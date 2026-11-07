@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>먼작귀 최저가 노트</title>
+<style>
+  :root{
+    --bg:#fbf7f2; --card:#fff; --ink:#2b2622; --sub:#7d736b; --line:#ece4da;
+    --accent:#e86f8f; --accent-soft:#fde8ee; --kr:#3b7ddd; --jp:#d9534f; --good:#2f9e6e; --good-soft:#e3f5ec;
+    --warn:#b7791f; --warn-soft:#fdf2dc; --radius:16px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#181614; --card:#221f1c; --ink:#f1ebe4; --sub:#a89e94; --line:#35302b;
+      --accent-soft:#3b2229; --good-soft:#1c3328; --warn-soft:#3a2f17; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:40px}
+  .wrap{max-width:880px;margin:0 auto;padding:0 16px}
+  header{padding:22px 0 8px}
+  h1{font-size:22px;margin:0 0 4px;letter-spacing:-.3px}
+  h1 span{color:var(--accent)}
+  .meta{color:var(--sub);font-size:13px}
+  .demo{background:var(--warn-soft);color:var(--warn);border-radius:10px;padding:8px 12px;font-size:13px;margin-top:10px}
+  .bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .bar input[type=search]{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:10px 12px;font-size:15px}
+  .seg{display:flex;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .seg button{border:0;background:none;color:var(--sub);padding:9px 12px;font-size:14px;cursor:pointer}
+  .seg button.on{background:var(--ink);color:var(--bg)}
+  .chk{font-size:13px;color:var(--sub);display:flex;gap:4px;align-items:center;white-space:nowrap}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:6px 0 14px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+  .stat b{display:block;font-size:20px}
+  .stat small{color:var(--sub);font-size:12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;display:flex;flex-direction:column;gap:8px}
+  .card h2{font-size:16px;margin:0;display:flex;justify-content:space-between;gap:8px;align-items:center}
+  .badges{display:flex;gap:4px;flex-wrap:wrap}
+  .badge{font-size:11px;font-weight:600;padding:2px 7px;border-radius:999px;white-space:nowrap}
+  .b-target{background:var(--good-soft);color:var(--good)}
+  .b-low{background:var(--accent-soft);color:var(--accent)}
+  .price{font-size:26px;font-weight:700;letter-spacing:-.5px}
+  .price small{font-size:13px;font-weight:500;color:var(--sub);margin-left:6px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:13px}
+  .split div{background:var(--bg);border-radius:10px;padding:6px 8px}
+  .split .lbl{font-size:11px;color:var(--sub)}
+  .kr{color:var(--kr)} .jp{color:var(--jp)}
+  .margin{font-size:13px;color:var(--sub)}
+  .margin b{color:var(--good)}
+  svg.spark{width:100%;height:46px;display:block}
+  .more{border:1px solid var(--line);background:none;color:var(--ink);border-radius:10px;padding:8px;font-size:14px;cursor:pointer}
+  .offers{display:none;flex-direction:column;gap:6px;margin-top:2px}
+  .card.open .offers{display:flex}
+  .offer{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:8px;align-items:center;text-decoration:none;color:inherit;
+    padding:6px;border-radius:10px;background:var(--bg)}
+  .offer img,.offer .ph{width:44px;height:44px;border-radius:8px;object-fit:cover;background:var(--line)}
+  .offer .t{font-size:13px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .offer .m{font-size:11px;color:var(--sub)}
+  .offer .p{text-align:right;font-weight:700;font-size:14px;white-space:nowrap}
+  .offer .p small{display:block;font-weight:400;font-size:11px;color:var(--sub)}
+  .offer.sus{opacity:.55}
+  .tag{font-size:10px;padding:1px 5px;border-radius:5px;margin-right:4px;font-weight:600}
+  .tag.KR{background:#e3edfb;color:var(--kr)} .tag.JP{background:#fbe5e4;color:var(--jp)}
+  .tag.sus{background:var(--warn-soft);color:var(--warn)}
+  .empty{color:var(--sub);text-align:center;padding:40px 0}
+  footer{color:var(--sub);font-size:12px;margin-top:24px;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>먼작귀 <span>최저가 노트</span></h1>
+    <div class="meta" id="meta">불러오는 중…</div>
+    <div class="demo" id="demo" hidden>지금 보이는 가격은 화면 확인용 샘플이에요. API 키를 넣으면 실제 가격으로 바뀝니다.</div>
+  </header>
+
+  <div class="bar">
+    <input type="search" id="q" placeholder="상품명·판매처 검색">
+    <div class="seg" id="seg">
+      <button data-r="ALL" class="on">전체</button><button data-r="KR">국내</button><button data-r="JP">일본</button>
+    </div>
+    <label class="chk"><input type="checkbox" id="hideSus" checked> 가품의심 숨김</label>
+  </div>
+
+  <div class="stats" id="stats"></div>
+  <div class="grid" id="grid"></div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const won = n => n == null ? '-' : n.toLocaleString('ko-KR') + '원';
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const SRC = {naver:'네이버쇼핑', rakuten:'라쿠텐', yahoo:'야후쇼핑'};
+let DATA, HIST, region = 'ALL';
+
+async function load(){
+  if (window.__DATA__) { DATA = window.__DATA__; HIST = window.__HIST__ || {}; return; }
+  const v = '?t=' + Date.now();
+  [DATA, HIST] = await Promise.all([
+    fetch('data/latest.json' + v).then(r => r.json()),
+    fetch('data/history.json' + v).then(r => r.json()).catch(() => ({}))
+  ]);
+}
+
+function spark(h, target){
+  if (!h || h.length < 2) return '<div class="margin">추이는 이틀째부터 보여요</div>';
+  const W = 300, H = 46, P = 4;
+  const vals = h.map(e => e.min);
+  const all = target ? vals.concat(target) : vals;
+  const lo = Math.min(...all), hi = Math.max(...all), span = (hi - lo) || 1;
+  const x = i => P + i * (W - 2 * P) / (h.length - 1);
+  const y = v => H - P - (v - lo) / span * (H - 2 * P);
+  const d = vals.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join('');
+  const minI = vals.indexOf(Math.min(...vals));
+  const tl = target ? `<line x1="${P}" x2="${W-P}" y1="${y(target)}" y2="${y(target)}" stroke="var(--good)" stroke-dasharray="3 3" stroke-width="1"/>` : '';
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="최근 ${h.length}일 최저가 추이">
+    ${tl}<path d="${d}" fill="none" stroke="var(--accent)" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
+    <circle cx="${x(minI)}" cy="${y(vals[minI])}" r="3" fill="var(--accent)"/>
+    <circle cx="${x(vals.length-1)}" cy="${y(vals.at(-1))}" r="3" fill="var(--ink)"/></svg>`;
+}
+
+function offerRow(o){
+  const img = o.image ? `<img src="${esc(o.image)}" loading="lazy" alt="">` : '<div class="ph"></div>';
+  const orig = o.currency === 'JPY' ? `<small>¥${o.price_orig.toLocaleString()}</small>` : '<small>배송비 별도</small>';
+  const note = o.currency === 'JPY' ? `<div class="m">${esc(o.ship_note)}</div>` : '';
+  return `<a class="offer ${o.suspicious ? 'sus' : ''}" href="${esc(o.link)}" target="_blank" rel="noopener">
+    ${img}
+    <div><div class="t">${esc(o.title)}</div>
+      <div class="m"><span class="tag ${o.region}">${o.region === 'KR' ? '국내' : '일본'}</span>${o.suspicious ? '<span class="tag sus">가품의심</span>' : ''}${esc(o.mall)} · ${SRC[o.source] || o.source}</div>${note}</div>
+    <div class="p">${won(o.landed_krw)}${orig}</div></a>`;
+}
+
+function render(){
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const hideSus = document.getElementById('hideSus').checked;
+  let hitTarget = 0, newLow = 0, cards = [];
+
+  for (const g of DATA.groups){
+    let offers = g.offers.filter(o => (region === 'ALL' || o.region === region) && !(hideSus && o.suspicious));
+    if (q && !g.name.toLowerCase().includes(q)) offers = offers.filter(o => (o.title + o.mall).toLowerCase().includes(q));
+    if (q && !offers.length) continue;
+    const best = offers.find(o => !o.suspicious) || null;
+    const h = HIST[g.id] || [];
+    const prevLow = h.length > 1 ? Math.min(...h.slice(0, -1).map(e => e.min)) : null;
+    const isTarget = best && g.target_krw && best.landed_krw <= g.target_krw;
+    const isLow = best && prevLow != null && best.landed_krw < prevLow;
+    if (isTarget) hitTarget++; if (isLow) newLow++;
+    const margin = best && g.sell_price ? Math.round((g.sell_price - best.landed_krw) / g.sell_price * 100) : null;
+
+    cards.push(`<div class="card">
+      <h2>${esc(g.name)}<span class="badges">${isTarget ? '<span class="badge b-target">목표가 도달</span>' : ''}${isLow ? '<span class="badge b-low">역대 최저</span>' : ''}</span></h2>
+      <div class="price">${best ? won(best.landed_krw) : '결과 없음'}${best ? `<small>${esc(best.mall)}</small>` : ''}</div>
+      <div class="split">
+        <div><div class="lbl">국내 최저</div><b class="kr">${won(g.best_kr?.landed_krw)}</b></div>
+        <div><div class="lbl">일본 최저 (도착가)</div><b class="jp">${won(g.best_jp?.landed_krw)}</b></div>
+      </div>
+      <div class="margin">${g.target_krw ? `목표가 ${won(g.target_krw)}` : ''}${margin != null ? ` · 판매가 ${won(g.sell_price)} 기준 마진 <b>${margin}%</b>` : ''}${g.all_time_low ? ` · 기록 최저 ${won(g.all_time_low)}` : ''}</div>
+      ${spark(h.slice(-30), g.target_krw)}
+      <button class="more" onclick="this.parentElement.classList.toggle('open');this.textContent=this.parentElement.classList.contains('open')?'접기':'판매처 ${offers.length}곳 보기'">판매처 ${offers.length}곳 보기</button>
+      <div class="offers">${offers.map(offerRow).join('') || '<div class="margin">조건에 맞는 상품이 없어요</div>'}</div>
+    </div>`);
+  }
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><b>${DATA.groups.length}</b><small>추적 상품</small></div>
+    <div class="stat"><b style="color:var(--good)">${hitTarget}</b><small>목표가 도달</small></div>
+    <div class="stat"><b style="color:var(--accent)">${newLow}</b><small>오늘 최저가 갱신</small></div>`;
+  document.getElementById('grid').innerHTML = cards.join('') || '<div class="empty">검색 결과가 없어요</div>';
+}
+
+load().then(() => {
+  const t = new Date(DATA.updated);
+  document.getElementById('meta').textContent =
+    `${t.toLocaleString('ko-KR', {month:'long', day:'numeric', hour:'2-digit', minute:'2-digit'})} 갱신 · 100엔 = ${(DATA.fx_jpy_krw * 100).toFixed(0)}원`;
+  document.getElementById('demo').hidden = !DATA.mock;
+  document.getElementById('foot').innerHTML =
+    `일본 상품은 <b>예상 도착가</b>예요: (상품가 + 일본 내 배송 ¥${DATA.settings.jp_domestic_shipping_jpy}) × 환율 × (1 + 세금 ${Math.round((DATA.settings.jp_import_tax_rate||0)*100)}%) + 배대지비 ${won(DATA.settings.jp_forwarding_krw_per_item)}.
+     합배송·품목별 관세에 따라 실제 금액은 달라질 수 있어요.<br>
+     가품의심 = 같은 상품군 중간값의 40% 미만인 가격. 매입 전 판매처 정품 여부를 꼭 확인하세요.<br>
+     환율: ${esc(DATA.fx_source)}`;
+  render();
+}).catch(e => { document.getElementById('meta').textContent = '아직 첫 수집 전이에요. GitHub Actions에서 수집을 한 번 실행하면 가격이 채워집니다.'; });
+
+document.getElementById('q').addEventListener('input', render);
+document.getElementById('hideSus').addEventListener('change', render);
+document.getElementById('seg').addEventListener('click', e => {
+  if (!e.target.dataset.r) return;
+  region = e.target.dataset.r;
+  document.querySelectorAll('#seg button').forEach(b => b.classList.toggle('on', b === e.target));
+  render();
+});
+</script>
+</body>
+</html>

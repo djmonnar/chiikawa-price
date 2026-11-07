@@ -1,0 +1,27 @@
+{
+  "_설명": "숫자만 바꿔서 쓰면 돼요. 저장하면 다음 수집부터 반영됩니다.",
+  "fx_fallback_jpy_krw": 9.3,
+  "jp_domestic_shipping_jpy": 800,
+  "jp_forwarding_krw_per_item": 3000,
+  "jp_import_tax_rate": 0.1,
+  "_세금설명": "판매 목적 수입은 개인 면세가 안 돼요. 기본은 부가세 10%만 반영. 관세는 품목별로 달라서 확인 후 올려주세요 (예: 0.18).",
+  "suspicious_ratio": 0.4,
+  "max_offers_per_group": 40,
+  "history_days": 180,
+  "exclude_words": [
+    "중고",
+    "호환",
+    "스타일",
+    "st ",
+    "짝퉁",
+    "레플",
+    "도안",
+    "케이스",
+    "폰케이스",
+    "그립톡",
+    "中古",
+    "ジャンク",
+    "ケース"
+  ],
+  "rakuten_origin": "https://YOUR-ID.github.io"
+}
