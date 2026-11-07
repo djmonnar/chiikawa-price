@@ -1,0 +1,101 @@
+{
+ "updated": "2026-11-08T00:39+09:00",
+ "fx_jpy_krw": 8.585,
+ "fx_source": "open.er-api.com",
+ "settings": {
+  "jp_domestic_shipping_jpy": 800,
+  "jp_forwarding_krw_per_item": 3000,
+  "jp_import_tax_rate": 0.1
+ },
+ "mock": false,
+ "groups": [
+  {
+   "id": "chiikawa-plush",
+   "name": "치이카와 인형",
+   "target_krw": 15000,
+   "sell_price": 25000,
+   "best": null,
+   "best_kr": null,
+   "best_jp": null,
+   "all_time_low": null,
+   "offers": []
+  },
+  {
+   "id": "hachiware-plush",
+   "name": "하치와레 인형",
+   "target_krw": 15000,
+   "sell_price": 25000,
+   "best": null,
+   "best_kr": null,
+   "best_jp": null,
+   "all_time_low": null,
+   "offers": []
+  },
+  {
+   "id": "usagi-plush",
+   "name": "우사기 인형",
+   "target_krw": 15000,
+   "sell_price": 25000,
+   "best": null,
+   "best_kr": null,
+   "best_jp": null,
+   "all_time_low": null,
+   "offers": []
+  },
+  {
+   "id": "momonga-plush",
+   "name": "모몽가 인형",
+   "target_krw": 15000,
+   "sell_price": 25000,
+   "best": null,
+   "best_kr": null,
+   "best_jp": null,
+   "all_time_low": null,
+   "offers": []
+  },
+  {
+   "id": "keyring",
+   "name": "마스코트 키링",
+   "target_krw": 8000,
+   "sell_price": 15000,
+   "best": null,
+   "best_kr": null,
+   "best_jp": null,
+   "all_time_low": null,
+   "offers": []
+  },
+  {
+   "id": "pouch",
+   "name": "파우치",
+   "target_krw": 10000,
+   "sell_price": 18000,
+   "best": null,
+   "best_kr": null,
+   "best_jp": null,
+   "all_time_low": null,
+   "offers": []
+  },
+  {
+   "id": "sticker",
+   "name": "스티커",
+   "target_krw": 2000,
+   "sell_price": 4500,
+   "best": null,
+   "best_kr": null,
+   "best_jp": null,
+   "all_time_low": null,
+   "offers": []
+  },
+  {
+   "id": "mug",
+   "name": "머그컵",
+   "target_krw": 12000,
+   "sell_price": 22000,
+   "best": null,
+   "best_kr": null,
+   "best_jp": null,
+   "all_time_low": null,
+   "offers": []
+  }
+ ]
+}
