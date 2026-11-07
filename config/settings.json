@@ -23,5 +23,7 @@
     "ジャンク",
     "ケース"
   ],
-  "rakuten_origin": "https://djmonnar.github.io"
+  "_라쿠텐설명": "라쿠텐 앱 등록 때 '許可されたWebサイト'에 넣은 주소와 같아야 해요. 앞의 버전이 안 되면 다음 버전을 시도합니다.",
+  "rakuten_origin": "https://chiikawa-price.vercel.app",
+  "rakuten_api_versions": ["20260701", "20220601"]
 }

@@ -37,7 +37,7 @@ docs/data/              수집 결과 (자동 커밋)
 2. **Settings → Secrets and variables → Actions → New repository secret** 에 아래 이름으로 등록
    `NAVER_CLIENT_ID`, `NAVER_CLIENT_SECRET`, `RAKUTEN_APP_ID`, `RAKUTEN_ACCESS_KEY`, `YAHOO_APP_ID`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
 3. **Settings → Pages** → Branch `main`, 폴더 `/docs` → Save
-4. `config/settings.json` 의 `rakuten_origin` 을 Pages 주소(`https://아이디.github.io`)로 변경 (라쿠텐 API가 Origin 헤더를 요구함)
+4. `config/settings.json` 의 `rakuten_origin` 을 사이트 주소(현재 `https://chiikawa-price.vercel.app`)로 맞추고, 라쿠텐 앱 등록 때 **アプリケーションタイプ: Webアプリケーション**, **許可されたWebサイト: `chiikawa-price.vercel.app`** 로 등록 (2026년 새 API는 이 주소의 Referer 헤더를 확인함)
 5. **Actions 탭 → 먼작귀 최저가 수집 → Run workflow** 로 첫 실행
 
 이후 `https://아이디.github.io/chiikawa-price/` 에서 확인. 홈 화면에 추가하면 앱처럼 쓸 수 있어요.

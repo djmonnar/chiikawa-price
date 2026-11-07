@@ -24,6 +24,7 @@ import re
 import statistics
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -112,21 +113,43 @@ def naver(query):
     return out
 
 
+_RAKUTEN_OK_VER = []  # 이번 실행에서 응답이 온 API 버전 (한 번 찾으면 계속 사용)
+
+
 def rakuten(query, fx, s):
     app, key = os.getenv("RAKUTEN_APP_ID"), os.getenv("RAKUTEN_ACCESS_KEY")
     if not app:
         return []
+    # 2026년 새 API는 앱 등록 때 넣은 '許可されたWebサイト'와 같은 주소의 Referer 헤더를 확인함
+    site = s.get("rakuten_origin", "https://example.com").rstrip("/")
+    headers = {"Origin": site, "Referer": site + "/"}
     out = []
     for sort in ("standard", "+itemPrice"):
         params = {"applicationId": app, "keyword": query, "hits": 30, "sort": sort,
                   "availability": 1, "format": "json", "formatVersion": 2}
         if key:
             params["accessKey"] = key
-        url = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601?" + urllib.parse.urlencode(params)
-        try:
-            d = http_json(url, {"Origin": s.get("rakuten_origin", "https://example.com")})
-        except Exception as e:  # noqa: BLE001
-            log(f"[라쿠텐] {query} 실패:", e)
+        d = None
+        for ver in list(_RAKUTEN_OK_VER or s.get("rakuten_api_versions") or ["20260701", "20220601"]):
+            url = f"https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/{ver}?" + urllib.parse.urlencode(params)
+            try:
+                d = http_json(url, headers)
+            except urllib.error.HTTPError as e:
+                log(f"[라쿠텐 {ver}] {query} 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:200])
+                d = None
+            except Exception as e:  # noqa: BLE001
+                log(f"[라쿠텐 {ver}] {query} 실패:", e)
+                d = None
+            if d is not None and isinstance(d.get("Items"), list):
+                if not _RAKUTEN_OK_VER:
+                    _RAKUTEN_OK_VER.append(ver)
+                    log(f"[라쿠텐] API 버전 {ver} 사용")
+                break
+            if d is not None:
+                log(f"[라쿠텐 {ver}] {query} 응답에 Items 없음:", str(d)[:200])
+                d = None
+            time.sleep(1.1)  # 초당 1회 제한
+        if d is None:
             continue
         for it in d.get("Items", []):
             jpy = int(it.get("itemPrice") or 0)
