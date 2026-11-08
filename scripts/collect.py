@@ -88,7 +88,10 @@ def naver(query):
             {"query": query, "display": 100, "sort": sort, "exclude": "used:rental"}
         )
         try:
-            d = http_json(url, {"X-Naver-Client-Id": cid, "X-Naver-Client-Secret": sec})
+            d = http_json(url, {"X-Naver-Client-Id": cid.strip(), "X-Naver-Client-Secret": sec.strip()})
+        except urllib.error.HTTPError as e:
+            log(f"[네이버] {query} 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:300])
+            continue
         except Exception as e:  # noqa: BLE001
             log(f"[네이버] {query} 실패:", e)
             continue
