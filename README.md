@@ -4,7 +4,7 @@
 **한국 도착 기준 최저가**를 비교하고, 최저가 갱신·목표가 도달 시 텔레그램으로 알려주는 매입용 대시보드입니다.
 
 - 서버 비용 0원: GitHub Actions(수집) + GitHub Pages(화면)
-- 국내: 네이버쇼핑 API → 쿠팡·11번가·G마켓·스마트스토어·해외직구 상품까지 한 번에
+- 국내: 11번가 오픈API 상품검색 (네이버쇼핑 검색 API는 2026-07-31 종료되어 더 이상 못 씀)
 - 일본: 라쿠텐 시장, Yahoo!쇼핑 → `(엔화가 + 일본 내 배송비) × 환율 + 배대지비`로 환산
 - 가품 의심 표시: 같은 상품군 중간값의 40% 미만 가격은 자동으로 숨김
 
@@ -23,9 +23,11 @@ docs/data/              수집 결과 (자동 커밋)
 ### 1. API 키 발급 (전부 무료)
 | 용도 | 발급처 | 필요한 값 |
 |---|---|---|
-| 국내 (필수) | developers.naver.com → 애플리케이션 등록 → 사용 API: **검색** | Client ID, Client Secret |
+| 국내 | openapi.11st.co.kr → 11번가 아이디로 로그인 → **API 신청** | 32자리 OpenAPI Key (180일마다 갱신) |
 | 라쿠텐 (선택) | webservice.rakuten.co.jp → アプリID発行 | アプリID, アクセスキー |
-| 야후쇼핑 (선택) | e.developer.yahoo.co.jp/register | Client ID |
+| 야후쇼핑 (선택) | e.developer.yahoo.co.jp/register (일본 휴대폰 번호 필요) | Client ID |
+
+> 네이버 검색 API의 **쇼핑** 검색은 2026-07-31에 종료됐어요(키가 있어도 `SE05` 오류). 코드는 남겨 뒀지만 첫 오류 뒤 바로 건너뜁니다.
 | 알림 (선택) | 텔레그램 @BotFather → /newbot | 봇 토큰 + 내 chat id |
 
 텔레그램 chat id: 만든 봇에게 아무 메시지나 보낸 뒤
@@ -35,7 +37,7 @@ docs/data/              수집 결과 (자동 커밋)
 ### 2. GitHub에 올리기
 1. 새 저장소 생성 (예: `chiikawa-price`) 후 이 폴더 전체 업로드
 2. **Settings → Secrets and variables → Actions → New repository secret** 에 아래 이름으로 등록
-   `NAVER_CLIENT_ID`, `NAVER_CLIENT_SECRET`, `RAKUTEN_APP_ID`, `RAKUTEN_ACCESS_KEY`, `YAHOO_APP_ID`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
+   `ELEVENST_API_KEY`, `RAKUTEN_APP_ID`, `RAKUTEN_ACCESS_KEY`, `YAHOO_APP_ID`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
 3. **Settings → Pages** → Branch `main`, 폴더 `/docs` → Save
 4. `config/settings.json` 의 `rakuten_origin` 을 사이트 주소(현재 `https://chiikawa-price.vercel.app`)로 맞추고, 라쿠텐 앱 등록 때 **アプリケーションタイプ: Webアプリケーション**, **許可されたWebサイト: `chiikawa-price.vercel.app`** 로 등록 (2026년 새 API는 이 주소의 Referer 헤더를 확인함)
 5. **Actions 탭 → 먼작귀 최저가 수집 → Run workflow** 로 첫 실행
@@ -60,8 +62,9 @@ docs/data/              수집 결과 (자동 커밋)
 ## 알아둘 점
 - **일본 도착가는 추정치**예요. 라쿠텐·야후 판매자 대부분은 한국 직배송을 안 해서 배대지 기준으로 계산합니다. 합배송하면 1개당 배대지비가 내려가니 `jp_forwarding_krw_per_item` 을 실제 단가에 맞게 조정하세요.
 - **판매 목적 수입은 개인 소액면세(자가사용) 대상이 아니에요.** 기본값은 부가세 10%만 도착가에 반영하고(`jp_import_tax_rate: 0.1`), 관세는 품목(HS코드)·원산지에 따라 달라서 관세사나 배대지에 확인한 뒤 올려주세요.
-- 네이버 API는 판매처별 배송비를 주지 않아서 국내 가격은 상품가 기준입니다.
-- 네이버 검색 API 한도: 하루 25,000회. 기본 설정(8개 상품 × 하루 2회)은 약 60회라 여유 많아요.
+- 11번가 가격은 '할인모음가'(받을 수 있는 할인을 모은 가격)가 있으면 그걸 씁니다. 배송비가 숫자로 오면 더하고, '무료배송' 같은 글자면 그대로 표시만 해요.
+- 11번가 오픈API 키는 **180일마다 만료**돼요(2026-06-30부터). 만료되면 수집 로그에 `[11번가] … 003` 이 찍히니 openapi.11st.co.kr에서 갱신한 뒤 Secret 값을 바꿔 주세요.
+- 국내 비교 범위는 11번가 입점 상품뿐이에요. 쿠팡은 쿠팡 파트너스 최종 승인(누적 판매 15만원 이상) 후에 API를 받을 수 있어서 아직 넣지 않았어요.
 - 공개 저장소의 Pages는 주소를 아는 사람은 누구나 볼 수 있어요 (검색엔진 노출은 막아둠).
 - 정품 재판매(병행수입)는 일반적으로 가능하지만, 가품 판매는 상표권 침해입니다. 가품의심 표시가 없더라도 판매처를 꼭 확인하세요.
 

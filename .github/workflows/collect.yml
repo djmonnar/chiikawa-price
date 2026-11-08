@@ -23,6 +23,7 @@ jobs:
           python-version: "3.12"
       - name: 가격 수집
         env:
+          ELEVENST_API_KEY: ${{ secrets.ELEVENST_API_KEY }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}

@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """먼작귀(치이카와) 굿즈 최저가 수집기.
 
-국내: 네이버쇼핑 검색 API (쿠팡·11번가·G마켓·스마트스토어·해외직구 상품 포함)
+국내: 11번가 오픈API 상품검색
+      (네이버쇼핑 검색 API는 2026-07-31 종료 — 키가 있어도 SE05 오류라 첫 실패 후 건너뜀)
 일본: 라쿠텐 시장 API, Yahoo!쇼핑 API  → 엔화를 원화로 환산 + 배송비/배대지비 추정
 
 결과는 docs/data/latest.json, docs/data/history.json 에 저장되고
 최저가 갱신·목표가 도달 시 텔레그램으로 알림을 보냅니다.
 
 환경변수 (GitHub Secrets):
-  NAVER_CLIENT_ID, NAVER_CLIENT_SECRET   (필수, 국내 비교)
+  ELEVENST_API_KEY                       (국내, 11번가 오픈API 32자리 키 — 180일마다 갱신)
+  NAVER_CLIENT_ID, NAVER_CLIENT_SECRET   (예전 네이버쇼핑용 — 종료됨, 없어도 됨)
   RAKUTEN_APP_ID, RAKUTEN_ACCESS_KEY     (선택, 라쿠텐)
   YAHOO_APP_ID                           (선택, 야후쇼핑)
   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID   (선택, 알림)
@@ -27,6 +29,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -78,9 +81,12 @@ def get_fx(settings):
 
 
 # ---------------------------------------------------------------- 수집기
+_SKIP = set()  # 이번 실행에서 더 부르지 않을 소스 (키 오류·서비스 종료)
+
+
 def naver(query):
     cid, sec = os.getenv("NAVER_CLIENT_ID"), os.getenv("NAVER_CLIENT_SECRET")
-    if not (cid and sec):
+    if not (cid and sec) or "naver" in _SKIP:
         return []
     out = []
     for sort in ("sim", "asc"):
@@ -90,7 +96,12 @@ def naver(query):
         try:
             d = http_json(url, {"X-Naver-Client-Id": cid.strip(), "X-Naver-Client-Secret": sec.strip()})
         except urllib.error.HTTPError as e:
-            log(f"[네이버] {query} 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:300])
+            body = e.read().decode("utf-8", "replace")[:300]
+            if "SE05" in body:  # 2026-07-31 쇼핑 검색 API 종료 → 같은 오류만 반복되니 이번 실행은 그만 부름
+                log("[네이버] 쇼핑 검색 API가 종료되어(SE05) 이번 수집에서는 건너뜁니다.")
+                _SKIP.add("naver")
+                return out
+            log(f"[네이버] {query} 실패: HTTP {e.code}", body)
             continue
         except Exception as e:  # noqa: BLE001
             log(f"[네이버] {query} 실패:", e)
@@ -113,6 +124,84 @@ def naver(query):
                 "image": it.get("image"),
             })
         time.sleep(0.15)
+    return out
+
+
+def _num(text):
+    digits = re.sub(r"[^\d]", "", text or "")
+    return int(digits) if digits else 0
+
+
+_11ST_ENC = []  # 검색어 인코딩: 결과가 나온 쪽(utf-8/cp949)을 찾으면 계속 사용
+
+
+def _11st_call(key, query, sort, enc):
+    url = "https://openapi.11st.co.kr/openapi/OpenApiService.tmall?" + urllib.parse.urlencode(
+        {"key": key, "apiCode": "ProductSearch", "keyword": query.encode(enc, "ignore"),
+         "pageNum": 1, "pageSize": 50, "sortCd": sort}
+    )
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        text = r.read().decode("cp949", "replace")
+    return ET.fromstring(re.sub(r"^\s*<\?xml[^>]*\?>", "", text))
+
+
+def elevenst(query):
+    """11번가 오픈API 상품검색. 응답은 EUC-KR XML이고, 오류도 HTTP 200 + <ErrorResponse>로 온다."""
+    key = (os.getenv("ELEVENST_API_KEY") or "").strip()
+    if not key or "11st" in _SKIP:
+        return []
+    out = []
+    for sort in ("CP", "L"):  # 인기도순, 낮은가격순
+        root = None
+        for enc in list(_11ST_ENC or ["utf-8", "cp949"]):
+            try:
+                root = _11st_call(key, query, sort, enc)
+            except Exception as e:  # noqa: BLE001
+                log(f"[11번가] {query} 실패:", e)
+                root = None
+                break
+            if root.tag == "ErrorResponse":
+                code, msg = root.findtext("ErrorCode"), root.findtext("ErrorMessage")
+                log(f"[11번가] {query} 실패: {code} {msg} {root.findtext('ErrorDetail') or ''}".strip())
+                if code in ("003", "004", "005"):  # 키 미등록·일일 한도 초과·접근 거부 → 이번 실행 중단
+                    _SKIP.add("11st")
+                    return out
+                root = None
+                continue
+            if root.find(".//Product") is not None:
+                if not _11ST_ENC:
+                    _11ST_ENC.append(enc)
+                    log(f"[11번가] 검색어 인코딩 {enc} 사용")
+                break
+            time.sleep(0.3)
+        if root is None:
+            continue
+        for it in root.iter("Product"):
+            price = _num(it.findtext("ProductPrice"))
+            sale = _num(it.findtext("SalePrice"))  # 할인모음가
+            if 0 < sale <= price or (sale > 0 and not price):
+                price = sale
+            if price <= 0:
+                continue
+            ship = (it.findtext("Delivery") or "").strip()
+            fee = _num(ship) if re.fullmatch(r"[\d,]+\s*원?", ship) else 0
+            img = next((it.findtext(t) for t in ("ProductImage300", "ProductImage200", "ProductImage",
+                                                 "ImageUrl", "ProductImage100") if it.findtext(t)), None)
+            out.append({
+                "source": "11st",
+                "region": "KR",
+                "key": f"11st:{it.findtext('ProductCode')}",
+                "title": clean_title(it.findtext("ProductName")),
+                "mall": (it.findtext("Seller") or "").strip() or "11번가",
+                "price_orig": price,
+                "currency": "KRW",
+                "landed_krw": price + fee,
+                "ship_note": (f"배송비 {fee:,}원 포함" if fee else ship) or "배송비 판매처별 상이",
+                "link": it.findtext("DetailPageUrl") or it.findtext("ProductDetailUrl"),
+                "image": img,
+            })
+        time.sleep(0.3)
     return out
 
 
@@ -243,10 +332,10 @@ def mock_offers(group, fx, s):
     out = []
     for i in range(8):
         p = int(base * rnd.uniform(0.8, 1.8) // 100 * 100)
-        out.append({"source": "naver", "region": "KR", "key": f"mock:kr:{group['id']}:{i}",
+        out.append({"source": "11st", "region": "KR", "key": f"mock:kr:{group['id']}:{i}",
                     "title": f"{group['ko'][0]} 정품 {rnd.choice(['S', 'M', 'L', '20cm', '세트'])}",
                     "mall": rnd.choice(malls_kr), "price_orig": p, "currency": "KRW", "landed_krw": p,
-                    "ship_note": "배송비 판매처별 상이", "link": "https://search.shopping.naver.com/", "image": None})
+                    "ship_note": "배송비 판매처별 상이", "link": "https://search.11st.co.kr/", "image": None})
     out.append({**out[0], "key": f"mock:kr:{group['id']}:fake", "title": f"{group['ko'][0]} 초특가",
                 "mall": "해외직구몰", "price_orig": int(base * 0.3), "landed_krw": int(base * 0.3)})
     for i in range(5):
@@ -292,8 +381,8 @@ def main():
                                          "min": int(base), "kr": int(base * 1.05), "jp": int(base)})
     result, alerts = [], []
 
-    if not mock and not os.getenv("NAVER_CLIENT_ID"):
-        log("⚠ NAVER_CLIENT_ID 가 없어 국내 가격은 건너뜁니다.")
+    if not mock and not os.getenv("ELEVENST_API_KEY"):
+        log("⚠ ELEVENST_API_KEY 가 없어 국내 가격(11번가)은 건너뜁니다.")
 
     for g in groups:
         if mock:
@@ -301,7 +390,7 @@ def main():
         else:
             raw = []
             for q in g.get("ko", []):
-                raw += naver(q)
+                raw += elevenst(q) + naver(q)
             for q in g.get("ja", []):
                 raw += rakuten(q, fx, s) + yahoo(q, fx, s)
         offers = finalize([o for o in raw if relevant(o, g, s)], s)

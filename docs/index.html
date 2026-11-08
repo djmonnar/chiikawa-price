@@ -93,7 +93,7 @@
 <script>
 const won = n => n == null ? '-' : n.toLocaleString('ko-KR') + '원';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const SRC = {naver:'네이버쇼핑', rakuten:'라쿠텐', yahoo:'야후쇼핑'};
+const SRC = {'11st':'11번가', naver:'네이버쇼핑', rakuten:'라쿠텐', yahoo:'야후쇼핑'};
 let DATA, HIST, region = 'ALL';
 
 async function load(){
