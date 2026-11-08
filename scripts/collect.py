@@ -2,14 +2,22 @@
 """먼작귀(치이카와) 굿즈 최저가 수집기.
 
 국내: 11번가 오픈API 상품검색
+      SerpApi 네이버 통합검색의 쇼핑 칸 (무료 월 250회)
+      Apify 쿠팡 검색 액터 (무료 월 $5 크레딧)
       (네이버쇼핑 검색 API는 2026-07-31 종료 — 키가 있어도 SE05 오류라 첫 실패 후 건너뜀)
 일본: 라쿠텐 시장 API, Yahoo!쇼핑 API  → 엔화를 원화로 환산 + 배송비/배대지비 추정
+
+SerpApi·Apify는 쓴 만큼 한도가 줄어서, 남은 한도를 다음 갱신일까지 남은 실행 횟수로 나눠
+이번 실행에 몇 개 상품만 새로 조회합니다. 나머지 상품은 docs/data/cache.json 에 남은
+지난 결과(기본 72시간 이내)를 그대로 씁니다.
 
 결과는 docs/data/latest.json, docs/data/history.json 에 저장되고
 최저가 갱신·목표가 도달 시 텔레그램으로 알림을 보냅니다.
 
 환경변수 (GitHub Secrets):
   ELEVENST_API_KEY                       (국내, 11번가 오픈API 32자리 키 — 180일마다 갱신)
+  SERPAPI_KEY                            (선택, 국내 네이버쇼핑 칸 — serpapi.com)
+  APIFY_TOKEN                            (선택, 국내 쿠팡 — apify.com)
   NAVER_CLIENT_ID, NAVER_CLIENT_SECRET   (예전 네이버쇼핑용 — 종료됨, 없어도 됨)
   RAKUTEN_APP_ID, RAKUTEN_ACCESS_KEY     (선택, 라쿠텐)
   YAHOO_APP_ID                           (선택, 야후쇼핑)
@@ -18,8 +26,10 @@
 사용: python scripts/collect.py          # 실제 수집
       python scripts/collect.py --mock   # API 없이 샘플 데이터로 테스트
 """
+import hashlib
 import html
 import json
+import math
 import os
 import random
 import re
@@ -35,6 +45,7 @@ from datetime import datetime, timedelta, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG = os.path.join(ROOT, "config")
 DATA = os.path.join(ROOT, "docs", "data")
+CACHE = os.path.join(DATA, "cache.json")
 KST = timezone(timedelta(hours=9))
 UA = "chiikawa-price-bot/1.0"
 
@@ -295,6 +306,222 @@ def jp_offer(source, key, title, mall, jpy, free_ship, link, image, fx, s):
     }
 
 
+# ---------------------------------------------------------------- 한도가 있는 소스 (SerpApi·Apify)
+def _amount(v):
+    if isinstance(v, bool):
+        return 0
+    if isinstance(v, (int, float)):
+        return int(v)
+    return _num(str(v or ""))
+
+
+def _parse_time(text):
+    if not text:
+        return None
+    try:
+        t = datetime.fromisoformat(str(text).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return t if t.tzinfo else t.replace(tzinfo=timezone.utc)
+
+
+def _runs_left(end, s):
+    """한도 갱신 시점까지 남은 수집 횟수 (이번 실행 포함)."""
+    now = datetime.now(timezone.utc)
+    if not end or end <= now:  # 갱신일을 모르면 이번 달 말일까지로 계산
+        end = (now.replace(day=1) + timedelta(days=32)).replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+    return max(1, math.ceil((end - now).total_seconds() / 86400 * s.get("runs_per_day", 2)))
+
+
+def _share(left_units, unit_per_group, end, s, n_groups):
+    """남은 한도를 남은 실행 횟수로 나눠, 이번에 새로 조회할 상품 수를 정한다."""
+    if left_units <= 0 or unit_per_group <= 0:
+        return 0, _runs_left(end, s)
+    runs = _runs_left(end, s)
+    n = round(left_units / unit_per_group / runs)
+    return max(0, min(n, int(left_units // unit_per_group), n_groups)), runs
+
+
+def serpapi_quota(s, n_groups):
+    key = (os.getenv("SERPAPI_KEY") or "").strip()
+    if not key:
+        return 0
+    try:  # 계정 조회는 검색 횟수에 포함되지 않음
+        d = http_json("https://serpapi.com/account.json?" + urllib.parse.urlencode({"api_key": key}))
+    except urllib.error.HTTPError as e:
+        log(f"[SerpApi] 계정 조회 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:200])
+        return 0
+    except Exception as e:  # noqa: BLE001
+        log("[SerpApi] 계정 조회 실패:", e)
+        return 0
+    left = _amount(d.get("total_searches_left") if d.get("total_searches_left") is not None
+                   else d.get("plan_searches_left"))
+    n, runs = _share(left, 1, _parse_time(d.get("plan_renewal_date")), s, n_groups)
+    log(f"[SerpApi] 남은 검색 {left}회, 갱신까지 약 {runs}번 수집 → 이번에 상품 {n}개 조회")
+    return n
+
+
+def apify_quota(s, n_groups):
+    token = (os.getenv("APIFY_TOKEN") or "").strip()
+    if not token:
+        return 0
+    try:
+        d = http_json("https://api.apify.com/v2/users/me/limits", {"Authorization": f"Bearer {token}"})["data"]
+        used = float(d["current"]["monthlyUsageUsd"])
+        cap = float(d["limits"]["maxMonthlyUsageUsd"])
+        end = _parse_time(d["monthlyUsageCycle"]["endAt"])
+    except urllib.error.HTTPError as e:
+        log(f"[Apify] 사용량 조회 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:200])
+        return 0
+    except Exception as e:  # noqa: BLE001
+        log("[Apify] 사용량 조회 실패:", e)
+        return 0
+    cap = min(cap, float(s.get("apify_max_usd_per_month", 4.5)))
+    per_group = int(s.get("apify_items_per_keyword", 10)) * float(s.get("apify_usd_per_item", 0.0025)) + 0.001
+    n, runs = _share(cap - used, per_group, end, s, n_groups)
+    log(f"[Apify] 이번 달 ${used:.2f} / ${cap:.2f} 사용, 갱신까지 약 {runs}번 수집 → 이번에 상품 {n}개 조회")
+    return n
+
+
+def serpapi_naver(query):
+    """SerpApi로 네이버 통합검색을 받아 '네이버 쇼핑' 칸의 상품만 쓴다. 실패하면 None (지난 결과 유지)."""
+    key = (os.getenv("SERPAPI_KEY") or "").strip()
+    if not key or "serpapi" in _SKIP:
+        return None
+    url = "https://serpapi.com/search.json?" + urllib.parse.urlencode(
+        {"engine": "naver", "query": query, "where": "nexearch", "api_key": key})
+    try:
+        d = http_json(url, timeout=90)
+    except urllib.error.HTTPError as e:
+        log(f"[SerpApi] {query} 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:200])
+        if e.code in (401, 403, 429):  # 키 오류·한도 초과 → 이번 실행 중단
+            _SKIP.add("serpapi")
+        return None
+    except Exception as e:  # noqa: BLE001
+        log(f"[SerpApi] {query} 실패:", e)
+        return None
+    if d.get("error"):
+        if "any results" in d["error"]:  # 검색은 됐는데 결과가 없음
+            log(f"[SerpApi] {query}: 결과 없음")
+            return []
+        log(f"[SerpApi] {query} 실패:", d["error"])
+        return None
+    items = d.get("shopping_results") or []
+    if isinstance(items, dict):
+        items = items.get("items") or items.get("results") or []
+    out = []
+    for it in items:
+        if not isinstance(it, dict):
+            continue
+        prices = [p for p in (_amount(it.get("coupon_price")), _amount(it.get("price"))) if p > 0]
+        if not prices:
+            continue
+        price = min(prices)
+        free = bool(it.get("free_shipping"))
+        fee = 0 if free else _amount(it.get("shipping"))
+        link = it.get("link") or ""
+        mid = re.search(r"nv_mid=(\d+)", link)
+        key_id = mid.group(1) if mid else hashlib.md5(f"{it.get('title')}|{it.get('stores')}".encode()).hexdigest()[:12]
+        stores = it.get("stores")
+        mall = ", ".join(map(str, stores))[:30] if isinstance(stores, list) else str(stores or "")
+        out.append({
+            "source": "naver",
+            "region": "KR",
+            "key": f"naver:{key_id}",
+            "title": clean_title(it.get("title")),
+            "mall": mall or "네이버쇼핑",
+            "price_orig": price,
+            "currency": "KRW",
+            "landed_krw": price + fee,
+            "ship_note": "무료배송" if free else (f"배송비 {fee:,}원 포함" if fee else "배송비 판매처별 상이"),
+            "link": link,
+            "image": it.get("thumbnail"),
+        })
+    log(f"[SerpApi] {query}: 쇼핑 칸 {len(out)}건")
+    return out
+
+
+def apify_coupang(query, s):
+    """Apify 쿠팡 검색 액터를 한 번 돌려 결과를 바로 받는다. 실패하면 None (지난 결과 유지)."""
+    token = (os.getenv("APIFY_TOKEN") or "").strip()
+    if not token or "apify" in _SKIP:
+        return None
+    actor = s.get("apify_coupang_actor", "piotrv1001~coupang-listings-scraper")
+    n = int(s.get("apify_items_per_keyword", 10))
+    max_usd = round(n * float(s.get("apify_usd_per_item", 0.0025)) * 2 + 0.01, 3)  # 한 번 실행에 쓸 수 있는 최대 금액
+    url = f"https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items?" + urllib.parse.urlencode(
+        {"timeout": 240, "maxItems": n, "maxTotalChargeUsd": max_usd, "clean": 1})
+    body = json.dumps({"searchTerms": [query], "maxResults": n,
+                       "sortBy": s.get("apify_coupang_sort", "relevance")}).encode()
+    req = urllib.request.Request(url, data=body, method="POST", headers={
+        "User-Agent": UA, "Content-Type": "application/json", "Authorization": f"Bearer {token}"})
+    try:
+        with urllib.request.urlopen(req, timeout=300) as r:
+            items = json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        log(f"[Apify 쿠팡] {query} 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:300])
+        if e.code in (401, 402, 403):  # 토큰 오류·크레딧 소진 → 이번 실행 중단
+            _SKIP.add("apify")
+        return None
+    except Exception as e:  # noqa: BLE001
+        log(f"[Apify 쿠팡] {query} 실패:", e)
+        return None
+    if not isinstance(items, list):
+        log(f"[Apify 쿠팡] {query} 응답 형식이 달라요:", str(items)[:200])
+        return None
+    out = []
+    for it in items:
+        if not isinstance(it, dict) or it.get("isSoldOut") or it.get("soldOut"):
+            continue
+        price = _amount(it.get("salesPrice") or it.get("price"))
+        if price <= 0:
+            continue
+        if it.get("isRocket"):
+            mall, note = "쿠팡 로켓배송", "로켓배송 (와우 회원 무료, 일반 19,800원 이상 무료)"
+        elif it.get("isRocketMerchant"):
+            mall, note = "쿠팡 판매자로켓", "판매자로켓"
+        else:
+            mall, note = "쿠팡", "배송비 판매자별 상이"
+        out.append({
+            "source": "coupang",
+            "region": "KR",
+            "key": f"coupang:{it.get('productId') or it.get('itemId') or it.get('vendorItemId')}",
+            "title": clean_title(it.get("title") or it.get("name")),
+            "mall": mall,
+            "price_orig": price,
+            "currency": "KRW",
+            "landed_krw": price,
+            "ship_note": note,
+            "link": it.get("url") or it.get("productUrl"),
+            "image": it.get("imageUrl") or it.get("image"),
+        })
+    log(f"[Apify 쿠팡] {query}: {len(out)}건")
+    return out
+
+
+def pick_groups(groups, n, slot):
+    """가장 오래전에 조회한 상품부터 n개."""
+    oldest = datetime.min.replace(tzinfo=timezone.utc)
+    ordered = sorted(groups, key=lambda g: _parse_time((slot.get(g["id"]) or {}).get("at")) or oldest)
+    return {g["id"] for g in ordered[:n]}
+
+
+def paid_offers(g, fetch, slot, fresh, s):
+    """이번 차례인 상품은 새로 조회하고, 아니면 cache.json의 지난 결과를 쓴다."""
+    now = datetime.now(timezone.utc)
+    q = (g.get("ko") or [None])[0]
+    if q and g["id"] in fresh:
+        got = fetch(q)
+        if got is not None:
+            slot[g["id"]] = {"at": now.isoformat(timespec="minutes"), "offers": [dict(o) for o in got]}
+            return got
+    ent = slot.get(g["id"]) or {}
+    at = _parse_time(ent.get("at"))
+    if not at or now - at > timedelta(hours=s.get("paid_cache_max_age_hours", 72)):
+        return []
+    return [{**o, "fetched_at": ent["at"]} for o in ent.get("offers", [])]
+
+
 # ---------------------------------------------------------------- 필터·정리
 def relevant(offer, group, s):
     """must_ko/must_ja: [["먼작귀","치이카와"], ["인형"]] → 각 줄에서 하나 이상 포함 (줄끼리는 AND)."""
@@ -384,6 +611,17 @@ def main():
     if not mock and not os.getenv("ELEVENST_API_KEY"):
         log("⚠ ELEVENST_API_KEY 가 없어 국내 가격(11번가)은 건너뜁니다.")
 
+    # 한도가 있는 소스: (조회 함수, cache.json 칸, 이번에 새로 조회할 상품 id들)
+    cache = {} if mock else load_json(CACHE, {})
+    paid = []
+    if not mock:
+        for name, quota, fetch in (("serpapi", serpapi_quota, serpapi_naver),
+                                   ("apify", apify_quota, lambda q: apify_coupang(q, s))):
+            slot = cache.setdefault(name, {})
+            for gid in [k for k in slot if k not in {g["id"] for g in groups}]:
+                slot.pop(gid)  # keywords.json에서 빠진 상품은 지움
+            paid.append((fetch, slot, pick_groups(groups, quota(s, len(groups)), slot)))
+
     for g in groups:
         if mock:
             raw = mock_offers(g, fx, s)
@@ -391,6 +629,8 @@ def main():
             raw = []
             for q in g.get("ko", []):
                 raw += elevenst(q) + naver(q)
+            for fetch, slot, fresh in paid:
+                raw += paid_offers(g, fetch, slot, fresh, s)
             for q in g.get("ja", []):
                 raw += rakuten(q, fx, s) + yahoo(q, fx, s)
         offers = finalize([o for o in raw if relevant(o, g, s)], s)
@@ -446,6 +686,8 @@ def main():
     save_json(os.path.join(DATA, "latest.json"), latest)
     save_json(os.path.join(DATA, "history.json"), history)
     save_json(os.path.join(DATA, "alert_state.json"), alerts_state)
+    if not mock:
+        save_json(CACHE, cache)
 
     if alerts:
         telegram(f"📉 먼작귀 최저가 알림 ({now:%m/%d %H:%M})\n\n" + "\n\n".join(alerts))

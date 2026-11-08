@@ -25,5 +25,13 @@
   ],
   "_라쿠텐설명": "라쿠텐 앱 등록 때 '許可されたWebサイト'에 넣은 주소와 같아야 해요. 앞의 버전이 안 되면 다음 버전을 시도합니다.",
   "rakuten_origin": "https://chiikawa-price.vercel.app",
-  "rakuten_api_versions": ["20260701", "20220601"]
+  "rakuten_api_versions": ["20260701", "20220601"],
+  "_한도설명": "SerpApi·Apify는 남은 한도를 갱신일까지 남은 수집 횟수(하루 runs_per_day번)로 나눠 조금씩 씁니다. 이번에 조회하지 않은 상품은 paid_cache_max_age_hours 시간 안의 지난 결과를 그대로 보여줘요.",
+  "runs_per_day": 2,
+  "paid_cache_max_age_hours": 72,
+  "apify_coupang_actor": "piotrv1001~coupang-listings-scraper",
+  "apify_coupang_sort": "relevance",
+  "apify_items_per_keyword": 10,
+  "apify_usd_per_item": 0.0025,
+  "apify_max_usd_per_month": 4.5
 }

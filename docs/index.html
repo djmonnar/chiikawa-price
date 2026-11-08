@@ -93,7 +93,7 @@
 <script>
 const won = n => n == null ? '-' : n.toLocaleString('ko-KR') + '원';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const SRC = {'11st':'11번가', naver:'네이버쇼핑', rakuten:'라쿠텐', yahoo:'야후쇼핑'};
+const SRC = {'11st':'11번가', naver:'네이버쇼핑', coupang:'쿠팡', rakuten:'라쿠텐', yahoo:'야후쇼핑'};
 let DATA, HIST, region = 'ALL';
 
 async function load(){
@@ -124,8 +124,12 @@ function spark(h, target){
 
 function offerRow(o){
   const img = o.image ? `<img src="${esc(o.image)}" loading="lazy" alt="">` : '<div class="ph"></div>';
-  const orig = o.currency === 'JPY' ? `<small>¥${o.price_orig.toLocaleString()}</small>` : '<small>배송비 별도</small>';
-  const note = o.currency === 'JPY' ? `<div class="m">${esc(o.ship_note)}</div>` : '';
+  const shipIn = /포함|^무료/.test(o.ship_note || '');
+  const orig = o.currency === 'JPY' ? `<small>¥${o.price_orig.toLocaleString()}</small>` : (shipIn ? '' : '<small>배송비 별도</small>');
+  const hrs = o.fetched_at ? Math.floor((Date.now() - Date.parse(o.fetched_at)) / 3600000) : 0;
+  const age = hrs >= 1 ? `${hrs}시간 전 가격` : '';
+  const noteText = [o.ship_note, age].filter(Boolean).join(' · ');
+  const note = noteText ? `<div class="m">${esc(noteText)}</div>` : '';
   return `<a class="offer ${o.suspicious ? 'sus' : ''}" href="${esc(o.link)}" target="_blank" rel="noopener">
     ${img}
     <div><div class="t">${esc(o.title)}</div>

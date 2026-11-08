@@ -24,6 +24,8 @@ jobs:
       - name: 가격 수집
         env:
           ELEVENST_API_KEY: ${{ secrets.ELEVENST_API_KEY }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
