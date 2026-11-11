@@ -3,7 +3,8 @@
 
 국내: 11번가 오픈API 상품검색
       SerpApi 네이버 통합검색의 쇼핑 칸 (무료 월 250회)
-      Apify 쿠팡 검색 액터 (무료 월 $5 크레딧)
+      Serper 구글 쇼핑 한국 (가입 때 무료 2,500회 — 상품마다 하루 1번만 조회)
+      Apify 쿠팡 검색 액터 (무료 월 $5 크레딧, 카드 등록 불필요)
       (네이버쇼핑 검색 API는 2026-07-31 종료 — 키가 있어도 SE05 오류라 첫 실패 후 건너뜀)
 일본: 라쿠텐 시장 API, Yahoo!쇼핑 API  → 엔화를 원화로 환산 + 배송비/배대지비 추정
 
@@ -17,6 +18,7 @@ SerpApi·Apify는 쓴 만큼 한도가 줄어서, 남은 한도를 다음 갱신
 환경변수 (GitHub Secrets):
   ELEVENST_API_KEY                       (국내, 11번가 오픈API 32자리 키 — 180일마다 갱신)
   SERPAPI_KEY                            (선택, 국내 네이버쇼핑 칸 — serpapi.com)
+  SERPER_API_KEY                         (선택, 국내 구글쇼핑 — serper.dev)
   APIFY_TOKEN                            (선택, 국내 쿠팡 — apify.com)
   NAVER_CLIENT_ID, NAVER_CLIENT_SECRET   (예전 네이버쇼핑용 — 종료됨, 없어도 됨)
   RAKUTEN_APP_ID, RAKUTEN_ACCESS_KEY     (선택, 라쿠텐)
@@ -383,6 +385,17 @@ def apify_quota(s, n_groups):
     return n
 
 
+def serper_quota(s, n_groups):
+    """Serper 무료 2,500회는 가입 때 한 번만 주고 남은 횟수 조회 API가 없어서, 상품마다 정해진 간격으로만 부른다."""
+    if not (os.getenv("SERPER_API_KEY") or "").strip():
+        return 0
+    hours = float(s.get("serper_refresh_hours", 24))
+    every = max(1, round(hours / 24 * s.get("runs_per_day", 2)))  # 상품 하나를 몇 번 수집에 한 번 조회할지
+    n = min(n_groups, math.ceil(n_groups / every))
+    log(f"[Serper] 상품마다 약 {hours:g}시간에 1번 → 이번에 상품 {n}개 조회")
+    return n
+
+
 def serpapi_naver(query):
     """SerpApi로 네이버 통합검색을 받아 '네이버 쇼핑' 칸의 상품만 쓴다. 실패하면 None (지난 결과 유지)."""
     key = (os.getenv("SERPAPI_KEY") or "").strip()
@@ -438,6 +451,68 @@ def serpapi_naver(query):
             "image": it.get("thumbnail"),
         })
     log(f"[SerpApi] {query}: 쇼핑 칸 {len(out)}건")
+    return out
+
+
+_KANA = re.compile(r"[぀-ヿ]")
+
+
+def serper_google(query):
+    """Serper로 구글 쇼핑(한국)을 검색한다. 쿠팡·SSG·에이블리·텐바이텐 등이 원화로 나온다. 실패하면 None."""
+    key = (os.getenv("SERPER_API_KEY") or "").strip()
+    if not key or "serper" in _SKIP:
+        return None
+    body = json.dumps({"q": query, "gl": "kr", "hl": "ko"}).encode()
+    req = urllib.request.Request("https://google.serper.dev/shopping", data=body, method="POST", headers={
+        "User-Agent": UA, "Content-Type": "application/json", "X-API-KEY": key})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            d = json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        log(f"[Serper] {query} 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:200])
+        if e.code in (400, 401, 402, 403, 429):  # 키 오류·무료 횟수 소진 → 이번 실행 중단
+            _SKIP.add("serper")
+        return None
+    except Exception as e:  # noqa: BLE001
+        log(f"[Serper] {query} 실패:", e)
+        return None
+    out, skipped_jp = [], 0
+    for it in d.get("shopping") or []:
+        if not isinstance(it, dict):
+            continue
+        price_text, store = str(it.get("price") or ""), str(it.get("source") or "")
+        if "₩" not in price_text and "원" not in price_text:
+            continue  # 원화가 아닌 가격
+        if _KANA.search(store):
+            skipped_jp += 1  # 일본 쇼핑몰: 국제배송비가 빠진 환산가라 국내 가격과 비교가 안 됨
+            continue
+        price = _num(price_text)
+        if price <= 0:
+            continue
+        deliv = str(it.get("delivery") or "")
+        fee_m = re.search(r"₩\s*([\d,]+)", deliv)
+        if re.search(r"무료|free", deliv, re.I):
+            fee, note = 0, "무료배송"
+        elif fee_m:
+            fee = _num(fee_m.group(1))
+            note = f"배송비 {fee:,}원 포함"
+        else:
+            fee, note = 0, "배송비 판매처별 상이"
+        pid = it.get("productId") or hashlib.md5(f"{it.get('title')}|{store}".encode()).hexdigest()[:12]
+        out.append({
+            "source": "google",
+            "region": "KR",
+            "key": f"google:{pid}",
+            "title": clean_title(it.get("title")),
+            "mall": store[:30] or "구글쇼핑",
+            "price_orig": price,
+            "currency": "KRW",
+            "landed_krw": price + fee,
+            "ship_note": note,
+            "link": it.get("link"),
+            "image": it.get("imageUrl"),
+        })
+    log(f"[Serper] {query}: 구글쇼핑 {len(out)}건" + (f" (일본 쇼핑몰 {skipped_jp}건 제외)" if skipped_jp else ""))
     return out
 
 
@@ -616,6 +691,7 @@ def main():
     paid = []
     if not mock:
         for name, quota, fetch in (("serpapi", serpapi_quota, serpapi_naver),
+                                   ("serper", serper_quota, serper_google),
                                    ("apify", apify_quota, lambda q: apify_coupang(q, s))):
             slot = cache.setdefault(name, {})
             for gid in [k for k in slot if k not in {g["id"] for g in groups}]:

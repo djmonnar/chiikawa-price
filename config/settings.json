@@ -29,6 +29,8 @@
   "_한도설명": "SerpApi·Apify는 남은 한도를 갱신일까지 남은 수집 횟수(하루 runs_per_day번)로 나눠 조금씩 씁니다. 이번에 조회하지 않은 상품은 paid_cache_max_age_hours 시간 안의 지난 결과를 그대로 보여줘요.",
   "runs_per_day": 2,
   "paid_cache_max_age_hours": 72,
+  "_serper설명": "Serper(구글쇼핑)는 무료 2,500회를 가입 때 한 번만 줘요. 상품마다 이 시간에 한 번만 조회 → 상품 8개면 하루 8회, 약 10달 사용.",
+  "serper_refresh_hours": 24,
   "apify_coupang_actor": "piotrv1001~coupang-listings-scraper",
   "apify_coupang_sort": "relevance",
   "apify_items_per_keyword": 10,
