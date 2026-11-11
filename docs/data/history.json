@@ -1,7 +1,28 @@
 {
- "chiikawa-plush": [],
- "hachiware-plush": [],
- "usagi-plush": [],
+ "chiikawa-plush": [
+  {
+   "date": "2026-11-11",
+   "min": 16500,
+   "kr": 16500,
+   "jp": null
+  }
+ ],
+ "hachiware-plush": [
+  {
+   "date": "2026-11-11",
+   "min": 24000,
+   "kr": 24000,
+   "jp": null
+  }
+ ],
+ "usagi-plush": [
+  {
+   "date": "2026-11-11",
+   "min": 16500,
+   "kr": 16500,
+   "jp": null
+  }
+ ],
  "momonga-plush": [],
  "keyring": [],
  "pouch": [],
