@@ -537,16 +537,24 @@ def apify_coupang(query, s):
                        "sortBy": s.get("apify_coupang_sort", "relevance")}).encode()
     req = urllib.request.Request(url, data=body, method="POST", headers={
         "User-Agent": UA, "Content-Type": "application/json", "Authorization": f"Bearer {token}"})
-    try:
-        with urllib.request.urlopen(req, timeout=300) as r:
-            items = json.loads(r.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        log(f"[Apify 쿠팡] {query} 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:300])
-        if e.code in (401, 402, 403):  # 토큰 오류·크레딧 소진 → 이번 실행 중단
-            _SKIP.add("apify")
-        return None
-    except Exception as e:  # noqa: BLE001
-        log(f"[Apify 쿠팡] {query} 실패:", e)
+    items = None
+    for attempt in (1, 2):  # 쿠팡 차단 등으로 액터 실행이 가끔 FAILED → 한 번만 다시 시도
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                items = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            msg = e.read().decode("utf-8", "replace")
+            log(f"[Apify 쿠팡] {query} 실패({attempt}회차): HTTP {e.code}", " ".join(msg.split())[:300])
+            if e.code in (401, 402, 403):  # 토큰 오류·크레딧 소진 → 이번 실행 중단
+                _SKIP.add("apify")
+                return None
+            if e.code != 400 or "run-failed" not in msg:
+                return None
+        except Exception as e:  # noqa: BLE001
+            log(f"[Apify 쿠팡] {query} 실패({attempt}회차):", e)
+            return None
+    if items is None:
         return None
     if not isinstance(items, list):
         log(f"[Apify 쿠팡] {query} 응답 형식이 달라요:", str(items)[:200])
