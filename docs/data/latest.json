@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T23:45+09:00",
+ "updated": "2026-11-13T00:00+09:00",
  "fx_jpy_krw": 8.393,
  "fx_source": "open.er-api.com",
  "settings": {
@@ -26,6 +26,7 @@
     "ship_note": "배송비 판매처별 상이",
     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%97%90%EB%8B%88%EB%A7%88%EC%9D%B4+%EC%BF%A0%EC%A7%80+%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+%ED%81%AC%EB%A1%9C%EC%BC%93",
     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRAni-aBYNX-vqYsbQr1wuzPx19QNa-0PkcwvpAlZAmx7VziIjZXrjMCrAYx5zJDEp1ONI3f8Bi417y-7yOLS0bXjoINgKmumkD63IM_3QDoNe_lFwTTn2o",
+    "fetched_at": "2026-11-12T14:45+00:00",
     "suspicious": false
    },
    "best_kr": {
@@ -40,6 +41,7 @@
     "ship_note": "배송비 판매처별 상이",
     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%97%90%EB%8B%88%EB%A7%88%EC%9D%B4+%EC%BF%A0%EC%A7%80+%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+%ED%81%AC%EB%A1%9C%EC%BC%93",
     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRAni-aBYNX-vqYsbQr1wuzPx19QNa-0PkcwvpAlZAmx7VziIjZXrjMCrAYx5zJDEp1ONI3f8Bi417y-7yOLS0bXjoINgKmumkD63IM_3QDoNe_lFwTTn2o",
+    "fetched_at": "2026-11-12T14:45+00:00",
     "suspicious": false
    },
    "best_jp": null,
@@ -57,6 +59,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%A4%91%ED%98%95%EC%9D%B8%ED%98%95%EC%9D%B4%EB%9E%91+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%B0%98%EC%A0%84%EC%BF%A0%EC%85%98+%EC%9D%B8%ED%98%95+%EC%83%88%EA%B1%B0+%EC%84%B8%EC%BB%A8%EC%9B%A8%EC%96%B4",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRU3DAsW_kW4PB8nvJ63gD370_rNwwAjpR4pxtn3uVwBciRhp7Bg9RmAJ-FP5kw2Oa4ENt8AQ1fYoEhXIAHVMu0OdzC8y_4M0ixVlCURRPE",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": true
     },
     {
@@ -71,6 +74,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EB%8C%80%ED%98%95+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EB%AA%A8%EC%B0%8C%EC%9D%B8%ED%98%95+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%95%A0%EC%B0%A9%EC%9D%B8%ED%98%95+%EC%97%AC%EC%9E%90%EC%B9%9C%EA%B5%AC%EC%84%A0%EB%AC%BC+%EC%9A%B0%EC%82%AC%EA%B8%B0%28%EC%98%90%EB%A1%9C%EC%9A%B0%29-30%EC%84%BC%ED%8B%B0+%EB%B3%84%ED%86%A0%EB%81%BC%EB%A7%88%EC%BC%93",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRbVKnSK9UqkwIihdBdc8iTZOLHX63fqWQBQdf_Wvm8Pu9xBzVmh-7r0kqj1Q5egt1DohPF6Hdv_UIk5tvy0AmpgRmaNPuJDA",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": true
     },
     {
@@ -85,6 +89,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%97%90%EB%8B%88%EB%A7%88%EC%9D%B4+%EC%BF%A0%EC%A7%80+%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+%ED%81%AC%EB%A1%9C%EC%BC%93",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRAni-aBYNX-vqYsbQr1wuzPx19QNa-0PkcwvpAlZAmx7VziIjZXrjMCrAYx5zJDEp1ONI3f8Bi417y-7yOLS0bXjoINgKmumkD63IM_3QDoNe_lFwTTn2o",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -99,6 +104,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9D%B8%ED%98%95+%EA%BD%83%EB%8B%A4%EB%B0%9C+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%A1%B8%EC%97%85%EC%8B%9D+%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%EC%8A%A4",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRQgdPr85PYQuQ282RU90E45_wAEpz6Tlqb9Ug_nKgFOSKBuHrhdN0ERYPuEPdQeW-nOXcxtpBqA73LT3MUw7iG_q_eW0YPkKoj3sJrRTc",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -113,6 +119,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%EC%95%89%EC%9D%80%EB%88%84%EC%9D%B4%EA%B5%AC%EB%A3%A8%EB%AF%B8+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%B9%85%EB%88%84%EC%9D%B4+%EB%8C%80%ED%98%95+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+1%ED%83%84+%ED%81%AC%EB%A1%9C%EC%BC%93",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRGr9jEEQs-jHoXC-2wBEG-zr3U89kXIWnJD0qg9-CLq_t6LuH9fLk3sJOrDwOdstGUdBvT3b8srpOsuEt_vL-5wrrCgxPl62Oo5ZqFUHJQ",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -127,6 +134,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%9E%8F%EC%BD%94%EB%B9%85%EB%88%84%EC%9D%B4+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%8C%80%ED%98%95+%EA%B2%80+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+%ED%81%AC%EB%A1%9C%EC%BC%93",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTbzWAmtw98AOBpiqiNk79oGRHYSoMxAcA5S3tFQWaNJC-qr9NWp-6O63KiJhQ0u05j7nD1Y6Z5lxie9Xm6TykONgbG5WWAx1jPU0yVu-B7",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -141,6 +149,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%ED%8C%8C%ED%81%AC+%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%95%A0%EB%A1%9C%EC%9C%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%8E%8C%ED%82%A8+%EB%AF%B8%EB%8B%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+%ED%81%AC%EB%A1%9C%EC%BC%93",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS0jiGeX2pTLb93hCd1Fqx_hmcp51SBEcPgAJ1RHaQo2Lwm5P3WRWQ95i23TqazpmwVo-q_XY9ToSri013NitQxDUTaMUlTKZZqoKN-YuyekKAAb8ajX63fRw",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -155,6 +164,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:8066495441880875249,gpcid:806153559511521471,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRWlOVsQaqRPU1FofHK2ADjSt-eTla9mVSMX5qcweRWsceKlirDyb5oy27txnOB4qbeqbRdC_2NKfS4fMUnUk_ouq4Ni2qQtjmhAbbOfxM",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     }
    ]
@@ -176,7 +186,6 @@
     "ship_note": "배송비 판매처별 상이",
     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%9A%B1%EB%9A%B1%EC%9D%B4+%EA%B7%80%EC%97%AC%EC%9A%B4+%EB%A8%BC%EC%9E%91%EA%B7%80+%EF%BB%BF%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95+%EC%9A%B0%EC%82%AC%EA%B8%B0+solethings.co.kr",
     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRt2YfvzbxfYmLHqhu8YsmRYK1gghGPTIQW6hmsoTml7mgGMZ3TIPsCqazwcewlJW7OJvOl2kuh9IwKGcb-xtDOtY09r5DeCiQbj7PN02BbpzHAT2ZjVFL_",
-    "fetched_at": "2026-11-12T03:51+00:00",
     "suspicious": false
    },
    "best_kr": {
@@ -191,12 +200,25 @@
     "ship_note": "배송비 판매처별 상이",
     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%9A%B1%EB%9A%B1%EC%9D%B4+%EA%B7%80%EC%97%AC%EC%9A%B4+%EB%A8%BC%EC%9E%91%EA%B7%80+%EF%BB%BF%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95+%EC%9A%B0%EC%82%AC%EA%B8%B0+solethings.co.kr",
     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRt2YfvzbxfYmLHqhu8YsmRYK1gghGPTIQW6hmsoTml7mgGMZ3TIPsCqazwcewlJW7OJvOl2kuh9IwKGcb-xtDOtY09r5DeCiQbj7PN02BbpzHAT2ZjVFL_",
-    "fetched_at": "2026-11-12T03:51+00:00",
     "suspicious": false
    },
    "best_jp": null,
    "all_time_low": 16500,
    "offers": [
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:8143385828",
+     "title": "치이카와 인형 먼작귀 우사기 하치와레 큰 봉제인형 쿠션",
+     "mall": "쿠팡",
+     "price_orig": 13970,
+     "currency": "KRW",
+     "landed_krw": 13970,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/8143385828?itemId=23144071067&vendorItemId=96085830865&q=하치와레 인형&searchId=3dd263a610048285&sourceType=search&rank=4&itemsCount=60&searchRank=4",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/945d/af5f71f6b84e16dff52c137bcb4eae2a7cb528bd055381ccdeef102e5fe3.jpg",
+     "suspicious": true
+    },
     {
      "source": "google",
      "region": "KR",
@@ -209,7 +231,6 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%9A%B1%EB%9A%B1%EC%9D%B4+%EA%B7%80%EC%97%AC%EC%9A%B4+%EB%A8%BC%EC%9E%91%EA%B7%80+%EF%BB%BF%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95+%EC%9A%B0%EC%82%AC%EA%B8%B0+solethings.co.kr",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRt2YfvzbxfYmLHqhu8YsmRYK1gghGPTIQW6hmsoTml7mgGMZ3TIPsCqazwcewlJW7OJvOl2kuh9IwKGcb-xtDOtY09r5DeCiQbj7PN02BbpzHAT2ZjVFL_",
-     "fetched_at": "2026-11-12T03:51+00:00",
      "suspicious": false
     },
     {
@@ -224,7 +245,20 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EA%B5%AD%EB%82%B4%EC%B6%9C%EA%B3%A0%EC%83%81%ED%92%88+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EA%B5%BF%EC%A6%88+%EC%BA%90%EB%A6%AD%ED%84%B0+%ED%94%BC%EA%B7%9C%EC%96%B4+%EB%B4%89%EC%A0%9C+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+chiikawa+27cm%2C+%EB%B0%B1%EA%B3%B0%2C+1%EA%B0%9C+coupang.com",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQPEzfsGcbP4uRjKoOf3pLGKZr62FpPLKMretbizmIbqKSq0_4laSXu5uTQf5RdM27QcbYksCJsCpCo6TkpO1VY1NS4BX0k",
-     "fetched_at": "2026-11-12T03:51+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9658605338",
+     "title": "hubin우사기 치이카와 하치와레 귀여원인형 쿠션 빅사이즈 40cm 60cm 80cm",
+     "mall": "쿠팡",
+     "price_orig": 30710,
+     "currency": "KRW",
+     "landed_krw": 30710,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9658605338?itemId=28872643461&vendorItemId=96053258422&q=하치와레 인형&searchId=3dd263a610048285&sourceType=search&rank=7&itemsCount=60&searchRank=7",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/2247/5566150ac86509b5bccce19a8e12d1b91c8d2ea27496b13f715c1ce3289f.png",
      "suspicious": false
     },
     {
@@ -238,8 +272,7 @@
      "landed_krw": 32900,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EB%B9%85%EC%82%AC%EC%9D%B4%EC%A6%88+%EC%9D%B8%ED%98%95+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EC%BF%A0%EC%85%98+35cm+60cm+75cm+%EC%BF%A0%ED%8C%A1",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQq-F71TONgUbpyn219ajoAVEyC27JY4Q9hFanbjV53AXKWt4hPmnG-xy-mDXPH-6cwJ2FxKIt4f45rwIiAJXTrl9APHtl_LAgsQ9TiTNvV",
-     "fetched_at": "2026-11-12T03:51+00:00",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR_JzbsIbJnaq071Oen_-QYUjMwU7rOugcefmgNmq2oZu33vO2VLcr5WN2V8m6pNlZBAW_aGOpeIXxVqs_pPeUMALGVghaifvIy3-UJoqvm",
      "suspicious": false
     },
     {
@@ -253,8 +286,7 @@
      "landed_krw": 33900,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%AA%A8%EB%AA%BD%EA%B0%80%EC%9D%B8%ED%98%95+%EB%A8%BC%EC%9E%91%EA%B7%80%EC%9D%B8%ED%98%95+%EC%BF%A0%EB%A6%AC%EB%A7%8C%EC%A5%AC+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EA%B5%BF%EC%A6%88+G%EB%A7%88%EC%BC%93",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTwq9yMGSNMF-ZSo0V-hm67u3zxhe_j3QVKzeK_yxyFK1hi3K-_0iuFcD_95ViG_4wD-UubgUvs4F-_1Lzw_A96RpBFQXQ1SFwsC5wq8FtBQZwznNyYdzqK",
-     "fetched_at": "2026-11-12T03:51+00:00",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR-pKMMqKRJ2xN8F-4R7w7Ka8W9eXTAPwVv8nNuMZdeQBd9oYIB1b6ShCdJWusaldeI7H2SNwXa9Yu93d6PwM-qFmXANaPwOAwla_HP3kwm10MF3IndNPc-",
      "suspicious": false
     },
     {
@@ -268,8 +300,21 @@
      "landed_krw": 37000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Chiikawa+Sushi+Pop-Up+Sushi+Mini+Plush+Toy+Hachiware+KREAM",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSWHMWuNvTFOGd53FuUTsPGI0DhZhrOYJOUfuSWAaV8HWTC4_boV9ZpM76KT1L2D_QSri4zW3UHG4J9YIFUnPeBQ9uAr2l16IYa6oI7QEKZ024HMNjSEjEA",
-     "fetched_at": "2026-11-12T03:51+00:00",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQJJkoBTYFZmP8rzLCvB_n8pNP-TL8GO-ZHzupGj9CZ-HUZ6JmBzGLIqK95FB01pAmaJnbUSbVMCN4GfJMVHDHWQiSH54sxhUzliYsU9YsdHXnWxxIXPGKr",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:6687185601709444603",
+     "title": "[ 정품/최저가 보장 ️] 치이카와 하치와레 우사기 무기 시리즈 정품 쿠션 정품 인형 3colors",
+     "mall": "에이블리",
+     "price_orig": 43800,
+     "currency": "KRW",
+     "landed_krw": 43800,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?ibp=oshop&q=%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:6687185601709444603,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRuo1IQNYAHHRV0RiH3eayVVGvm8NTuW2B8y_sPOti41id3pqRLa2EC4PFpp6Snr19Gf7BuQpWRr3AQhW80i0lLdBdpYfkBeyHRYFwRwrZFVSRVnBbGWqMj",
      "suspicious": false
     },
     {
@@ -283,8 +328,7 @@
      "landed_krw": 49000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Chiikawa+Panda+Plush+Hachiware+KREAM",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSET8P_07CHnrI7Cr49qcfNx-r5-pW3mj4ikzxBSmL3ASJjRONBb8y6ypCSNXMkZDqE850JJob4BfIJnZnrj8AtoNtyCiKDRtDtORpFU0p-pYKUpbebVC__vw",
-     "fetched_at": "2026-11-12T03:51+00:00",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTrAwQC_yUWUJtoGHyolvTDHV_kxmVBw_4Kf2mREzRARzHOSzB5JalGQr_ccGfplvoTKiJYOdbKL_deUYvbmzHcKYHODgCpFbGnje6zwq5hgAEOfAVV8Z1Z9A",
      "suspicious": false
     },
     {
@@ -299,7 +343,6 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%28%EB%A8%BC%EC%9E%91%EA%B7%80%29+%ED%95%A8%EA%BB%98+%EB%A8%B9%EC%96%B4%EC%9A%94+%ED%8C%9D%EC%BD%98+%EB%B4%89%EC%A0%9C+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+bunjang.co.kr",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ_ajzR3lhBz3o_F8RKwjizNGNPT4Q49CePYKeVF5f-XGKyB2wrY1w12tuTKFoM-YOV3atTnMdRiBj0J-2AN-tSmjsbEVaY2Q",
-     "fetched_at": "2026-11-12T03:51+00:00",
      "suspicious": false
     },
     {
@@ -313,468 +356,7 @@
      "landed_krw": 60000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Chiikawa+x+Sanrio+Characters+Desktop+Hang+Plush+Hachiware+Hello+Kitty+KREAM",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS_qHncP46T3w6uU1g9ojHHatiQGgVJzivqTZsBirdxeRabA6aOc_MyXA-4Xsb6TQw3iXQXOywgBRDkKE8WJn5UJ9QNNNyhGSAx55-YjPRVk-BrHs9OZ6u6",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:4514053672423451998",
-     "title": "[ 정품/최저가 보장 ️] 먼작귀 치이카와 하치와레 우사기 후드 봉제인형",
-     "mall": "에이블리",
-     "price_orig": 61800,
-     "currency": "KRW",
-     "landed_krw": 61800,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B+%EC%A0%95%ED%92%88%2F%EC%B5%9C%EC%A0%80%EA%B0%80+%EB%B3%B4%EC%9E%A5+%EF%B8%8F%5D+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%9B%84%EB%93%9C+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EC%97%90%EC%9D%B4%EB%B8%94%EB%A6%AC",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSRm5Nx-HqvGRYGCDIIngng0CHXU8j0tuNW3gGKIVBj3StKsJuH8oXD9wHylSYOIEKQkhbs3C1lnqcWiie_o75PRbDDKEAmX4qF2GKWDUPc3ev7Z4tAgudR",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    }
-   ]
-  },
-  {
-   "id": "usagi-plush",
-   "name": "우사기 인형",
-   "target_krw": 15000,
-   "sell_price": 25000,
-   "best": {
-    "source": "google",
-    "region": "KR",
-    "key": "google:17528426530013852447",
-    "title": "먼작귀 치이카와 우사기 하치와레 봉제인형 귀여운 인형 고블린",
-    "mall": "coupang.com",
-    "price_orig": 17100,
-    "currency": "KRW",
-    "landed_krw": 17100,
-    "ship_note": "배송비 판매처별 상이",
-    "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B7%80%EC%97%AC%EC%9A%B4+%EC%9D%B8%ED%98%95+%EA%B3%A0%EB%B8%94%EB%A6%B0+coupang.com",
-    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRU3tO7xTuZORXn_ERqp7vWh8aOPIDSiPvl9QZzzuPIMWAAi3hOdi6Wepth3RzZ9k5bmmDcOUmIAeWP9VriWWerYyZkBWr1",
-    "fetched_at": "2026-11-12T03:51+00:00",
-    "suspicious": false
-   },
-   "best_kr": {
-    "source": "google",
-    "region": "KR",
-    "key": "google:17528426530013852447",
-    "title": "먼작귀 치이카와 우사기 하치와레 봉제인형 귀여운 인형 고블린",
-    "mall": "coupang.com",
-    "price_orig": 17100,
-    "currency": "KRW",
-    "landed_krw": 17100,
-    "ship_note": "배송비 판매처별 상이",
-    "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B7%80%EC%97%AC%EC%9A%B4+%EC%9D%B8%ED%98%95+%EA%B3%A0%EB%B8%94%EB%A6%B0+coupang.com",
-    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRU3tO7xTuZORXn_ERqp7vWh8aOPIDSiPvl9QZzzuPIMWAAi3hOdi6Wepth3RzZ9k5bmmDcOUmIAeWP9VriWWerYyZkBWr1",
-    "fetched_at": "2026-11-12T03:51+00:00",
-    "suspicious": false
-   },
-   "best_jp": null,
-   "all_time_low": 16500,
-   "offers": [
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:10248837526344559183",
-     "title": "먼작귀 치이카와 우사기 하치와레 모찌 바디필로우 안고자는 롱쿠션 인형쿠션 수면인형 애착인형ZCBV",
-     "mall": "coupang.com",
-     "price_orig": 11500,
-     "currency": "KRW",
-     "landed_krw": 11500,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EB%AA%A8%EC%B0%8C+%EB%B0%94%EB%94%94%ED%95%84%EB%A1%9C%EC%9A%B0+%EC%95%88%EA%B3%A0%EC%9E%90%EB%8A%94+%EB%A1%B1%EC%BF%A0%EC%85%98+%EC%9D%B8%ED%98%95%EC%BF%A0%EC%85%98+%EC%88%98%EB%A9%B4%EC%9D%B8%ED%98%95+%EC%95%A0%EC%B0%A9%EC%9D%B8%ED%98%95ZCBV+coupang.com",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSOooSVtVTB0EZqFRjmJegbNIF3ys3SLjTilII4OHQV-i4bKaS4RJRtVdh9mJDETry8kiAuqxdho58rA-7dFb_RKDecp4FE7T9ulgsqVBE_GStjQsOvMJI1",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": true
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:1524230462044524263",
-     "title": "뚱뚱이 귀여운 먼작귀 ﻿치이카와 우사기 하치와레 인형 우사기",
-     "mall": "solethings.co.kr",
-     "price_orig": 16500,
-     "currency": "KRW",
-     "landed_krw": 16500,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%9A%B1%EB%9A%B1%EC%9D%B4+%EA%B7%80%EC%97%AC%EC%9A%B4+%EB%A8%BC%EC%9E%91%EA%B7%80+%EF%BB%BF%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95+%EC%9A%B0%EC%82%AC%EA%B8%B0+solethings.co.kr",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRt2YfvzbxfYmLHqhu8YsmRYK1gghGPTIQW6hmsoTml7mgGMZ3TIPsCqazwcewlJW7OJvOl2kuh9IwKGcb-xtDOtY09r5DeCiQbj7PN02BbpzHAT2ZjVFL_",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": true
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:14417438132315367074",
-     "title": "ZCBV먼작귀 치이카와 토벌봉 우사기 노란색 70cm 봉제 인형 캐릭터 봉제인형 귀여운 대형 쿠션 소품 침실 장식 선물용 생일 여친선물",
-     "mall": "coupang.com",
-     "price_orig": 16500,
-     "currency": "KRW",
-     "landed_krw": 16500,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=ZCBV%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%86%A0%EB%B2%8C%EB%B4%89+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%85%B8%EB%9E%80%EC%83%89+70cm+%EB%B4%89%EC%A0%9C+%EC%9D%B8%ED%98%95+%EC%BA%90%EB%A6%AD%ED%84%B0+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B7%80%EC%97%AC%EC%9A%B4+%EB%8C%80%ED%98%95+%EC%BF%A0%EC%85%98+%EC%86%8C%ED%92%88+%EC%B9%A8%EC%8B%A4+%EC%9E%A5%EC%8B%9D+%EC%84%A0%EB%AC%BC%EC%9A%A9+%EC%83%9D%EC%9D%BC+%EC%97%AC%EC%B9%9C%EC%84%A0%EB%AC%BC+coupang.com",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWpp6MSeM92wI06XxYPZ264CrRjHUAR3gFAUUulN3anz5W5kWxoz46RKXl94upjQEXdEZu8LxyCA7O6bf7ay3JX9i7t2xX2g-W3hGMBoAOJXiV86JxrT5xyg",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": true
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:17528426530013852447",
-     "title": "먼작귀 치이카와 우사기 하치와레 봉제인형 귀여운 인형 고블린",
-     "mall": "coupang.com",
-     "price_orig": 17100,
-     "currency": "KRW",
-     "landed_krw": 17100,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B7%80%EC%97%AC%EC%9A%B4+%EC%9D%B8%ED%98%95+%EA%B3%A0%EB%B8%94%EB%A6%B0+coupang.com",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRU3tO7xTuZORXn_ERqp7vWh8aOPIDSiPvl9QZzzuPIMWAAi3hOdi6Wepth3RzZ9k5bmmDcOUmIAeWP9VriWWerYyZkBWr1",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:3216645636784814794",
-     "title": "먼작귀 치이카와 우사기 토끼 하치와레 가르마 귀여운 말랑이 스퀴시 피젯토이 굿즈 인형",
-     "mall": "coupang.com",
-     "price_orig": 20500,
-     "currency": "KRW",
-     "landed_krw": 20500,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%86%A0%EB%81%BC+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EA%B0%80%EB%A5%B4%EB%A7%88+%EA%B7%80%EC%97%AC%EC%9A%B4+%EB%A7%90%EB%9E%91%EC%9D%B4+%EC%8A%A4%ED%80%B4%EC%8B%9C+%ED%94%BC%EC%A0%AF%ED%86%A0%EC%9D%B4+%EA%B5%BF%EC%A6%88+%EC%9D%B8%ED%98%95+coupang.com",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS5-7mlJHtNhfd_nme08lMiKQouBY9gNCTHUuKqzH2TkdWvJFjcL9WM-FmhuzkirvPTlySgrLGks6AQzoTwTwd75T-SxzMb",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:5452280834226957699",
-     "title": "먼작귀 우사기 초매지컬 흑화 다크 버전 마스코트 인형 BI",
-     "mall": "후루츠패밀리",
-     "price_orig": 22500,
-     "currency": "KRW",
-     "landed_krw": 22500,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%B4%88%EB%A7%A4%EC%A7%80%EC%BB%AC+%ED%9D%91%ED%99%94+%EB%8B%A4%ED%81%AC+%EB%B2%84%EC%A0%84+%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+%EC%9D%B8%ED%98%95+BI+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQidipncmEOQhKHxiMgDwCABvHBdUvrbh2JRpQqL4i230FDQwZsMa_9WI1hFNhjvTu4S4QARCejNNX9k3bn5nQthTOEMtsKKZp5mox8H6itVsU5Jfs-7Rfy",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:10043389320899793134",
-     "title": "치이카와 먼작귀 우사기 토끼 허그 자석 손잡이 나카요시 마스코트 누이 인형",
-     "mall": "후루츠패밀리",
-     "price_orig": 23000,
-     "currency": "KRW",
-     "landed_krw": 23000,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%86%A0%EB%81%BC+%ED%97%88%EA%B7%B8+%EC%9E%90%EC%84%9D+%EC%86%90%EC%9E%A1%EC%9D%B4+%EB%82%98%EC%B9%B4%EC%9A%94%EC%8B%9C+%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+%EB%88%84%EC%9D%B4+%EC%9D%B8%ED%98%95+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSl-zmyrcISfxBaMpoyTIR8BNmZyALYBdca1vMY0dF8d28Qw3TjCvtpMKJW6VPjOMxB8X_YWlFWLVnnm7WHGkxWMMcNU8gi02CQbXnMwQA1sEuuhblJbD4iyg",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:1527686660873194758",
-     "title": "국내출고상품 치이카와 먼작귀 굿즈 캐릭터 피규어 봉제 인형 하치와레 우사기 chiikawa 27cm, 백곰, 1개",
-     "mall": "coupang.com",
-     "price_orig": 24000,
-     "currency": "KRW",
-     "landed_krw": 24000,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EA%B5%AD%EB%82%B4%EC%B6%9C%EA%B3%A0%EC%83%81%ED%92%88+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EA%B5%BF%EC%A6%88+%EC%BA%90%EB%A6%AD%ED%84%B0+%ED%94%BC%EA%B7%9C%EC%96%B4+%EB%B4%89%EC%A0%9C+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+chiikawa+27cm%2C+%EB%B0%B1%EA%B3%B0%2C+1%EA%B0%9C+coupang.com",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQPEzfsGcbP4uRjKoOf3pLGKZr62FpPLKMretbizmIbqKSq0_4laSXu5uTQf5RdM27QcbYksCJsCpCo6TkpO1VY1NS4BX0k",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:4965600735081785865",
-     "title": "먼작귀 우사기 치이카와 하치와레 인형 생일 파티 선물",
-     "mall": "coupang.com",
-     "price_orig": 24500,
-     "currency": "KRW",
-     "landed_krw": 24500,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95+%EC%83%9D%EC%9D%BC+%ED%8C%8C%ED%8B%B0+%EC%84%A0%EB%AC%BC+coupang.com",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTdzqaTfy7FARlmaWxCoBh-lmWV5wrEdgSRcljf55YWXwl4DdpDiMIG4jUyTr-tJpx8zTugzGVmdaEJ9UToNn1Bm36ZtHQ0mg",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:15222358059400777555",
-     "title": "먼작귀 친구들 치이카와 우사기 하치와레 인형 봉제인형 수박 시리즈 35cm 45cm 55cm 선물",
-     "mall": "coupang.com",
-     "price_orig": 27500,
-     "currency": "KRW",
-     "landed_krw": 27500,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%9C%EA%B5%AC%EB%93%A4+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EC%88%98%EB%B0%95+%EC%8B%9C%EB%A6%AC%EC%A6%88+35cm+45cm+55cm+%EC%84%A0%EB%AC%BC+coupang.com",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRljEujM3WV44Vb9A1-Pig1eL6BdY6ooClEB_R1WZj7WEXRGw3009hO-yNocZIwPrpOqsUKPMN1-JLq62pc52stzHaEmRQQ",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:812271344963553158",
-     "title": "먼작귀 치이카와 대형 쿠션 인형 하치와레 우사기 80cm 굿즈, 1개",
-     "mall": "coupang.com",
-     "price_orig": 29800,
-     "currency": "KRW",
-     "landed_krw": 29800,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%8C%80%ED%98%95+%EC%BF%A0%EC%85%98+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+80cm+%EA%B5%BF%EC%A6%88%2C+1%EA%B0%9C+coupang.com",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS3FZRYQN65Ia2yhLvGPj_5ok8sGickW35UaUoVAyrh39Mcz9qzd87_hf9Oua0pH_eKYFMd3Zy4hlTlkYlmqiKNyLLUTMLhDg",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:13096441766958697987",
-     "title": "먼작귀 우사기 파자마 인형",
-     "mall": "후루츠패밀리",
-     "price_orig": 30000,
-     "currency": "KRW",
-     "landed_krw": 30000,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%8C%8C%EC%9E%90%EB%A7%88+%EC%9D%B8%ED%98%95+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcReVjKyR3lOz7ygV9t3a-nQ0_7O_c7hw-lxcWO0haTBCgZYV69dUWoyZRULjK0vbFzsBlYORboIwA3zRzlpvx0-541T0VUNhL02DMTjuLyP",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:6903072070977244347",
-     "title": "먼작귀굿즈 먼작귀인형 치이카와 우사기 하치와레 캐릭터",
-     "mall": "coupang.com",
-     "price_orig": 31500,
-     "currency": "KRW",
-     "landed_krw": 31500,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80%EA%B5%BF%EC%A6%88+%EB%A8%BC%EC%9E%91%EA%B7%80%EC%9D%B8%ED%98%95+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%BA%90%EB%A6%AD%ED%84%B0+coupang.com",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTvsCeRYK3DOAFyASgf9J9DtiX7OAnNXAFhIgT6268OUrfR2_rU_HwTWdlpW3LaV32bfGsrhxXSgUZsFzILUESUGuOCEJJPvdWEO_u_LBI5xlFlfc4N9O8KzQ",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:12318716462122615942",
-     "title": "[ 정품/신상특가] 치이카와 하치와레 우사기 정품 미니 먼작귀 정품 봉제인형",
-     "mall": "에이블리",
-     "price_orig": 32800,
-     "currency": "KRW",
-     "landed_krw": 32800,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B+%EC%A0%95%ED%92%88%2F%EC%8B%A0%EC%83%81%ED%8A%B9%EA%B0%80%5D+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%A0%95%ED%92%88+%EB%AF%B8%EB%8B%88+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%A0%95%ED%92%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EC%97%90%EC%9D%B4%EB%B8%94%EB%A6%AC",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSgK8zPIEKk47uQ7t2HgjYHRQrmECSeLO3mLF9oxmti-_kp7C5HMCWhWIrkgLeRCmEcGc1LYZM6Q278NJ31GEnu8Na0pT4j8Ot8zEFYFfbav205dbrfMnvdQw0",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:7197540128175566956",
-     "title": "우사기 봉제 인형 치이카와 베개 먼작귀",
-     "mall": "coupang.com",
-     "price_orig": 36100,
-     "currency": "KRW",
-     "landed_krw": 36100,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%B4%89%EC%A0%9C+%EC%9D%B8%ED%98%95+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%B2%A0%EA%B0%9C+%EB%A8%BC%EC%9E%91%EA%B7%80+coupang.com",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTtWaVr3FjyUr4EDRDhu5Nfhoo5logD5aOgPSFj5FagEzUZyJBG-8QVo14zaf5mDt_6DlQ_0wbY5WpZ5nV3tohMAeJ3fAybUFZyZMI11seCvWV40RjE5Q",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:8994323655622050146",
-     "title": "먼작귀 인형 꽃다발 치이카와 우사기 졸업식",
-     "mall": "아이디어스",
-     "price_orig": 37900,
-     "currency": "KRW",
-     "landed_krw": 37900,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9D%B8%ED%98%95+%EA%BD%83%EB%8B%A4%EB%B0%9C+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%A1%B8%EC%97%85%EC%8B%9D+%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%EC%8A%A4",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRQgdPr85PYQuQ282RU90E45_wAEpz6Tlqb9Ug_nKgFOSKBuHrhdN0ERYPuEPdQeW-nOXcxtpBqA73LT3MUw7iG_q_eW0YPkKoj3sJrRTc",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:13781320040166421847",
-     "title": "치이카와 하치와레 우사기 플라워 미니 먼작귀 정품 인형",
-     "mall": "에이블리",
-     "price_orig": 39800,
-     "currency": "KRW",
-     "landed_krw": 39800,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:13781320040166421847,gpcid:443532102315024363,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRa6S8gyeEnda_Ej2HpweIiDq1H6v9q4PyFE2D6RxcV0bcQwijXrr4i3e1LkCLViVPbt2WW6jLfuz_-rcp2NV5VK5JEnasJToJIY8NkVtS8X-HP3fUEElfaIQ",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:9957271018674932445",
-     "title": "치이카와 먼작귀 우사기 말 따라하는 회전 인형",
-     "mall": "coupang.com",
-     "price_orig": 42900,
-     "currency": "KRW",
-     "landed_krw": 42900,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%A7%90+%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94+%ED%9A%8C%EC%A0%84+%EC%9D%B8%ED%98%95+coupang.com",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRHkplmKyT9mRVneR7_2Wxq69G2hXxbMFvrqPmy550kysmysZsVlHHiss1q0VpetQ4P5HxqsMQEA-gN_ioTYqXzp1ZVgn8utZKdDv5jB9AboY2k7FjLW9n6",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:4069141422708875455",
-     "title": "먼작귀 치이카와 하치와레 우사기 모니터 걸이 인형",
-     "mall": "에이블리",
-     "price_orig": 47800,
-     "currency": "KRW",
-     "landed_krw": 47800,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:4069141422708875455,gpcid:1050090670374205388,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTa4rAvp5IVAKidLG8MjFOPBkSydXAYkcJzdb6QkYhw8bDWDLC2sawttQMrpnNBgHc0xgbHrBGwbIpmtD2UM3LzhcB59aHoPZVPR0ElsPuCheQa-lbVRROw",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:17868221212404451938",
-     "title": "먼작귀 치이카와 하치와레 우사기 모니터 인형",
-     "mall": "coupang.com",
-     "price_orig": 49000,
-     "currency": "KRW",
-     "landed_krw": 49000,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%AA%A8%EB%8B%88%ED%84%B0+%EC%9D%B8%ED%98%95+coupang.com",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSLenqG1GHNUmuow5Ob9UYQG6gccwfOhxwXxJ63m35qOtwd7CVLyxMaIhtZrz4M01Q_OgPg6NObwp7Ni33KtteXAyjRPZEqrofPnUYlyFK8v2-OiChfIsgPXg",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:8663792776614293740",
-     "title": "먼작귀 치이카와 하치와레 우사기 카메라 곰돌이 인형",
-     "mall": "에이블리",
-     "price_orig": 49600,
-     "currency": "KRW",
-     "landed_krw": 49600,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:8663792776614293740,gpcid:15822491908728910636,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSPtNC_ZTKG2zTmWhc527Zwt7lAfl83-LqGojJW8mzu7B9a_K9vR2VixGOido6W9rbzFR3db_CFjlYyjaqz1MeEx8ZI5IH_BY74qwnZXBwJ",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:3419337914562189498",
-     "title": "먼작귀 치이카와 대형 쿠션 인형 하치와레 우사기 80cm",
-     "mall": "coupang.com",
-     "price_orig": 49800,
-     "currency": "KRW",
-     "landed_krw": 49800,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%8C%80%ED%98%95+%EC%BF%A0%EC%85%98+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+80cm+coupang.com",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTgrAxIAdpay6AHshaXWBcc6uEfiDqj5r9nWSUumlxpBw3Ss9Z0F_jTCu7VlChdJvMpdRo3ig7IqdQASttUCmOE2jWPr9vB",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:7411180243948911339",
-     "title": "먼작귀인형 치이카와 우사기 가 랏코 쿠리만쥬 인형 굿즈",
-     "mall": "coupang.com",
-     "price_orig": 51200,
-     "currency": "KRW",
-     "landed_krw": 51200,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80%EC%9D%B8%ED%98%95+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EA%B0%80+%EB%9E%8F%EC%BD%94+%EC%BF%A0%EB%A6%AC%EB%A7%8C%EC%A5%AC+%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+coupang.com",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTcpYSB01k2PXZjp7VenW9uyWzPYbnXOzIm1rbODrWGgQZnx8sDDud90m1S1SfBz7pF0GsCatMXmaSfA5cwJJKHhbUveYlsK6rz4Gm3-Gfzv1UXxSElZtWW",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:14797102565895540442",
-     "title": "먼작귀 치이카와 인형 하치와레 우사기 모몽가 대형 봉제인형 피규어, 1개, 잔디 하치와레",
-     "mall": "coupang.com",
-     "price_orig": 54000,
-     "currency": "KRW",
-     "landed_krw": 54000,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%AA%A8%EB%AA%BD%EA%B0%80+%EB%8C%80%ED%98%95+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%ED%94%BC%EA%B7%9C%EC%96%B4%2C+1%EA%B0%9C%2C+%EC%9E%94%EB%94%94+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+coupang.com",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS-093aWrpR7iHp8Q-555JgCUW_UtugpXwgEaJ2CCmOgH1VtBv3zqFhVz7bDeB6S8IIwqa0HBGCbUl5d_8qPALJrXhQ6-6D",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:5204150366656962221",
-     "title": "먼작귀 우사기 모몽가 대형 얼굴 인형 쿠션 말랑 폭신 빅사이즈 캐릭터 쿠션",
-     "mall": "에이블리",
-     "price_orig": 54800,
-     "currency": "KRW",
-     "landed_krw": 54800,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:5204150366656962221,gpcid:5661624830935080187,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRjIDvGtdW0V2prCa1qtu4f6pGccWUWEExy0bKy-s42sf8O8ZG1U1OcgtoQ_lR6STVczAWmXaitwbo872Zn1IQHCoSuFgaghQxSxnaYzPM",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:15627365949314553795",
-     "title": "치이카와 우사기 먼작귀 아기 포대기 봉제인형 포근한 선물",
-     "mall": "coupang.com",
-     "price_orig": 58250,
-     "currency": "KRW",
-     "landed_krw": 58250,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%95%84%EA%B8%B0+%ED%8F%AC%EB%8C%80%EA%B8%B0+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%ED%8F%AC%EA%B7%BC%ED%95%9C+%EC%84%A0%EB%AC%BC+coupang.com",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ5_BmaDPGPnNWDrPXqTuOv68oct9D8vfN4hx1DgL2liL-LrXcVz_h1bjJjxBo-o7lTzkNqO2Uzeb7xP49tCTfa7_AquL66LD0BMJoHQT9N9CO4ZCGPcyD0",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:10878367792015084220",
-     "title": "먼작귀 친구들 치이카와 하치와레 우사기 미디움 봉제 인형 8종",
-     "mall": "에이블리",
-     "price_orig": 60800,
-     "currency": "KRW",
-     "landed_krw": 60800,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:10878367792015084220,gpcid:6565694067239480519,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRobiJZME6pL8rUYR3Qz3nlBVJYxyhtbswNW4ACE5oaSDXjZUO-K41SW0IgMKZjOjzIx0hB2nLz7s-_dzW0yd6k7IC3zzxOA0sKVJjiHnIyBfp6Il0D_lGX",
-     "fetched_at": "2026-11-12T03:51+00:00",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRaZT9IKNTM1NB-d6S2FbQZonxRDMvc-5cNMwF3J2hZkZtVWUyxKOIlVdxlFG1_jJ0QHsiIN_5Ih7lg6WRjiT1LIdPT4WOf4npBwFk3HrtW_x5SI3_GtC6c",
      "suspicious": false
     },
     {
@@ -789,7 +371,520 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B+%EC%A0%95%ED%92%88%2F%EC%B5%9C%EC%A0%80%EA%B0%80+%EB%B3%B4%EC%9E%A5+%EF%B8%8F%5D+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%9B%84%EB%93%9C+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EC%97%90%EC%9D%B4%EB%B8%94%EB%A6%AC",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRIVdMEmdY-iaQiI4qE7pgtA_XNeNlgQWdHQfeikyhykpJucthDyLGE3DT4WswLyBjtdfGjgun1WExYvfpMQnMuCbx2d19q95bgn76Eiqn12H2pSR2GQ7Zj",
-     "fetched_at": "2026-11-12T03:51+00:00",
+     "suspicious": false
+    }
+   ]
+  },
+  {
+   "id": "usagi-plush",
+   "name": "우사기 인형",
+   "target_krw": 15000,
+   "sell_price": 25000,
+   "best": {
+    "source": "coupang",
+    "region": "KR",
+    "key": "coupang:9774682479",
+    "title": "치이카와 우사기 인형 쿠션 베개 애착인형 선물, 1개 (3)",
+    "mall": "쿠팡",
+    "price_orig": 15800,
+    "currency": "KRW",
+    "landed_krw": 15800,
+    "ship_note": "배송비 판매자별 상이",
+    "link": "https://www.coupang.com/vp/products/9774682479?itemId=29260026592&vendorItemId=96177854098&q=먼작귀 우사기 인형&searchId=66b6c12910051071&sourceType=search&rank=2&itemsCount=60&searchRank=2",
+    "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/75a9/a76115b167063ca76eef5ac5cfb2db2f149c33a09aefdbffdda3302911a2.jpg",
+    "suspicious": false
+   },
+   "best_kr": {
+    "source": "coupang",
+    "region": "KR",
+    "key": "coupang:9774682479",
+    "title": "치이카와 우사기 인형 쿠션 베개 애착인형 선물, 1개 (3)",
+    "mall": "쿠팡",
+    "price_orig": 15800,
+    "currency": "KRW",
+    "landed_krw": 15800,
+    "ship_note": "배송비 판매자별 상이",
+    "link": "https://www.coupang.com/vp/products/9774682479?itemId=29260026592&vendorItemId=96177854098&q=먼작귀 우사기 인형&searchId=66b6c12910051071&sourceType=search&rank=2&itemsCount=60&searchRank=2",
+    "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/75a9/a76115b167063ca76eef5ac5cfb2db2f149c33a09aefdbffdda3302911a2.jpg",
+    "suspicious": false
+   },
+   "best_jp": null,
+   "all_time_low": 15800,
+   "offers": [
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9800610372",
+     "title": "먼작귀 치이카와 우사기 토벌봉 무기 토벌창 인형, 1개, 피치 핑크, 70cm",
+     "mall": "쿠팡",
+     "price_orig": 9900,
+     "currency": "KRW",
+     "landed_krw": 9900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9800610372?itemId=29346844665&vendorItemId=96260119475&sourceType=srp_product_ads&clickEventId=591bd980-deaa-11f1-8631-97cf800adbfd&clickEventId=591bd980-deaa-11f1-8631-97cf800adbfd&korePlacement=15&korePlacement=15&koreSubPlacement=5&koreSubPlacement=5&q=먼작귀 우사기 인형&searchId=66b6c12910051071&searchRank=1",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/4bd4/7f9e6934c472cb25dbbf4422c5936a86e44868aeacdb08b7cab8ec32480c.png",
+     "suspicious": true
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:10248837526344559183",
+     "title": "먼작귀 치이카와 우사기 하치와레 모찌 바디필로우 안고자는 롱쿠션 인형쿠션 수면인형 애착인형ZCBV",
+     "mall": "coupang.com",
+     "price_orig": 11500,
+     "currency": "KRW",
+     "landed_krw": 11500,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EB%AA%A8%EC%B0%8C+%EB%B0%94%EB%94%94%ED%95%84%EB%A1%9C%EC%9A%B0+%EC%95%88%EA%B3%A0%EC%9E%90%EB%8A%94+%EB%A1%B1%EC%BF%A0%EC%85%98+%EC%9D%B8%ED%98%95%EC%BF%A0%EC%85%98+%EC%88%98%EB%A9%B4%EC%9D%B8%ED%98%95+%EC%95%A0%EC%B0%A9%EC%9D%B8%ED%98%95ZCBV+coupang.com",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSOooSVtVTB0EZqFRjmJegbNIF3ys3SLjTilII4OHQV-i4bKaS4RJRtVdh9mJDETry8kiAuqxdho58rA-7dFb_RKDecp4FE7T9ulgsqVBE_GStjQsOvMJI1",
+     "suspicious": true
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:566798275209489751",
+     "title": "치이카와 앉은 애착 인형 봉제 굿즈 먼작귀 미니 우사기 귀여운 5종",
+     "mall": "coupang.com",
+     "price_orig": 13000,
+     "currency": "KRW",
+     "landed_krw": 13000,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%95%89%EC%9D%80+%EC%95%A0%EC%B0%A9+%EC%9D%B8%ED%98%95+%EB%B4%89%EC%A0%9C+%EA%B5%BF%EC%A6%88+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%AF%B8%EB%8B%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EA%B7%80%EC%97%AC%EC%9A%B4+5%EC%A2%85+coupang.com",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQZqJIXNEXwZnMTb58osUWbiuWMoOUmxIPx_Rd05LTbuy5YXso-yk8cGNnPcfZT_pLsHIrRv4-HV8XXwEETqpLxatPO3x4dgDPQi-Y0PZE6zWy-Gb2s7g",
+     "suspicious": true
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9774682479",
+     "title": "치이카와 우사기 인형 쿠션 베개 애착인형 선물, 1개 (3)",
+     "mall": "쿠팡",
+     "price_orig": 15800,
+     "currency": "KRW",
+     "landed_krw": 15800,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9774682479?itemId=29260026592&vendorItemId=96177854098&q=먼작귀 우사기 인형&searchId=66b6c12910051071&sourceType=search&rank=2&itemsCount=60&searchRank=2",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/75a9/a76115b167063ca76eef5ac5cfb2db2f149c33a09aefdbffdda3302911a2.jpg",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:1524230462044524263",
+     "title": "뚱뚱이 귀여운 먼작귀 ﻿치이카와 우사기 하치와레 인형 우사기",
+     "mall": "solethings.co.kr",
+     "price_orig": 16500,
+     "currency": "KRW",
+     "landed_krw": 16500,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%9A%B1%EB%9A%B1%EC%9D%B4+%EA%B7%80%EC%97%AC%EC%9A%B4+%EB%A8%BC%EC%9E%91%EA%B7%80+%EF%BB%BF%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95+%EC%9A%B0%EC%82%AC%EA%B8%B0+solethings.co.kr",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRt2YfvzbxfYmLHqhu8YsmRYK1gghGPTIQW6hmsoTml7mgGMZ3TIPsCqazwcewlJW7OJvOl2kuh9IwKGcb-xtDOtY09r5DeCiQbj7PN02BbpzHAT2ZjVFL_",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:14417438132315367074",
+     "title": "ZCBV먼작귀 치이카와 토벌봉 우사기 노란색 70cm 봉제 인형 캐릭터 봉제인형 귀여운 대형 쿠션 소품 침실 장식 선물용 생일 여친선물",
+     "mall": "coupang.com",
+     "price_orig": 16500,
+     "currency": "KRW",
+     "landed_krw": 16500,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=ZCBV%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%86%A0%EB%B2%8C%EB%B4%89+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%85%B8%EB%9E%80%EC%83%89+70cm+%EB%B4%89%EC%A0%9C+%EC%9D%B8%ED%98%95+%EC%BA%90%EB%A6%AD%ED%84%B0+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B7%80%EC%97%AC%EC%9A%B4+%EB%8C%80%ED%98%95+%EC%BF%A0%EC%85%98+%EC%86%8C%ED%92%88+%EC%B9%A8%EC%8B%A4+%EC%9E%A5%EC%8B%9D+%EC%84%A0%EB%AC%BC%EC%9A%A9+%EC%83%9D%EC%9D%BC+%EC%97%AC%EC%B9%9C%EC%84%A0%EB%AC%BC+coupang.com",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWpp6MSeM92wI06XxYPZ264CrRjHUAR3gFAUUulN3anz5W5kWxoz46RKXl94upjQEXdEZu8LxyCA7O6bf7ay3JX9i7t2xX2g-W3hGMBoAOJXiV86JxrT5xyg",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:17528426530013852447",
+     "title": "먼작귀 치이카와 우사기 하치와레 봉제인형 귀여운 인형 고블린",
+     "mall": "coupang.com",
+     "price_orig": 17100,
+     "currency": "KRW",
+     "landed_krw": 17100,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B7%80%EC%97%AC%EC%9A%B4+%EC%9D%B8%ED%98%95+%EA%B3%A0%EB%B8%94%EB%A6%B0+coupang.com",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRU3tO7xTuZORXn_ERqp7vWh8aOPIDSiPvl9QZzzuPIMWAAi3hOdi6Wepth3RzZ9k5bmmDcOUmIAeWP9VriWWerYyZkBWr1",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:3216645636784814794",
+     "title": "먼작귀 치이카와 우사기 토끼 하치와레 가르마 귀여운 말랑이 스퀴시 피젯토이 굿즈 인형",
+     "mall": "coupang.com",
+     "price_orig": 20500,
+     "currency": "KRW",
+     "landed_krw": 20500,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%86%A0%EB%81%BC+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EA%B0%80%EB%A5%B4%EB%A7%88+%EA%B7%80%EC%97%AC%EC%9A%B4+%EB%A7%90%EB%9E%91%EC%9D%B4+%EC%8A%A4%ED%80%B4%EC%8B%9C+%ED%94%BC%EC%A0%AF%ED%86%A0%EC%9D%B4+%EA%B5%BF%EC%A6%88+%EC%9D%B8%ED%98%95+coupang.com",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS5-7mlJHtNhfd_nme08lMiKQouBY9gNCTHUuKqzH2TkdWvJFjcL9WM-FmhuzkirvPTlySgrLGks6AQzoTwTwd75T-SxzMb",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:8769499679",
+     "title": "먼작귀 치이카와 우사기 하치와레 토벌창 스틱 봉제 인형 인테리어 장식 굿즈 28cm, 1개",
+     "mall": "쿠팡",
+     "price_orig": 20800,
+     "currency": "KRW",
+     "landed_krw": 20800,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/8769499679?itemId=25506591636&vendorItemId=96304882669&q=먼작귀 우사기 인형&searchId=66b6c12910051071&sourceType=search&rank=4&itemsCount=60&searchRank=4",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/febe/25ebcad730dfe25bdede1b288d716b1a2ac9139c4c42339ba25e1afcb79a.png",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:5452280834226957699",
+     "title": "먼작귀 우사기 초매지컬 흑화 다크 버전 마스코트 인형 BI",
+     "mall": "후루츠패밀리",
+     "price_orig": 22500,
+     "currency": "KRW",
+     "landed_krw": 22500,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%B4%88%EB%A7%A4%EC%A7%80%EC%BB%AC+%ED%9D%91%ED%99%94+%EB%8B%A4%ED%81%AC+%EB%B2%84%EC%A0%84+%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+%EC%9D%B8%ED%98%95+BI+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQidipncmEOQhKHxiMgDwCABvHBdUvrbh2JRpQqL4i230FDQwZsMa_9WI1hFNhjvTu4S4QARCejNNX9k3bn5nQthTOEMtsKKZp5mox8H6itVsU5Jfs-7Rfy",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:10043389320899793134",
+     "title": "치이카와 먼작귀 우사기 토끼 허그 자석 손잡이 나카요시 마스코트 누이 인형",
+     "mall": "후루츠패밀리",
+     "price_orig": 23000,
+     "currency": "KRW",
+     "landed_krw": 23000,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%86%A0%EB%81%BC+%ED%97%88%EA%B7%B8+%EC%9E%90%EC%84%9D+%EC%86%90%EC%9E%A1%EC%9D%B4+%EB%82%98%EC%B9%B4%EC%9A%94%EC%8B%9C+%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+%EB%88%84%EC%9D%B4+%EC%9D%B8%ED%98%95+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSl-zmyrcISfxBaMpoyTIR8BNmZyALYBdca1vMY0dF8d28Qw3TjCvtpMKJW6VPjOMxB8X_YWlFWLVnnm7WHGkxWMMcNU8gi02CQbXnMwQA1sEuuhblJbD4iyg",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:1527686660873194758",
+     "title": "국내출고상품 치이카와 먼작귀 굿즈 캐릭터 피규어 봉제 인형 하치와레 우사기 chiikawa 27cm, 백곰, 1개",
+     "mall": "coupang.com",
+     "price_orig": 24000,
+     "currency": "KRW",
+     "landed_krw": 24000,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EA%B5%AD%EB%82%B4%EC%B6%9C%EA%B3%A0%EC%83%81%ED%92%88+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EA%B5%BF%EC%A6%88+%EC%BA%90%EB%A6%AD%ED%84%B0+%ED%94%BC%EA%B7%9C%EC%96%B4+%EB%B4%89%EC%A0%9C+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+chiikawa+27cm%2C+%EB%B0%B1%EA%B3%B0%2C+1%EA%B0%9C+coupang.com",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQPEzfsGcbP4uRjKoOf3pLGKZr62FpPLKMretbizmIbqKSq0_4laSXu5uTQf5RdM27QcbYksCJsCpCo6TkpO1VY1NS4BX0k",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:4965600735081785865",
+     "title": "먼작귀 우사기 치이카와 하치와레 인형 생일 파티 선물",
+     "mall": "coupang.com",
+     "price_orig": 24500,
+     "currency": "KRW",
+     "landed_krw": 24500,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95+%EC%83%9D%EC%9D%BC+%ED%8C%8C%ED%8B%B0+%EC%84%A0%EB%AC%BC+coupang.com",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTdzqaTfy7FARlmaWxCoBh-lmWV5wrEdgSRcljf55YWXwl4DdpDiMIG4jUyTr-tJpx8zTugzGVmdaEJ9UToNn1Bm36ZtHQ0mg",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:812271344963553158",
+     "title": "먼작귀 치이카와 대형 쿠션 인형 하치와레 우사기 80cm 굿즈, 1개",
+     "mall": "coupang.com",
+     "price_orig": 29800,
+     "currency": "KRW",
+     "landed_krw": 29800,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%8C%80%ED%98%95+%EC%BF%A0%EC%85%98+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+80cm+%EA%B5%BF%EC%A6%88%2C+1%EA%B0%9C+coupang.com",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS3FZRYQN65Ia2yhLvGPj_5ok8sGickW35UaUoVAyrh39Mcz9qzd87_hf9Oua0pH_eKYFMd3Zy4hlTlkYlmqiKNyLLUTMLhDg",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:13096441766958697987",
+     "title": "먼작귀 우사기 파자마 인형",
+     "mall": "후루츠패밀리",
+     "price_orig": 30000,
+     "currency": "KRW",
+     "landed_krw": 30000,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%8C%8C%EC%9E%90%EB%A7%88+%EC%9D%B8%ED%98%95+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcReVjKyR3lOz7ygV9t3a-nQ0_7O_c7hw-lxcWO0haTBCgZYV69dUWoyZRULjK0vbFzsBlYORboIwA3zRzlpvx0-541T0VUNhL02DMTjuLyP",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:7110154050321844981",
+     "title": "먼작귀 엎드린 하치와레 우사기 치이카와 모몽가 인형",
+     "mall": "coupang.com",
+     "price_orig": 30200,
+     "currency": "KRW",
+     "landed_krw": 30200,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%97%8E%EB%93%9C%EB%A6%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%AA%A8%EB%AA%BD%EA%B0%80+%EC%9D%B8%ED%98%95+coupang.com",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR0jV8Pc3wdWOv4PVrS-0-VhVzCQXZdR5-6PptqVUli0BdLW16AM7Ndj8bM7FAJm3erHRMvQNve0VlhHcUJqRghM6dV-07k",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:6903072070977244347",
+     "title": "먼작귀굿즈 먼작귀인형 치이카와 우사기 하치와레 캐릭터",
+     "mall": "coupang.com",
+     "price_orig": 31500,
+     "currency": "KRW",
+     "landed_krw": 31500,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80%EA%B5%BF%EC%A6%88+%EB%A8%BC%EC%9E%91%EA%B7%80%EC%9D%B8%ED%98%95+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%BA%90%EB%A6%AD%ED%84%B0+coupang.com",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTvsCeRYK3DOAFyASgf9J9DtiX7OAnNXAFhIgT6268OUrfR2_rU_HwTWdlpW3LaV32bfGsrhxXSgUZsFzILUESUGuOCEJJPvdWEO_u_LBI5xlFlfc4N9O8KzQ",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:12318716462122615942",
+     "title": "[ 정품/신상특가] 치이카와 하치와레 우사기 정품 미니 먼작귀 정품 봉제인형",
+     "mall": "에이블리",
+     "price_orig": 32800,
+     "currency": "KRW",
+     "landed_krw": 32800,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B+%EC%A0%95%ED%92%88%2F%EC%8B%A0%EC%83%81%ED%8A%B9%EA%B0%80%5D+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%A0%95%ED%92%88+%EB%AF%B8%EB%8B%88+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%A0%95%ED%92%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EC%97%90%EC%9D%B4%EB%B8%94%EB%A6%AC",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSgK8zPIEKk47uQ7t2HgjYHRQrmECSeLO3mLF9oxmti-_kp7C5HMCWhWIrkgLeRCmEcGc1LYZM6Q278NJ31GEnu8Na0pT4j8Ot8zEFYFfbav205dbrfMnvdQw0",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:7197540128175566956",
+     "title": "우사기 봉제 인형 치이카와 베개 먼작귀",
+     "mall": "coupang.com",
+     "price_orig": 36100,
+     "currency": "KRW",
+     "landed_krw": 36100,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%B4%89%EC%A0%9C+%EC%9D%B8%ED%98%95+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%B2%A0%EA%B0%9C+%EB%A8%BC%EC%9E%91%EA%B7%80+coupang.com",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTtWaVr3FjyUr4EDRDhu5Nfhoo5logD5aOgPSFj5FagEzUZyJBG-8QVo14zaf5mDt_6DlQ_0wbY5WpZ5nV3tohMAeJ3fAybUFZyZMI11seCvWV40RjE5Q",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:8994323655622050146",
+     "title": "먼작귀 인형 꽃다발 치이카와 우사기 졸업식",
+     "mall": "아이디어스",
+     "price_orig": 37900,
+     "currency": "KRW",
+     "landed_krw": 37900,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9D%B8%ED%98%95+%EA%BD%83%EB%8B%A4%EB%B0%9C+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%A1%B8%EC%97%85%EC%8B%9D+%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%EC%8A%A4",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRQgdPr85PYQuQ282RU90E45_wAEpz6Tlqb9Ug_nKgFOSKBuHrhdN0ERYPuEPdQeW-nOXcxtpBqA73LT3MUw7iG_q_eW0YPkKoj3sJrRTc",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:13781320040166421847",
+     "title": "치이카와 하치와레 우사기 플라워 미니 먼작귀 정품 인형",
+     "mall": "에이블리",
+     "price_orig": 39800,
+     "currency": "KRW",
+     "landed_krw": 39800,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:13781320040166421847,gpcid:443532102315024363,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRa6S8gyeEnda_Ej2HpweIiDq1H6v9q4PyFE2D6RxcV0bcQwijXrr4i3e1LkCLViVPbt2WW6jLfuz_-rcp2NV5VK5JEnasJToJIY8NkVtS8X-HP3fUEElfaIQ",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9665120866",
+     "title": "먼작귀 치이카와 대형 쿠션 인형 하치와레 우사기 80cm",
+     "mall": "쿠팡",
+     "price_orig": 41800,
+     "currency": "KRW",
+     "landed_krw": 41800,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9665120866?itemId=28895565773&vendorItemId=94475125607&q=먼작귀 우사기 인형&searchId=66b6c12910051071&sourceType=search&rank=3&itemsCount=60&searchRank=3",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/6f5e/fb59d537b75bdc74b7582ad37c2a1fc384715de11c43c607d3be0441bbff.jpg",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:9957271018674932445",
+     "title": "치이카와 먼작귀 우사기 말 따라하는 회전 인형",
+     "mall": "coupang.com",
+     "price_orig": 42900,
+     "currency": "KRW",
+     "landed_krw": 42900,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%A7%90+%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94+%ED%9A%8C%EC%A0%84+%EC%9D%B8%ED%98%95+coupang.com",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRHkplmKyT9mRVneR7_2Wxq69G2hXxbMFvrqPmy550kysmysZsVlHHiss1q0VpetQ4P5HxqsMQEA-gN_ioTYqXzp1ZVgn8utZKdDv5jB9AboY2k7FjLW9n6",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:4069141422708875455",
+     "title": "먼작귀 치이카와 하치와레 우사기 모니터 걸이 인형",
+     "mall": "에이블리",
+     "price_orig": 47800,
+     "currency": "KRW",
+     "landed_krw": 47800,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:4069141422708875455,gpcid:1050090670374205388,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTa4rAvp5IVAKidLG8MjFOPBkSydXAYkcJzdb6QkYhw8bDWDLC2sawttQMrpnNBgHc0xgbHrBGwbIpmtD2UM3LzhcB59aHoPZVPR0ElsPuCheQa-lbVRROw",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:17868221212404451938",
+     "title": "먼작귀 치이카와 하치와레 우사기 모니터 인형",
+     "mall": "coupang.com",
+     "price_orig": 49000,
+     "currency": "KRW",
+     "landed_krw": 49000,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%AA%A8%EB%8B%88%ED%84%B0+%EC%9D%B8%ED%98%95+coupang.com",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSLenqG1GHNUmuow5Ob9UYQG6gccwfOhxwXxJ63m35qOtwd7CVLyxMaIhtZrz4M01Q_OgPg6NObwp7Ni33KtteXAyjRPZEqrofPnUYlyFK8v2-OiChfIsgPXg",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:8663792776614293740",
+     "title": "먼작귀 치이카와 하치와레 우사기 카메라 곰돌이 인형",
+     "mall": "에이블리",
+     "price_orig": 49600,
+     "currency": "KRW",
+     "landed_krw": 49600,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:8663792776614293740,gpcid:15822491908728910636,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSPtNC_ZTKG2zTmWhc527Zwt7lAfl83-LqGojJW8mzu7B9a_K9vR2VixGOido6W9rbzFR3db_CFjlYyjaqz1MeEx8ZI5IH_BY74qwnZXBwJ",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:3419337914562189498",
+     "title": "먼작귀 치이카와 대형 쿠션 인형 하치와레 우사기 80cm",
+     "mall": "coupang.com",
+     "price_orig": 49800,
+     "currency": "KRW",
+     "landed_krw": 49800,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%8C%80%ED%98%95+%EC%BF%A0%EC%85%98+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+80cm+coupang.com",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTgrAxIAdpay6AHshaXWBcc6uEfiDqj5r9nWSUumlxpBw3Ss9Z0F_jTCu7VlChdJvMpdRo3ig7IqdQASttUCmOE2jWPr9vB",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:7411180243948911339",
+     "title": "먼작귀인형 치이카와 우사기 가 랏코 쿠리만쥬 인형 굿즈",
+     "mall": "coupang.com",
+     "price_orig": 51200,
+     "currency": "KRW",
+     "landed_krw": 51200,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80%EC%9D%B8%ED%98%95+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EA%B0%80+%EB%9E%8F%EC%BD%94+%EC%BF%A0%EB%A6%AC%EB%A7%8C%EC%A5%AC+%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+coupang.com",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTcpYSB01k2PXZjp7VenW9uyWzPYbnXOzIm1rbODrWGgQZnx8sDDud90m1S1SfBz7pF0GsCatMXmaSfA5cwJJKHhbUveYlsK6rz4Gm3-Gfzv1UXxSElZtWW",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:14797102565895540442",
+     "title": "먼작귀 치이카와 인형 하치와레 우사기 모몽가 대형 봉제인형 피규어, 1개, 잔디 하치와레",
+     "mall": "coupang.com",
+     "price_orig": 54000,
+     "currency": "KRW",
+     "landed_krw": 54000,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9D%B8%ED%98%95+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%AA%A8%EB%AA%BD%EA%B0%80+%EB%8C%80%ED%98%95+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%ED%94%BC%EA%B7%9C%EC%96%B4%2C+1%EA%B0%9C%2C+%EC%9E%94%EB%94%94+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+coupang.com",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS-093aWrpR7iHp8Q-555JgCUW_UtugpXwgEaJ2CCmOgH1VtBv3zqFhVz7bDeB6S8IIwqa0HBGCbUl5d_8qPALJrXhQ6-6D",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:5204150366656962221",
+     "title": "먼작귀 우사기 모몽가 대형 얼굴 인형 쿠션 말랑 폭신 빅사이즈 캐릭터 쿠션",
+     "mall": "에이블리",
+     "price_orig": 54800,
+     "currency": "KRW",
+     "landed_krw": 54800,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:5204150366656962221,gpcid:5661624830935080187,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRjIDvGtdW0V2prCa1qtu4f6pGccWUWEExy0bKy-s42sf8O8ZG1U1OcgtoQ_lR6STVczAWmXaitwbo872Zn1IQHCoSuFgaghQxSxnaYzPM",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:15627365949314553795",
+     "title": "치이카와 우사기 먼작귀 아기 포대기 봉제인형 포근한 선물",
+     "mall": "coupang.com",
+     "price_orig": 58250,
+     "currency": "KRW",
+     "landed_krw": 58250,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%95%84%EA%B8%B0+%ED%8F%AC%EB%8C%80%EA%B8%B0+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%ED%8F%AC%EA%B7%BC%ED%95%9C+%EC%84%A0%EB%AC%BC+coupang.com",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQSHm-nKaPyymDwGOSrW1VdfPnMjeUTO96O48qjRD67ZF18S8_-s-fJH7sIXN27vlvkl_rjqVqgFNLeXAxJqj2ICVvnBz1H598iDsbXq_x3kDr6J2FlfiKXOA",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:10394776915880215202",
+     "title": "먼작귀 가방 치이카와 하치와레 우사기 대왕 정품 쿠션 정품 인형",
+     "mall": "에이블리",
+     "price_orig": 59300,
+     "currency": "KRW",
+     "landed_krw": 59300,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:10394776915880215202,gpcid:3561411530546837110,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQLGGhPpkWFk4wf6e2u_PerL5mGPjm76df9FbqzRP-zQi58Y8pW61gnhjiLiGFTqeMA-_i5R4G1AtMgLhoikVB13O76wDJpZ0soWq9lXJeQXCfPKeWZNQsV",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:10878367792015084220",
+     "title": "먼작귀 친구들 치이카와 하치와레 우사기 미디움 봉제 인형 8종",
+     "mall": "에이블리",
+     "price_orig": 60800,
+     "currency": "KRW",
+     "landed_krw": 60800,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:10878367792015084220,gpcid:6565694067239480519,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRobiJZME6pL8rUYR3Qz3nlBVJYxyhtbswNW4ACE5oaSDXjZUO-K41SW0IgMKZjOjzIx0hB2nLz7s-_dzW0yd6k7IC3zzxOA0sKVJjiHnIyBfp6Il0D_lGX",
+     "suspicious": false
+    },
+    {
+     "source": "google",
+     "region": "KR",
+     "key": "google:4514053672423451998",
+     "title": "[ 정품/최저가 보장 ️] 먼작귀 치이카와 하치와레 우사기 후드 봉제인형",
+     "mall": "에이블리",
+     "price_orig": 61800,
+     "currency": "KRW",
+     "landed_krw": 61800,
+     "ship_note": "배송비 판매처별 상이",
+     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B+%EC%A0%95%ED%92%88%2F%EC%B5%9C%EC%A0%80%EA%B0%80+%EB%B3%B4%EC%9E%A5+%EF%B8%8F%5D+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%9B%84%EB%93%9C+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EC%97%90%EC%9D%B4%EB%B8%94%EB%A6%AC",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRIVdMEmdY-iaQiI4qE7pgtA_XNeNlgQWdHQfeikyhykpJucthDyLGE3DT4WswLyBjtdfGjgun1WExYvfpMQnMuCbx2d19q95bgn76Eiqn12H2pSR2GQ7Zj",
      "suspicious": false
     },
     {
@@ -804,7 +899,6 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:16289145985122477014,gpcid:2844640652465869571,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTw6yXvXVksuIrX8imzRawU5BNkD5w8b-kqVBc4Hjwx7fjZJT-9A3uTLLoGdt2OKyqzDyJahcNacnb7bsW9jixR8JuGOVd6zTzG_U-ONqE",
-     "fetched_at": "2026-11-12T03:51+00:00",
      "suspicious": false
     },
     {
@@ -813,13 +907,12 @@
      "key": "google:3532626869433889449",
      "title": "치이카와파크 먼작귀 할로윈 우사기 펌킨 미니 봉제인형 굿즈",
      "mall": "크로켓",
-     "price_orig": 77503,
+     "price_orig": 79900,
      "currency": "KRW",
-     "landed_krw": 77503,
+     "landed_krw": 79900,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%ED%8C%8C%ED%81%AC+%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%95%A0%EB%A1%9C%EC%9C%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%8E%8C%ED%82%A8+%EB%AF%B8%EB%8B%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+%ED%81%AC%EB%A1%9C%EC%BC%93",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS0jiGeX2pTLb93hCd1Fqx_hmcp51SBEcPgAJ1RHaQo2Lwm5P3WRWQ95i23TqazpmwVo-q_XY9ToSri013NitQxDUTaMUlTKZZqoKN-YuyekKAAb8ajX63fRw",
-     "fetched_at": "2026-11-12T03:51+00:00",
      "suspicious": false
     },
     {
@@ -834,7 +927,6 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%9A%B1%EC%B9%98%EC%B9%B4%EC%99%80+%ED%86%B5%ED%86%B5%ED%95%9C+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9D%B8%ED%98%95+%EB%8C%80%ED%98%95+%EC%86%8C%ED%98%95+coupang.com",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ01UQMkBIBzRxPsdcuAFHqVK3x5qN71WQYQDb2RWRlz5yR0tJ5eYzGRw8fps8J_1zAtMecyJfwiVv8TJCARXADyREOec8U",
-     "fetched_at": "2026-11-12T03:51+00:00",
      "suspicious": false
     },
     {
@@ -849,22 +941,6 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80%EC%9D%B8%ED%98%95+%EB%9A%B1%EB%9D%A0%EC%B9%B4%EC%99%80+%EB%9A%B1%EC%B9%98%EC%B9%B4%EC%99%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EB%8C%80%ED%98%95+%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+coupang.com",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQXBaFvkO-iN7m55wkYlLhBVqa261Ptke5uSUIM9bgwdnbBsSKD--tvCFQWJ8vXNbbVv_KdZtpLJZt3DyNI9Axmh0RC4JpAsXU2Q6Bshm9FtRKcOLEHDksW",
-     "fetched_at": "2026-11-12T03:51+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:1859192395982456742",
-     "title": "뚱뚱이 먼작귀 치이카와 하치와레 우사기 캐릭터 인형",
-     "mall": "에이블리",
-     "price_orig": 98000,
-     "currency": "KRW",
-     "landed_krw": 98000,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EC%9D%B8%ED%98%95&prds=localAnnotatedOfferId:1,catalogid:1859192395982456742,gpcid:5998758965243998938,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR4n3f9rUKf1iDSNAe9pg78oCEDE80TqlChkoYLZZpYOeCyINsTrod5usOH2sJNoVbZBMp8geIl417npu2xCyPZ1hCyQfgBNH5r-u0is8Ov3c1XRM_wl0_Cmw",
-     "fetched_at": "2026-11-12T03:51+00:00",
      "suspicious": false
     },
     {
@@ -879,7 +955,6 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EA%B5%BF%EC%A6%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%A7%90%ED%95%98%EB%8A%94+%EC%9D%B8%ED%98%95+%EB%B0%98%EB%8B%A4%EC%9D%B4+%EC%97%90%EC%9D%B4%EB%B8%94%EB%A6%AC",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTilTGquCMPSNYFz6xFGIVSSL52ST49FBPtXtyIdmHuP9vGT9eXjT16Ms9IpfLiM3YNnyuXsDTTXNxeq3tvYoq-rKjasOM_Ctg4gzSmGTA",
-     "fetched_at": "2026-11-12T03:51+00:00",
      "suspicious": false
     }
    ]
@@ -895,13 +970,12 @@
     "key": "google:3396613814830708962",
     "title": "Miniso x Chiikawa Bear Series Plush Mascot Momonga",
     "mall": "KREAM",
-    "price_orig": 30000,
+    "price_orig": 27000,
     "currency": "KRW",
-    "landed_krw": 30000,
+    "landed_krw": 27000,
     "ship_note": "배송비 판매처별 상이",
     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Miniso+x+Chiikawa+Bear+Series+Plush+Mascot+Momonga+KREAM",
-    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSvtOgtXSxIKbyw3BDacHZt6j-yPPgbhHhfX_xiWsucWw3IUgtZyX3GZEqLP-RWipPvK3aLOi9eJeE9Q4teDJNe9SxavZmV0_-aI1W-J52cha-v83LawCt8iQ",
-    "fetched_at": "2026-11-12T09:21+00:00",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSOrZKlPNaFyPPENlEpn2LWTUFc5QbTDM_kaettuKvEORkKDL1CXYmf0Ldg_pcFZHc0dlcgWRiOnU6xo4yY-_Zbdh9bjak9FUjweS3iJjHoHv8gPBFhMWViUA",
     "suspicious": false
    },
    "best_kr": {
@@ -910,31 +984,43 @@
     "key": "google:3396613814830708962",
     "title": "Miniso x Chiikawa Bear Series Plush Mascot Momonga",
     "mall": "KREAM",
-    "price_orig": 30000,
+    "price_orig": 27000,
     "currency": "KRW",
-    "landed_krw": 30000,
+    "landed_krw": 27000,
     "ship_note": "배송비 판매처별 상이",
     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Miniso+x+Chiikawa+Bear+Series+Plush+Mascot+Momonga+KREAM",
-    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSvtOgtXSxIKbyw3BDacHZt6j-yPPgbhHhfX_xiWsucWw3IUgtZyX3GZEqLP-RWipPvK3aLOi9eJeE9Q4teDJNe9SxavZmV0_-aI1W-J52cha-v83LawCt8iQ",
-    "fetched_at": "2026-11-12T09:21+00:00",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSOrZKlPNaFyPPENlEpn2LWTUFc5QbTDM_kaettuKvEORkKDL1CXYmf0Ldg_pcFZHc0dlcgWRiOnU6xo4yY-_Zbdh9bjak9FUjweS3iJjHoHv8gPBFhMWViUA",
     "suspicious": false
    },
    "best_jp": null,
-   "all_time_low": 30000,
+   "all_time_low": 27000,
    "offers": [
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:8442299347",
+     "title": "먼작귀 치이카와 엎드려 있는 인형 누워있는 대형 인형 하치와레 우사기 모몽가 굿즈 선물, 30cm",
+     "mall": "쿠팡",
+     "price_orig": 9690,
+     "currency": "KRW",
+     "landed_krw": 9690,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/8442299347?itemId=28778307073&vendorItemId=96234949342&q=먼작귀 모몽가 인형&searchId=8f90155a10070451&sourceType=search&rank=3&itemsCount=60&searchRank=3",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/dfb1/9f866e7e4edef01919b428f69702287976f7efadfd1523cc71243d616888.jpg",
+     "suspicious": true
+    },
     {
      "source": "google",
      "region": "KR",
      "key": "google:3396613814830708962",
      "title": "Miniso x Chiikawa Bear Series Plush Mascot Momonga",
      "mall": "KREAM",
-     "price_orig": 30000,
+     "price_orig": 27000,
      "currency": "KRW",
-     "landed_krw": 30000,
+     "landed_krw": 27000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Miniso+x+Chiikawa+Bear+Series+Plush+Mascot+Momonga+KREAM",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSvtOgtXSxIKbyw3BDacHZt6j-yPPgbhHhfX_xiWsucWw3IUgtZyX3GZEqLP-RWipPvK3aLOi9eJeE9Q4teDJNe9SxavZmV0_-aI1W-J52cha-v83LawCt8iQ",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSOrZKlPNaFyPPENlEpn2LWTUFc5QbTDM_kaettuKvEORkKDL1CXYmf0Ldg_pcFZHc0dlcgWRiOnU6xo4yY-_Zbdh9bjak9FUjweS3iJjHoHv8gPBFhMWViUA",
      "suspicious": false
     },
     {
@@ -948,8 +1034,21 @@
      "landed_krw": 35000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Chiikawa+Baby+Crawling+Plush+Momonga+KREAM",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTsIKO8lnjdd-_sr2uHAAL_43dl7sU0GDVAx7fIgJfwLWRTSQuzCwQvfIMEUfe8Pkuo96KlybWKBqYY6YVibX463amt3HYOq4GK2CukbJ0U6tbOiNH3ijIn",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRkfYoCMcFM6wg3DA25yq3ByY2pbWxMN6nR9JZbxzWHiHys8mhhiMPZlJ42ejcOSaaV3AXXlODe_Gl3d4kFbo6axl1hKTJl7WtrGkQTsMSZbHQkPExbIBB9",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9679298097",
+     "title": "먼작귀 모몽가 봉제인형 캐릭터 쿠션인형 장식인형 소파 침대 장식 선물, 모몽가 A, 1개, 1cm",
+     "mall": "쿠팡",
+     "price_orig": 35900,
+     "currency": "KRW",
+     "landed_krw": 35900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9679298097?itemId=28943304305&vendorItemId=96296323331&q=먼작귀 모몽가 인형&searchId=8f90155a10070451&sourceType=search&rank=2&itemsCount=60&searchRank=2",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/2530/46fbe2ac1274f924a4b126c35f2a46a8e74d461b3cbd17736f090221d403.png",
      "suspicious": false
     },
     {
@@ -963,8 +1062,7 @@
      "landed_krw": 40000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Chiikawa+Watching+From+The+Desktop+Plush+Momonga+with+a+Fan+KREAM",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT7kLcG_0bGFxxErOvHbomF4OCp-8dEMpXDrV4f08ecSGfksiNj9e4bThXAbgNXzMqBJi-XtVejNjaaxWfyAFDs0ckYBcvzDXgwiAOZ4R1xhQlFO-7bJUQ2vg",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSF0374LaQjKBJ2hP3J0wvumJSY-ORedtML5R8VHpQJ1Z4LxxILYw2US8fW37Tmg1Fps4WkezQ2EydHeRFf4uiGYTrVvNLCsYCBAkS4XsdFqucnwI1eazEQ0w",
      "suspicious": false
     },
     {
@@ -978,8 +1076,7 @@
      "landed_krw": 43000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Miniso+x+Chiikawa+Equestrian+Series+Plush+Mascot+Momonga+KREAM",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTGs7vDfKVE4Hw3Y67HIX-sI2JHtq4COQHuNYIBrqZexoEwrbdwrC2uYe1X8stDyrIXaGAEGBoyyRqSBR3Cp4vWBf0IEA7vSX6HbzII7pL00pqm0qo2rgJlMw",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQC6eLw-n3qLB-YjL_WLeSCwTbmqexb2ax47E5za1BtG4LGwjEhGKFl2792FRp0aNF57Gxpx5DWrM6lNEWN7x2oj1_CsCoLeNXbfkLY2f-ayOu18yqU9eoSfQ",
      "suspicious": false
     },
     {
@@ -988,13 +1085,12 @@
      "key": "google:13504936491726347523",
      "title": "Chiikawa Sad Faced Plush Momonga",
      "mall": "KREAM",
-     "price_orig": 52000,
+     "price_orig": 50000,
      "currency": "KRW",
-     "landed_krw": 52000,
+     "landed_krw": 50000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Chiikawa+Sad+Faced+Plush+Momonga+KREAM",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSkDR83Nnd0v7fyumbLme_Pmm14lWNAB1G8_muYIaWHEjMO2BY45coyidyqhXmMGGjIGV2b5cDZsB-ykpagK0czSPYUAmxrC3yZsyfUVOc7OcUSzRiJPtLL8A",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQydLrONkitBbT93h0zCZ-PDLFNBzSTE45wsWfPavOwhbw3f1fLmQAyAMw9oIa54IvOPKshWxNtXgKWQZI2Zja6Ycp6MClY7IQMXOeKbrMAIDoEOgCVNmJ8oA",
      "suspicious": false
     },
     {
@@ -1008,8 +1104,7 @@
      "landed_krw": 55000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Chiikawa+x+Sanrio+Characters+Desktop+Hang+Plush+Momonga+Kuromi+KREAM",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRlQXirmo4nYQzw22rh91dgSFMVscgW5UMtwU0zuL5N5Y5z8QzeLq0OarWcnyBMS7vItnf1lF7EBEZEk4WO1x009AFxgl0HE175rhvGY_1ge3k9dsEBU3sfcw",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQz-5m2rFgmLhwXKaFoFeG4tlmZHsBzMc9L9LQohJj1rhCfQ3Fx8hoViMK6COzQLSsmQj9B6Qz6BFD__11yTzrWdeNdz8NXR-CmHlTMcxNLcdiOGcvpXu_WmQ",
      "suspicious": false
     },
     {
@@ -1023,8 +1118,7 @@
      "landed_krw": 58000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Sanrio+x+Chiikawa+Kuromi+Chiikawa+Stuffed+Toy+Momonga+KREAM",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMBYV23MukWUQXWjTg8PW5xY7a5U4NaTLW-wRkMIb2rS5Oo4UnbKIE7iCz70crZbS-lL0H1K-dWaRF0MAHQE9y2Gip4UrBmcPLwT3nxniwwR4tYMJriQT57Q",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSYGuPQHUIjy5uK07-XUn20b7dpCjOHKf94PN_S6R6IhRhKk122gLtT4k4TWqTj4eeXy69GJb1aoLMLi02BADlmxM-8vK0xgyT_Sx0pAzy55Ud9kfLHsU7ogQ",
      "suspicious": false
     },
     {
@@ -1038,8 +1132,7 @@
      "landed_krw": 60000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=Chiikawa+Tokyo+Souvenir+Sitting+Plush+Momonga+KREAM",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTZwaTUWsMnx_WQS5-tW5XhNpvaQBQrwJMcMajA0_ASaGD0tC3orUDqua9T0O9tmNiwJ_TTuhjGyOdiUDdK3nGHBliqHadhvVjlKDdzu4ivplIR6WgxJbrZeQ",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQLNTxByxAP8IbXryXyC3J-UzvBR5Z4cSk2jHJispr1OsQ54sAVLi2MrOGn9yEJkB7RkbqKF-k5z5LntOOjChTi2xEOjIVWYirNLzrczjYX2u7BDDOAdCksBQ",
      "suspicious": false
     }
    ]
@@ -1050,36 +1143,92 @@
    "target_krw": 8000,
    "sell_price": 15000,
    "best": {
-    "source": "google",
+    "source": "coupang",
     "region": "KR",
-    "key": "google:17053069126576042208",
-    "title": "먼작귀 페이스 봉제 거울 키링 3탄 치이카와",
-    "mall": "한스지몰",
-    "price_orig": 9000,
+    "key": "coupang:9787314725",
+    "title": "귀여운 치이카와 아크릴 키링 자동차 가방고리 장식, 1개, 4.모몽가",
+    "mall": "쿠팡",
+    "price_orig": 6900,
     "currency": "KRW",
-    "landed_krw": 9000,
-    "ship_note": "배송비 판매처별 상이",
-    "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%8E%98%EC%9D%B4%EC%8A%A4+%EB%B4%89%EC%A0%9C+%EA%B1%B0%EC%9A%B8+%ED%82%A4%EB%A7%81+3%ED%83%84+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%9C%EC%8A%A4%EC%A7%80%EB%AA%B0",
-    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCTcGKuG6G4-FM-4uhiSwRpZKg9cwHMVCSPrZ-Xveh1JUA8URm7pi2xJ_ajbAdlvT4wXHOeXNt4-Y8korpthKdkiyDIAB1AB6tOf1MXoCYFewakkB-3tIu",
+    "landed_krw": 6900,
+    "ship_note": "배송비 판매자별 상이",
+    "link": "https://www.coupang.com/vp/products/9787314725?itemId=29303833951&vendorItemId=96219334602&q=먼작귀 키링&searchId=a7dbda417932951&sourceType=search&rank=10&itemsCount=60&searchRank=10",
+    "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/image_audit/stage/manual/07cb084285bc46c3ee6bd197cc7a23718b2bfbe9a428bb8055137b40957c_1793695416779.png",
     "suspicious": false
    },
    "best_kr": {
-    "source": "google",
+    "source": "coupang",
     "region": "KR",
-    "key": "google:17053069126576042208",
-    "title": "먼작귀 페이스 봉제 거울 키링 3탄 치이카와",
-    "mall": "한스지몰",
-    "price_orig": 9000,
+    "key": "coupang:9787314725",
+    "title": "귀여운 치이카와 아크릴 키링 자동차 가방고리 장식, 1개, 4.모몽가",
+    "mall": "쿠팡",
+    "price_orig": 6900,
     "currency": "KRW",
-    "landed_krw": 9000,
-    "ship_note": "배송비 판매처별 상이",
-    "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%8E%98%EC%9D%B4%EC%8A%A4+%EB%B4%89%EC%A0%9C+%EA%B1%B0%EC%9A%B8+%ED%82%A4%EB%A7%81+3%ED%83%84+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%9C%EC%8A%A4%EC%A7%80%EB%AA%B0",
-    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCTcGKuG6G4-FM-4uhiSwRpZKg9cwHMVCSPrZ-Xveh1JUA8URm7pi2xJ_ajbAdlvT4wXHOeXNt4-Y8korpthKdkiyDIAB1AB6tOf1MXoCYFewakkB-3tIu",
+    "landed_krw": 6900,
+    "ship_note": "배송비 판매자별 상이",
+    "link": "https://www.coupang.com/vp/products/9787314725?itemId=29303833951&vendorItemId=96219334602&q=먼작귀 키링&searchId=a7dbda417932951&sourceType=search&rank=10&itemsCount=60&searchRank=10",
+    "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/image_audit/stage/manual/07cb084285bc46c3ee6bd197cc7a23718b2bfbe9a428bb8055137b40957c_1793695416779.png",
     "suspicious": false
    },
    "best_jp": null,
-   "all_time_low": 9000,
+   "all_time_low": 6900,
    "offers": [
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9800597034",
+     "title": "먼작귀 치이카와 큰사이즈 키링 캐릭터 열쇠고리 키홀더 가방고리 장식 굿즈",
+     "mall": "쿠팡",
+     "price_orig": 5900,
+     "currency": "KRW",
+     "landed_krw": 5900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9800597034?itemId=29346790199&vendorItemId=96260066502&sourceType=srp_product_ads&clickEventId=6c96e130-deaa-11f1-af44-f0705c7235d5&clickEventId=6c96e130-deaa-11f1-af44-f0705c7235d5&korePlacement=15&korePlacement=15&koreSubPlacement=6&koreSubPlacement=6&q=먼작귀 키링&searchId=a7dbda417932951&searchRank=5",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/f1bf/c3a07f64231c9122ed0a12d5ad766f13ad5cfb82ef62668d5cfb8087c6eb.png",
+     "suspicious": true
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9787314725",
+     "title": "귀여운 치이카와 아크릴 키링 자동차 가방고리 장식, 1개, 4.모몽가",
+     "mall": "쿠팡",
+     "price_orig": 6900,
+     "currency": "KRW",
+     "landed_krw": 6900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9787314725?itemId=29303833951&vendorItemId=96219334602&q=먼작귀 키링&searchId=a7dbda417932951&sourceType=search&rank=10&itemsCount=60&searchRank=10",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/image_audit/stage/manual/07cb084285bc46c3ee6bd197cc7a23718b2bfbe9a428bb8055137b40957c_1793695416779.png",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9776768426",
+     "title": "먼작귀 치이카와 캐릭터 피규어 키링 우사기 자동차 가방 열쇠고리 가방고리 장식, 1개, MZK-005",
+     "mall": "쿠팡",
+     "price_orig": 7900,
+     "currency": "KRW",
+     "landed_krw": 7900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9776768426?itemId=29267499398&vendorItemId=96184947027&q=먼작귀 키링&searchId=a7dbda417932951&sourceType=search&rank=15&itemsCount=60&searchRank=15",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/image_audit/prod/a4b348db-cc57-5246-ad23-e09d3fda92c8.png",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9740357949",
+     "title": "자석 페어 키링 모몽가 커플 열쇠고리 하치와래 우사기 피규어 키홀더 치이카와+모몽가, 1개, 하치와레+우사기",
+     "mall": "쿠팡",
+     "price_orig": 8100,
+     "currency": "KRW",
+     "landed_krw": 8100,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9740357949?itemId=29153255975&vendorItemId=96263926844&q=먼작귀 키링&searchId=a7dbda417932951&sourceType=search&rank=8&itemsCount=60&searchRank=8",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/1f46/51a459adb253d5088c29d8794cc9af4b5f078a515ddd30d9f177d1470131.png",
+     "suspicious": false
+    },
     {
      "source": "google",
      "region": "KR",
@@ -1092,6 +1241,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%8E%98%EC%9D%B4%EC%8A%A4+%EB%B4%89%EC%A0%9C+%EA%B1%B0%EC%9A%B8+%ED%82%A4%EB%A7%81+3%ED%83%84+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%9C%EC%8A%A4%EC%A7%80%EB%AA%B0",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCTcGKuG6G4-FM-4uhiSwRpZKg9cwHMVCSPrZ-Xveh1JUA8URm7pi2xJ_ajbAdlvT4wXHOeXNt4-Y8korpthKdkiyDIAB1AB6tOf1MXoCYFewakkB-3tIu",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1106,6 +1256,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B%EB%B0%94%EB%A1%9C%EB%B0%9C%EC%86%A1%5D+%EC%BA%90%EB%A6%AD%ED%84%B0+LED+4%EA%B5%AC+%EC%A7%B1%EA%B5%AC+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%9C%EA%B5%90%EB%8F%99+%ED%81%B4%EB%A6%AC%EC%BB%A4+%ED%82%A4%EC%BA%A1+%ED%81%B4%EB%A6%AD%EC%BB%A4+%ED%82%A4%EB%B3%B4%EB%93%9C+%ED%82%A4%EB%A7%81%2C+1%EA%B0%9C+coupang.com",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTJgMtUreuyaE5TZEvmFHkH6LIlZUYVbzFxi6g7pieljWOGoH-Jq33CTWXDUS9AYD2WuO3r4tyPncpcJ3537yAP1ZDPkWsHSuzJ5HJEYoylmIVqgk6hq-rl",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1120,6 +1271,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%85%B8%EB%8F%99+%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8A%B8+%ED%82%A4%EB%A7%81+%ED%82%A4%ED%99%80%EB%8D%94+%ED%85%90%EB%B0%94%EC%9D%B4%ED%85%90",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTtZ49-CmfTNzbQrXcpLYxqBnwRvrRmXs3S86x5yqWO1Q3Fimf1I_ig84u3q6jcCaNwCFoFJH9tCfk03WokrMAvaylXcg1CaA44pVTP5cX1FqZSepEQVg4lmA",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1134,6 +1286,21 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%85%B8%EB%8F%99+%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8A%B8+%ED%82%A4%EB%A7%81+%ED%82%A4%ED%99%80%EB%8D%94+2%ED%83%84+%ED%85%90%EB%B0%94%EC%9D%B4%ED%85%90",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQcMEc13FXvktbiz3SVedv1z2Om_bgug03O3mjfIM2vyUwUYoasXrfMsTUXEXmECiI2rNr_edfQI9UJO0tsKgcwyE32PnXJJ91AEXeca734q8WAinkhJkro1Q",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9778138597",
+     "title": "먼작 치이카 3연 8연 SD 아크릴 키링 캐릭터 가방고리 랏코 모몬가 굿즈 백꾸 악세사리, 1개, 03.먼작귀 올스타 키링",
+     "mall": "쿠팡",
+     "price_orig": 9800,
+     "currency": "KRW",
+     "landed_krw": 9800,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9778138597?itemId=29303063619&vendorItemId=96218566772&q=먼작귀 키링&searchId=a7dbda417932951&sourceType=search&rank=2&itemsCount=60&searchRank=2",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/7b54/ae8c761d01f8a849c31d50590cd5baba28558417ec8891532561ec907250.png",
      "suspicious": false
     },
     {
@@ -1148,6 +1315,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9D%B8%EC%96%B4%EC%84%AC+%EC%95%84%ED%81%AC%EB%A6%B4%ED%82%A4%EB%A7%81+6%EC%A2%85%EC%84%B8%ED%8A%B8+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT7hfnInCek6VR_CR6LfdSHdGLNHT1oFaOSIVP2NeB6X8B7fmAQ1meVKgtROFrVu1cMJD-UjFl8S-i48BUOWi3k8LZZkIlkH4WMXW5DY3gP",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1162,6 +1330,21 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%ED%99%80%EB%A1%9C%EA%B7%B8%EB%9E%A8%ED%82%A4%EB%A7%81+1%EA%B0%9C+%EB%9E%9C%EB%8D%A4+%ED%8A%B8%EC%9C%99%ED%81%B4+%EB%82%B1%EA%B0%9C+%ED%82%A4%EB%A7%81+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+gsshop",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRRyBO2wlyryFu97eHbEwr49b7OT0hm6Kry5_qEXPzCOUOcpHIAM_b9dbpyP9QLkJj2xlKOJ3r73QmNTICfp_2CewprNyrD5gXqljv8ZjDn9kzZMb15m-Kt9A",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9778418376",
+     "title": "먼작귀 치이카와 인형 가방 키링 10cm 귀여운 동물 굿즈, 1개, 치이카와 스타, 11cm",
+     "mall": "쿠팡",
+     "price_orig": 15900,
+     "currency": "KRW",
+     "landed_krw": 15900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9778418376?itemId=29273606823&vendorItemId=96190589862&q=먼작귀 키링&searchId=a7dbda417932951&sourceType=search&rank=3&itemsCount=60&searchRank=3",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/b121/7e435813208fc4f209e80694c103e0d9a30e10e937d20b2e3137cb0ab9ad.jpg",
      "suspicious": false
     },
     {
@@ -1176,6 +1359,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%82%A4%EB%A7%81+%EB%9E%9C%EB%8D%A4+%EC%BA%90%EB%A6%AD%ED%84%B0%ED%82%A4%EB%A7%81+%ED%82%A4%ED%99%80%EB%8D%94+%EA%B0%80%EB%B0%A9%ED%82%A4%EB%A7%81+%EA%B5%BF%EC%A6%88%ED%82%A4%EB%A7%81+gsshop",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRfuH4Pl27fP2cMuWdjw1EFtuSqgooS4suJs1o0907Tv9vVNxwz9F22KVQjTMQ9mL_AG5M8ce7mmq8YEIdBRCY4iBRlVT2Y7lAAoW3t-m_PWvEMg5rQcr5t",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1190,6 +1374,49 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%B2%A0%EC%9D%B4%EC%A7%81+%EB%B4%89%EC%A0%9C+%ED%82%A4%EB%A7%81+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%A4%91%EA%B5%AD+%EA%B3%B5%EC%8B%9D+%EA%B5%BF%EC%A6%88+%EC%BD%94%EB%AF%B9%EC%8A%A4%EC%95%84%ED%8A%B8",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRmFsj5tmJbBs33S3no7wST2I-Uq0J6KqGMZ1S-f6kxcJF0gi_eELdVECoKBdZN4ypuSwvg6K8g4yE5CjJYDc18Os_wPUT6_HTPBuSLtjUtxloi09ho2aKI",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:8750621621",
+     "title": "무드바이브 귀여운 복슬 먼작귀 인형 키링 치이카와 우사기 하치와레 나가노 굿즈 우정템 생일선물, 복실하치와레키링",
+     "mall": "쿠팡",
+     "price_orig": 18500,
+     "currency": "KRW",
+     "landed_krw": 18500,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/8750621621?itemId=25438349153&vendorItemId=92345066455&q=먼작귀 키링&searchId=a7dbda417932951&sourceType=search&rank=7&itemsCount=60&searchRank=7",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/72e3/76fcf77215b51937935693db40b6481870030cd7b9e6994b48258d6f0a53.jpg",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9055888345",
+     "title": "울보 먼작귀 시리즈 키링 인형 귀여운 인형 치이카와 하치와레 우사기 키링",
+     "mall": "쿠팡",
+     "price_orig": 18900,
+     "currency": "KRW",
+     "landed_krw": 18900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9055888345?itemId=26583154169&vendorItemId=93556512970&sourceType=srp_product_ads&clickEventId=6c96e130-deaa-11f1-8266-e39745c5446e&clickEventId=6c96e130-deaa-11f1-8266-e39745c5446e&korePlacement=15&korePlacement=15&koreSubPlacement=9&koreSubPlacement=9&q=먼작귀 키링&searchId=a7dbda417932951&searchRank=6",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/image_audit/stage/manual/1a332e16b8b9e442c5c5394ec45dd8f9690ac64c1488ba1ca83db5050687_1769760743471.JPG",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9747980767",
+     "title": "차이첸 극장판 먼작귀 귀염 키링, 1개, 인어섬의 비밀- 치이카와, 10cm",
+     "mall": "쿠팡 로켓배송",
+     "price_orig": 22800,
+     "currency": "KRW",
+     "landed_krw": 22800,
+     "ship_note": "로켓배송 (와우 회원 무료, 일반 19,800원 이상 무료)",
+     "link": "https://www.coupang.com/vp/products/9747980767?itemId=29185641844&vendorItemId=96229028148&q=먼작귀 키링&searchId=a7dbda417932951&sourceType=search&rank=13&itemsCount=60&searchRank=13",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/8d70/e0e6aede887463563490dfa83e41250b6ff1728ba2171455935f4eb3b842.jpg",
      "suspicious": false
     },
     {
@@ -1204,6 +1431,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%ED%82%A4%EB%A7%81+%ED%82%A4%ED%99%80%EB%8D%94+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%A7%80%EA%B0%91+%EC%9E%85%EC%B2%B4+3D+%EA%B0%80%EB%B0%A9+%ED%82%A4%EC%B2%B4%EC%9D%B8+%EB%A7%90%EB%9E%91+3%EC%A2%85+%EC%97%B4%EC%87%A0+%EA%B3%A0%EB%A6%AC+%EC%95%84%ED%81%AC%EB%A6%B4%ED%82%A4%EB%A7%81+CJ%EC%98%A8%EC%8A%A4%ED%83%80%EC%9D%BC",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRfOht1eajJu14GsJfFMkwH3qoTU3qXENvGn1U9aXchmvqR0eDh1-EWO-H_EkBrwoffKQ-Yd2R2yRWBFvasBdy6iTN46Fx6kwGZYl09gS7NQJuBW4tjvpFY",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1218,6 +1446,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=5000+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%96%91%EB%A9%B4+%EC%95%A0%EB%8B%88+%ED%82%A4%EB%A7%81+1%EB%B0%95%EC%8A%A4+12%EA%B0%9C%28%EB%A0%88261106%29+%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC+%EB%B8%8C%EB%9D%BC%EB%8D%94%EC%9C%A0%ED%86%B5",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQApJoZC0KzBS5rBAK9SznueO_XijcSTI9K11aEhTRZt9LOfyWYK_MibWvXwK-5mwjcp1YKw8214zEarYgN2ai5Xn2YVypkctJPzG7LqsMOIu-Db7SFdYIL5g",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1232,6 +1461,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%A0%95%ED%92%88%EC%9D%B8%EC%A6%9D+%EB%A8%B9%EA%B1%B0%EB%A6%AC+%EA%B0%84%EC%8B%9D+%EB%94%94%EC%A0%80%ED%8A%B8+%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+3+%ED%94%BC%EA%B7%9C%EC%96%B4+%ED%82%A4%EB%A7%81+6%EC%A2%85+%EB%A8%BC%EC%9E%91%EA%B7%80%EC%9D%B8%ED%98%95+%ED%82%A4%ED%99%80%EB%8D%94+%EA%B5%BF%EC%A6%88+%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%9A%B0%EC%82%AC%EA%B8%B0%EC%8B%9C%EC%82%AC+%EC%BF%A0%EB%A6%AC%EB%A7%8C%EC%A5%AC+%EC%84%A0%EB%AC%BC+%EA%B3%A0%ED%80%84%EB%A6%AC%ED%8B%B0+%ED%9D%AC%EA%B7%80%ED%85%9C+%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84+%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%85%8C%EB%A6%AC%EC%96%B4+%EC%97%90%EC%9D%B4%EB%B8%94%EB%A6%AC",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQeuSqUK3uBhWdHaKr5KtaK8UwDByxsBVj-8CA_v60Qbj7zmXbwFBHdOSoRSLQvKU-HjObkWJJU_A9ACJxti3POHY29F3cIDIlkAS4vfU7mHg3CQ-NRvdgvhw",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1246,6 +1476,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%B4%88%EB%B0%A5+%EC%8A%A4%EC%8B%9C+%ED%82%A4%EB%A7%81+%ED%94%BC%EA%B7%9C%EC%96%B4+5%EC%A2%85+%EC%9D%BC%EB%B3%B8%EC%A0%95%ED%92%88%2C+%EB%AA%A8%EB%AA%BD%EA%B0%80%ED%82%A4%EB%A7%81%2C+1%EA%B0%9C+coupang.com",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSx1QzqN8NGXGtTIc_H2pYmrNa5n7byQ8kRzq20XGOSbLJcrDseALjGRyBEcu45qbCXYaykvStYqR7pSPSVFvo1LTA-0h1oWWvwZj2brC05vyzTiF3icKip",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1260,6 +1491,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%98%A4%ED%83%80%EC%BF%A0%EC%9A%B0%EC%82%AC%EA%B8%B0+%EB%A8%BC%EC%9E%91%EA%B7%80%ED%82%A4%EB%A7%81+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+%EB%AF%B8%EB%8B%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%ED%81%AC%EB%A1%9C%EC%BC%93",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcToRiFAIWXdzGVZhtDG_qt2SM0pB02u1Q-ckzcYLVBAyp2iRyrUBaSTLAzs3XY0R0b50ez9axIHaX608DoAhCLWztXrkj1l9L66zRtZzobr6bZDF7pyufPZfg",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1274,6 +1506,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%B9%B4%EC%8A%A4%ED%85%8C%EB%9D%BC+%EB%B2%A0%EC%9D%B4%EB%B9%84+%EB%A7%88%EC%8A%A4%EC%BD%94%ED%8A%B8+%ED%82%A4%EB%A7%81+%EB%AF%B8%EB%8B%88+%EB%B4%89%EC%A0%9C%EC%9D%B8%ED%98%95+%EA%B5%BF%EC%A6%88+%EC%9A%B0%EC%82%AC%EA%B8%B0+%ED%81%AC%EB%A1%9C%EC%BC%93",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ63OtthxCTCcD_0QxCZyHio77H8IM5OJhp3ZJtGhq6fwQtSyhGpcJvYod1eq8rkykb9xfMzeUrmWJX5gjh2DW7lgdK51A3dJ4ZHv6saiz8AVrAp4IPBqeI",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1288,6 +1521,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%ED%8A%B8%EC%9C%99%ED%81%B4+%ED%99%80%EB%A1%9C%EA%B7%B8%EB%9E%A8%ED%82%A4%EB%A7%81+%ED%82%A4%EB%A7%81+%EB%A8%BC%EC%9E%91%EA%B7%80+20%EA%B0%9C%EC%9E%85+1%EB%B0%95%EC%8A%A4+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+gsshop",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTAPxhb5tJ0x9OkSDfwxfMw7o2DrhcYPYeiIXhFOV_OeNj4eIBHc_PGyGmOcqxlltMTJDVL6C0vowVcyDD7CRopdU8B6T39odemDXU_VWfsnUaN_ZRqWFEveg",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     }
    ]
@@ -1300,51 +1534,34 @@
    "best": {
     "source": "google",
     "region": "KR",
-    "key": "google:17907820234139825109",
-    "title": "먼작귀 미니 파우치_하치와레",
-    "mall": "캐샵",
-    "price_orig": 5900,
+    "key": "google:3972425937583775916",
+    "title": "문구/GIFT 먼작귀 미니 파우치",
+    "mall": "POOM",
+    "price_orig": 6500,
     "currency": "KRW",
-    "landed_krw": 5900,
+    "landed_krw": 6500,
     "ship_note": "배송비 판매처별 상이",
-    "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%AF%B8%EB%8B%88+%ED%8C%8C%EC%9A%B0%EC%B9%98_%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%BA%90%EC%83%B5",
-    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSxibLcn6iPf74Iy5F2_cKGv1NpydEL-bdjSLuAoHlS_nkCAtnT2O10dw321DkpU_kkTwSUWBNzIvhVNrKcRCWuvp3YmgtU8Y5ZV4KhOMipeQ1ZUnJXFnYT",
-    "fetched_at": "2026-11-12T09:21+00:00",
+    "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%8C%8C%EC%9A%B0%EC%B9%98&prds=localAnnotatedOfferId:1,catalogid:3972425937583775916,gpcid:3744625409223748005,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRo3pvd9K6vrf-eAMVYrNOZLpr_d4_xzeY3nYVW1KQLtLpdBh9TKsJRyWwqQyAvqoEzfbj4_b9omnU4DCB5U6Fy07yE5eVLopjGRvyA211H3qOEqiW4v683",
     "suspicious": false
    },
    "best_kr": {
     "source": "google",
     "region": "KR",
-    "key": "google:17907820234139825109",
-    "title": "먼작귀 미니 파우치_하치와레",
-    "mall": "캐샵",
-    "price_orig": 5900,
+    "key": "google:3972425937583775916",
+    "title": "문구/GIFT 먼작귀 미니 파우치",
+    "mall": "POOM",
+    "price_orig": 6500,
     "currency": "KRW",
-    "landed_krw": 5900,
+    "landed_krw": 6500,
     "ship_note": "배송비 판매처별 상이",
-    "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%AF%B8%EB%8B%88+%ED%8C%8C%EC%9A%B0%EC%B9%98_%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%BA%90%EC%83%B5",
-    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSxibLcn6iPf74Iy5F2_cKGv1NpydEL-bdjSLuAoHlS_nkCAtnT2O10dw321DkpU_kkTwSUWBNzIvhVNrKcRCWuvp3YmgtU8Y5ZV4KhOMipeQ1ZUnJXFnYT",
-    "fetched_at": "2026-11-12T09:21+00:00",
+    "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%8C%8C%EC%9A%B0%EC%B9%98&prds=localAnnotatedOfferId:1,catalogid:3972425937583775916,gpcid:3744625409223748005,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRo3pvd9K6vrf-eAMVYrNOZLpr_d4_xzeY3nYVW1KQLtLpdBh9TKsJRyWwqQyAvqoEzfbj4_b9omnU4DCB5U6Fy07yE5eVLopjGRvyA211H3qOEqiW4v683",
     "suspicious": false
    },
    "best_jp": null,
    "all_time_low": 5900,
    "offers": [
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:17907820234139825109",
-     "title": "먼작귀 미니 파우치_하치와레",
-     "mall": "캐샵",
-     "price_orig": 5900,
-     "currency": "KRW",
-     "landed_krw": 5900,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%AF%B8%EB%8B%88+%ED%8C%8C%EC%9A%B0%EC%B9%98_%ED%95%98%EC%B9%98%EC%99%80%EB%A0%88+%EC%BA%90%EC%83%B5",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSxibLcn6iPf74Iy5F2_cKGv1NpydEL-bdjSLuAoHlS_nkCAtnT2O10dw321DkpU_kkTwSUWBNzIvhVNrKcRCWuvp3YmgtU8Y5ZV4KhOMipeQ1ZUnJXFnYT",
-     "fetched_at": "2026-11-12T09:21+00:00",
-     "suspicious": false
-    },
     {
      "source": "google",
      "region": "KR",
@@ -1356,8 +1573,7 @@
      "landed_krw": 6500,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%8C%8C%EC%9A%B0%EC%B9%98&prds=localAnnotatedOfferId:1,catalogid:3972425937583775916,gpcid:3744625409223748005,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTQeMbP_b-Y4Prs7cTxTxLFpT6BM5hZ0SAGbCWVEw1j8RloA552JQVDuAhmOS90Zq8DgrqKAfBfbLeYdxdPZ4Ko0KvhO86pieSRYAaA7nzQugsetDzjYu3X",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRo3pvd9K6vrf-eAMVYrNOZLpr_d4_xzeY3nYVW1KQLtLpdBh9TKsJRyWwqQyAvqoEzfbj4_b9omnU4DCB5U6Fy07yE5eVLopjGRvyA211H3qOEqiW4v683",
      "suspicious": false
     },
     {
@@ -1371,8 +1587,7 @@
      "landed_krw": 6500,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=by+%EC%95%84%ED%8A%B8%EB%B0%95%EC%8A%A4+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%AF%B8%EB%8B%88%ED%8C%8C%EC%9A%B0%EC%B9%98+%EC%9A%B0%EC%82%AC%EA%B8%B0+%2852009600%29+POOM",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQVVKuo17W60oWy0Kd5-TcaSDKWs4CKWxGFAdNw-qRiFsvOKoOmLzxbDPrj0I0d8PZtyIMFmLiYdZvTdT_zUG-fHXb9d6zncC_Qh8rjwqW15aHidJgCWzwz",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQFRcWBh5n068PAZu68gqRYnxEWKBCE3nR1WnOa0i9iajx-YNCHFPMmffztxkWi77QmmrjtcyvrhrjaBg6UXgoZoKe_Vdy_yBB9ApQ10iZjMn3WX63BIwqn",
      "suspicious": false
     },
     {
@@ -1386,38 +1601,21 @@
      "landed_krw": 6800,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%96%BC%EA%B5%B4+%EB%AF%B8%EB%8B%88+%ED%8C%8C%EC%9A%B0%EC%B9%98+%EC%98%AC%EC%94%A8+A",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQExHz_bnFNAMgSpGsTn1vM_uvXgOgIhSgQLCAL5q7Ujg3S8FqyNiDZdF1Oqa0MZXLtzfqfzobo2FcJFB1EFlS6K8_gnHC9Lne6wbjA4U-6AghBb8FQr2sM",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR_Sbplvl4PQoyKt_Wq8P25TIqu-5Il7JMRBJ3lW4IuobDuDPlgA_2Dds8URxCsW2ddglWRvQ7jxYKRIwkgTNAcksO2zeJXH-iTug7DABKfergcEbLRPOOg",
      "suspicious": false
     },
     {
-     "source": "google",
+     "source": "coupang",
      "region": "KR",
-     "key": "google:13542102256352532230",
-     "title": "먼작귀 반원 투명 파우치 블루",
-     "mall": "톺TOP",
-     "price_orig": 8500,
+     "key": "coupang:9796719408",
+     "title": "뉴 먼작귀 미니 파우치 4종류 캐릭터 동전지갑 이어폰 소지품보관 생일선물 굿즈 카드지갑 125mm 11월16일 출고예정",
+     "mall": "쿠팡",
+     "price_orig": 6900,
      "currency": "KRW",
-     "landed_krw": 8500,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%B0%98%EC%9B%90+%ED%88%AC%EB%AA%85+%ED%8C%8C%EC%9A%B0%EC%B9%98+%EB%B8%94%EB%A3%A8+%ED%86%BATOP",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ19V2a6nJLSS3oZXq6iE4sDmeTlX5tJ5tbVJ_KoRwz9_6uBAed4cqoeh6GwH4lN_1GjI-Ap6-W5kk70drLZq1dVCx5IQY-KfAlP6LkllvV1Rc6bHrHKl9S",
-     "fetched_at": "2026-11-12T09:21+00:00",
-     "suspicious": false
-    },
-    {
-     "source": "google",
-     "region": "KR",
-     "key": "google:4107684918095018631",
-     "title": "먼작귀 투명 키링 파우치 패턴 민트",
-     "mall": "톺TOP",
-     "price_orig": 9900,
-     "currency": "KRW",
-     "landed_krw": 9900,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%88%AC%EB%AA%85+%ED%82%A4%EB%A7%81+%ED%8C%8C%EC%9A%B0%EC%B9%98+%ED%8C%A8%ED%84%B4+%EB%AF%BC%ED%8A%B8+%ED%86%BATOP",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQlqaQILDYGegmYJ6hf0RKX8I6DGRfrWAB2I1V1mGmk1OBO4V9TlQ97pIWRpSQl-oCSeJDLgZU8pHx-6eGRGqj6K8TDUZZghP8QblCylCRPrxkVOWMb5g02",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "landed_krw": 6900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9796719408?itemId=29334185957&vendorItemId=96248130778&q=먼작귀 파우치&searchId=c68c6d2c451177&sourceType=search&rank=3&itemsCount=60&searchRank=3",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/cfe1/2fbd54b5a1e1e697b665aee2912ae65a328a62ec0b1a29391b687ce3bf62.png",
      "suspicious": false
     },
     {
@@ -1431,8 +1629,7 @@
      "landed_krw": 12000,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%8C%8C%EC%9A%B0%EC%B9%98&prds=localAnnotatedOfferId:1,catalogid:17190886956875175690,gpcid:5723579060477195183,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSSdclGuDEVFEKI8jSMVcnA3Z2zCo8AY_lO_nwqTk0StPd0VZhpun8TJocEAht_WQCelz6TSIgMyWjNk8Bjqncms09Ce_vySyTRKpGB_2XWuCA8Q4WnxgeaGA",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQQiXp1OUqATnnH71WZDQHOIyO-wTs-WfV6I_Ynvo4s3zniC1OpDfHCQJzP4jxIrApVaXUYd-8gStdgVWJ8haFH_UTlHA3TA26JyJRtKUYdD1dEpzHOioVWZw",
      "suspicious": false
     },
     {
@@ -1446,8 +1643,21 @@
      "landed_krw": 14700,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%8C%8C%EC%9A%B0%EC%B9%98+%ED%88%AC%EB%AA%85+%EB%B0%98%EC%9B%90%ED%98%95+%ED%95%84%ED%86%B5+%EB%B8%94%EB%A3%A8+%EC%88%98%EB%82%A9+%EC%86%8C%ED%92%88+%EA%B0%80%EB%B0%A9+%ED%82%A4%EB%A7%81%EB%8F%99%EC%A0%84%EC%A7%80%EA%B0%91+%EA%B7%80%EC%97%AC%EC%9A%B4%ED%82%A4%EB%A7%81+%ED%82%A4%EB%A7%81%EC%A7%80%EA%B0%91+CJ%EC%98%A8%EC%8A%A4%ED%83%80%EC%9D%BC",
-     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRoXrfS5eNu57TDUihz37sUMUP4vYTkp0EtqLyXhrxIL8fsPUIWG4u_dxLvlQkxtxmVDkXIloerwOgU-ISu02w4i8WKKbP5DnV0w9YS9CW2IHrPbn4fR62B",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTovHHf2t2A2bbTSR6uMonnv8cIAC3xvONuWhrlJxhYsoXRaCdcfSggYOldSPUOnjbKWW7EdCnHNjUvmwW0NrPuvsZRw43KTeAOa-wQnKdzhz5gTjVn5hEK",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9775251072",
+     "title": "귀요미 캐릭터 우사기 치이카와 하치와레 파우치 대용량 수납 파우치",
+     "mall": "쿠팡",
+     "price_orig": 14900,
+     "currency": "KRW",
+     "landed_krw": 14900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9775251072?itemId=29261959658&vendorItemId=96179696475&q=먼작귀 파우치&searchId=c68c6d2c451177&sourceType=search&rank=4&itemsCount=60&searchRank=4",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/6b6d/2a9d54e147dfd45a63bede70ed444606ba6ca171e1fb59eba121d98a5d3f.jpeg",
      "suspicious": false
     },
     {
@@ -1461,8 +1671,7 @@
      "landed_krw": 15400,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%AF%B8%EB%8B%88+%ED%8C%8C%EC%9A%B0%EC%B9%98-%EA%B0%80%EB%A5%B4%EB%A7%88+CJ%EC%98%A8%EC%8A%A4%ED%83%80%EC%9D%BC",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSx70YtYPXkX1tiMGaJAXu401kZxecgxaYKYuMgI-FgYBq2z5xHb720ABgytbaYQhsIFhNCEmDRX8hRGn8t1M150ZDbawRyEAgzJ3HwLfUyy0_1F3TrbRbjBg",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSaHVTCL0g5enN6D_prDFahYQw_8IJ6Tlm-9VwdQ7Gd2VjD-idtelgPpVlJgsos-_Z7SsD2eS-e1_4maWgyi_6g_ylW9-EtJDTeoL2PCB3CVMGczThAsJMvJQ",
      "suspicious": false
     },
     {
@@ -1476,8 +1685,21 @@
      "landed_krw": 18800,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%8B%A4%EB%A6%AC%EC%BD%98+%ED%8C%8C%EC%9A%B0%EC%B9%98+%EC%BA%90%EB%A6%AD%ED%84%B0+%ED%95%84%ED%86%B5+%ED%99%94%EC%9E%A5%ED%92%88+%EC%88%98%EB%82%A9+%EC%86%8C%ED%92%88+%EA%B0%80%EB%B0%A9+%EB%9E%9C%EB%8D%A4+%EC%95%84%EB%8F%99%ED%8C%8C%EC%9A%B0%EC%B9%98+%EC%BA%90%EB%A6%AD%ED%84%B0%EC%A7%80%EA%B0%91+CJ%EC%98%A8%EC%8A%A4%ED%83%80%EC%9D%BC",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT6Lb3QvQ6XUCob07HngagTT3v8AolBQOOgm4e02jy1TvVebL9thsUtvF3JnKVpaCFjWnZxQBKpb2UKUyN3iNFaAtRuoeiU_2BWzKcSXTcgGE2b5u-28sDA",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS8MtioLsOC4r3JN6fagKDnXvSWRroZ7v9rmZlpfpZE5yUhWqYL82HinwcoYweMq0MuXlFWE8FC4mcC5VboeQPccCU54tPgVXaWX8A7CoRGXMil2iZPfmYF",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9788770851",
+     "title": "[정품] 먼작귀 치이카와 하치와레 우사기 플러시 파우치 대용량 화장품 파우치 미니 가방 귀여운 캐릭터 여행 수납 선물",
+     "mall": "쿠팡",
+     "price_orig": 23560,
+     "currency": "KRW",
+     "landed_krw": 23560,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9788770851?itemId=29307910640&vendorItemId=96223179480&q=먼작귀 파우치&searchId=c68c6d2c451177&sourceType=search&rank=8&itemsCount=60&searchRank=8",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/0ebd/709983ad66f495387ac79c0238546f8fc410f6e13e214697d34d46187aca.png",
      "suspicious": false
     },
     {
@@ -1491,23 +1713,21 @@
      "landed_krw": 25900,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%86%8C%ED%92%88+%EB%8B%A4%EC%9A%A9%EB%8F%84+%EC%88%98%EB%82%A9%EA%B0%80%EB%B0%A9+%ED%9C%B4%EB%8C%80%EC%9A%A9+%EB%A8%BC%EC%9E%91%EA%B7%80+%ED%8C%8C%EC%9A%B0%EC%B9%98+%EC%A0%95+%EC%97%AC%EC%84%B1%ED%8C%8C%EC%9A%B0%EC%B9%98+%EC%86%8C%ED%92%88%ED%8C%8C%EC%9A%B0%EC%B9%98+%EC%88%98%EB%82%A9%EA%B0%80%EB%B0%A9+CJ%EC%98%A8%EC%8A%A4%ED%83%80%EC%9D%BC",
-     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR0lkr252gs2PI9X5AKz70iQ1Nd65UAp92oIgA8iydSKa8BGQ5vmnOKtoOvhVIZxmm0kyDJ7WhKL4rE1a21fC7lDCCF3n0LoZb1v2Zm-dPBZhZpwH5gmDdK",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTe3TIdCuV2Oae47H2IO19piw9F3eu-f0NkU1ZC4SSQwzuqu9752lbyA01wc6uljPaWD2VXnxBQlMSTFelqlluPmmdfx70foPnDesuNhYVYGdEL8gg1EWDd",
      "suspicious": false
     },
     {
-     "source": "google",
+     "source": "coupang",
      "region": "KR",
-     "key": "google:9451784310565437590",
-     "title": "소품가방 먼작귀 엠보 EVA 빅파우치 블루 소품가방 파우치백",
-     "mall": "CJ온스타일",
-     "price_orig": 27100,
+     "key": "coupang:9238529251",
+     "title": "나가노 먼작귀 나리키리 미미 다용도 파우치, 1개, 하치와레",
+     "mall": "쿠팡",
+     "price_orig": 27800,
      "currency": "KRW",
-     "landed_krw": 27100,
-     "ship_note": "배송비 판매처별 상이",
-     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%86%8C%ED%92%88%EA%B0%80%EB%B0%A9+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%97%A0%EB%B3%B4+EVA+%EB%B9%85%ED%8C%8C%EC%9A%B0%EC%B9%98+%EB%B8%94%EB%A3%A8+%EC%86%8C%ED%92%88%EA%B0%80%EB%B0%A9+%ED%8C%8C%EC%9A%B0%EC%B9%98%EB%B0%B1+CJ%EC%98%A8%EC%8A%A4%ED%83%80%EC%9D%BC",
-     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTkzLES_cD303QsacCRz818reNzvZoZU3wxfqxseJGUCo0WQCXTs_QxD7Yd_ccej5isC7RdCElUrvZ3X-LO6yeQGzRJ1w_SXOdNsLvGi4LHrkLYQYTz0i5c4g",
-     "fetched_at": "2026-11-12T09:21+00:00",
+     "landed_krw": 27800,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9238529251?itemId=27316598219&vendorItemId=94283023767&q=먼작귀 파우치&searchId=c68c6d2c451177&sourceType=search&rank=7&itemsCount=60&searchRank=7",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/b245/6366ff1a13e84174c7d1359f625215cbf557e9e00357cb7c8aa194ce0951.jpg",
      "suspicious": false
     },
     {
@@ -1522,7 +1742,6 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%A6%B4%ED%8C%A1+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%9E%90%EC%88%98+%EC%96%B4%EA%B9%A8%EB%81%88+%EB%B3%B4%EC%98%A8%EB%B3%B4%EB%83%89+%EB%AC%BC%EB%B3%91+%ED%8C%8C%EC%9A%B0%EC%B9%98+coupang.com",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQU-V1a7Sm0XSlkBaBzxC_bqgJlCiVZmicTL-S6aw6ugurfZNIvASk0g15WT3h0ZKwxp7_1RApkU1NviaiBJOiKsmX4lpluw9JXLHAnPVYXSbNke1_rWcOc",
-     "fetched_at": "2026-11-12T09:21+00:00",
      "suspicious": false
     }
    ]
@@ -1544,6 +1763,7 @@
     "ship_note": "배송비 판매처별 상이",
     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B%EC%B9%98%EC%9D%B4%ED%82%A4%EC%99%80%5D+%EB%82%98%EA%B0%80%EB%85%B8+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%8D%B0%EC%BD%94+%EC%8A%A4%ED%8B%B0%EC%BB%A4+2%ED%83%84+%EC%95%84%EB%A0%88%EC%BD%94%EB%A0%88",
     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTtAid18ND6SSit0cATv_Vc8ChhtryuIKgMKOqIRRwyspdIf7hOXSgTZnzTxaUksxrgQBn67-LPPmGGRyr34REpIDyIhAXn4OiuVtY-crcbjZIGJyxOZhJlGA",
+    "fetched_at": "2026-11-12T14:45+00:00",
     "suspicious": false
    },
    "best_kr": {
@@ -1558,6 +1778,7 @@
     "ship_note": "배송비 판매처별 상이",
     "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B%EC%B9%98%EC%9D%B4%ED%82%A4%EC%99%80%5D+%EB%82%98%EA%B0%80%EB%85%B8+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%8D%B0%EC%BD%94+%EC%8A%A4%ED%8B%B0%EC%BB%A4+2%ED%83%84+%EC%95%84%EB%A0%88%EC%BD%94%EB%A0%88",
     "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTtAid18ND6SSit0cATv_Vc8ChhtryuIKgMKOqIRRwyspdIf7hOXSgTZnzTxaUksxrgQBn67-LPPmGGRyr34REpIDyIhAXn4OiuVtY-crcbjZIGJyxOZhJlGA",
+    "fetched_at": "2026-11-12T14:45+00:00",
     "suspicious": false
    },
    "best_jp": null,
@@ -1575,6 +1796,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B%EC%B9%98%EC%9D%B4%ED%82%A4%EC%99%80%5D+%EB%82%98%EA%B0%80%EB%85%B8+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EB%8D%B0%EC%BD%94+%EC%8A%A4%ED%8B%B0%EC%BB%A4+2%ED%83%84+%EC%95%84%EB%A0%88%EC%BD%94%EB%A0%88",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTtAid18ND6SSit0cATv_Vc8ChhtryuIKgMKOqIRRwyspdIf7hOXSgTZnzTxaUksxrgQBn67-LPPmGGRyr34REpIDyIhAXn4OiuVtY-crcbjZIGJyxOZhJlGA",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1589,6 +1811,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%8A%A4%ED%8B%B0%EC%BB%A4&prds=localAnnotatedOfferId:1,catalogid:955317073252734915,gpcid:14854431654108094651,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTQJLh9FZV70vK0vMclNFg7Os_MgW9sQ0YoKgh_MpMANv-N1m3Didj8PAvKjmIcbVyAoKoLKLE5CUbaUoqsSm-yGsftV52UB-q60D7mrWEDWykBTeYX_BX6bA",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1603,6 +1826,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%8A%A4%ED%8B%B0%EC%BB%A4&prds=localAnnotatedOfferId:1,catalogid:8285927410030960478,gpcid:5370289504381684908,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ6lQtWa7QuCmHwsPZeLOvL71hZWPYT5NVabnK6wG-0ce0DA6OvcemajNQVVPx497mrcGL3La3w0f5T9h8ARLE9q-QcM_eCPYldupS3kJgXoOdh4hKAu9Ne",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1617,6 +1841,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%8A%A4%ED%8B%B0%EC%BB%A4&prds=localAnnotatedOfferId:1,catalogid:10676124203698326436,gpcid:1579508353089520304,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTBBtfFF5ko0KTSuB_vHHWJUZNaG3U2-qAmkUbrcwF_obAYJLl7ldaZ5gjq8nvugnDTCk8Nota6IYm_AZSY8ThU0az5IMNX",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1631,6 +1856,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EB%8F%84%ED%8B%B0%EB%8F%84%EA%B7%B8+2way+%EB%9D%BC%EB%B2%A8+%EC%8A%A4%ED%8B%B0%EC%BB%A4%2C+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%2C+1%EA%B0%9C+coupang.com",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTo9KhsIKnianZIzp-HgLaMJ83zlLQ0l-Fleo2L_vODjpZFnuEz43ZappEpk3FEAvveRKndmX23tZ77ReAY_XQ1qVqWJo8JoUH38w3bkXL5raSoY1JQBpYn",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1645,6 +1871,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%8A%A4%ED%8B%B0%EC%BB%A4&prds=localAnnotatedOfferId:1,catalogid:17838163925001435926,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRDDk9wRg0ZK0K29NeyN4UhLawPQjokM-ecNCUHph-bbY8kO_KqW6g8c2H0b6jqS6sSihHwALSem9YRF0X5ZhL9VgzGdyHo6FnIV55aBRdoedY43s0kpPYY1w",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1659,6 +1886,21 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B%EB%A8%BC%EC%9E%91%EA%B7%80%5D+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%ED%8F%AC%EC%8A%A4%ED%84%B0+%EC%8A%A4%ED%8B%B0%EC%BB%A4+%EC%84%B8%ED%8A%B8+3%EC%A2%85+%ED%85%90%EB%B0%94%EC%9D%B4%ED%85%90",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSU4i_b1PuSBWFY_7q1fqxnsypP1x8NkEhbDWK61heAnxrWCUmfSEfY5EJaAQ39ipB2EEpDTAtPokLD3ITPPwQQfL587etfbw",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9787314886",
+     "title": "귀여운 치이카와 방수 스티커 100장 데코 스티커 노트북 핸드폰 캐리어 꾸미기 스티커 세트, 100개",
+     "mall": "쿠팡",
+     "price_orig": 4700,
+     "currency": "KRW",
+     "landed_krw": 4700,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9787314886?itemId=29303834386&vendorItemId=96219335060&q=먼작귀 스티커&searchId=23db7ec310082166&sourceType=search&rank=4&itemsCount=60&searchRank=4",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/80d1/9a5bd54b6e08dcdd4fdc0376377048974fad4c719d2556ad7f9c83862a88.jpg",
      "suspicious": false
     },
     {
@@ -1673,6 +1915,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+2way+%EB%9D%BC%EB%B2%A8%EC%8A%A4%ED%8B%B0%EC%BB%A4+%EB%B3%84%EB%B9%9B%EB%8B%A4%EB%9D%BD",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT35BvTpiuazNII0vtxuajM59QTDj2Ya9NRRExGC8z47x9VMjBi4OoAyCm4XrrKnEAdGAK8Wc60RCubXo3XYvmLTEqxKxZ8kMJ5IdZRbTO7LaX_azkrADQ20A",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1687,6 +1930,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B%ED%9B%84%EB%A0%88%EC%9D%B4%ED%81%AC%EC%94%B0%5D+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%A1%B0%EA%B0%81+%EC%8A%A4%ED%8B%B0%EC%BB%A4+%2F+%EB%B8%94%EB%A3%A8+%ED%82%A4%EB%8B%88%EB%82%98%EB%A3%A8",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRP2ae-2eFMSXw6LgKzQuez7V1MgldswxVan-8nvo1yB-3Z18_copl6IFrBlGIjWFFh5hN2mLR-xpKvpQuPorMa9Wo9HzMg_vHAWra_8EW9zin_2QArnMAsVA",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1701,6 +1945,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%8A%A4%ED%8B%B0%EC%BB%A4+%EB%B2%BD%EA%B1%B8%EC%9D%B4+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRiS7lBcyt8lX18TmVy_YDMi4Fqyn8gUOHiFyggUb0t6DIZNsi93cWrXKftygddRpaRbSkHD2wz8hMIw86AhInkXwj4HS1hC5Zy7PPddcOVsdGW0lSzPViw",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1715,6 +1960,21 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+2way+%EB%9D%BC%EB%B2%A8%EC%8A%A4%ED%8B%B0%EC%BB%A4+%EB%B6%84%EB%A5%98%EB%9D%BC%EB%B2%A8+%EC%B1%85%EA%B0%88%ED%94%BC%EC%8A%A4%ED%8B%B0%EC%BB%A4+coupang.com",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQxR3S3meR_HRKOE5v03ke0kZtpSkeHXdgQm06oPFy_CWQGGaMrZ1_22aEw9uIwwmB9ejA_l9mdJQb4ctA5aviltjx5z3YY-MyH6VUzYk6OKs7LAbPLbixxeA",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9659996640",
+     "title": "치이카와 먼작귀 홀로그램 반짝이 투명 다꾸 스티커, 1세트, 10장",
+     "mall": "쿠팡 로켓배송",
+     "price_orig": 5450,
+     "currency": "KRW",
+     "landed_krw": 5450,
+     "ship_note": "로켓배송 (와우 회원 무료, 일반 19,800원 이상 무료)",
+     "link": "https://www.coupang.com/vp/products/9659996640?itemId=28877831463&vendorItemId=95810906481&q=먼작귀 스티커&searchId=23db7ec310082166&sourceType=search&rank=8&itemsCount=60&searchRank=8",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/11c0/edc883406231d01e0f382379b34429ca420eeab50df0f93a0cfb2db139e7.jpg",
      "suspicious": false
     },
     {
@@ -1729,6 +1989,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%8A%A4%ED%8B%B0%EC%BB%A4&prds=localAnnotatedOfferId:1,catalogid:16014033593168796950,gpcid:10743633318388286353,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRu2OYVchCkFdX3sv3zc8oTpU40SptZOqTtuJuGVxW0_2s26ZomjvWrf91i9B1rXwkb2s3p7GE3ZWAi4h79-2BgtHOIX0L-6k0gE2qvWaFOJ80sGsnW4gSu",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1743,6 +2004,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B%EB%A8%BC%EC%9E%91%EA%B7%80%5D+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A1%A4+%EB%AF%B8%EB%8B%88+%EC%8A%A4%ED%8B%B0%EC%BB%A4+2%EC%A2%85+%ED%85%90%EB%B0%94%EC%9D%B4%ED%85%90",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTlV_HRFq0tzaR02mIqgUrjg6n9VHSAbBh5WZmXzX7q7F4i1Sr2yzAR80yqbZGiK59AxVmASIiZz-hkLaSfTx_xIHPRqk6Q",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1757,6 +2019,21 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%8D%AC%EC%8A%A4%ED%83%80%EB%AC%B8%EA%B5%AC+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%86%8D%EB%8B%B4%EA%B3%B0+%EB%8B%A4%EC%9D%B4%EC%BB%B7+%EC%8A%A4%ED%8B%B0%EC%BB%A4%EC%84%B8%ED%8A%B8+%ED%8E%80%EC%B9%98+%EA%B3%A0%EC%8B%9C%EC%9C%8C%EB%B6%81%EC%8A%A4",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT4wMn0cWL6EgUk-JHNL7r8NFbTqyxqUcyChnqS3gWYVu8Gk6hHDMJH1ebCPyAtKKUhePP9Yy1CCtzf7kB71qXplurHNivBlxPNkSc9BEq6Jqwt08dWnQkRXg",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9785222661",
+     "title": "문구보따리 헬로키티 한교동 치이카와 스티커 다꾸 스티커 50장세트, 1개, 치이카와 50매",
+     "mall": "쿠팡 로켓배송",
+     "price_orig": 7900,
+     "currency": "KRW",
+     "landed_krw": 7900,
+     "ship_note": "로켓배송 (와우 회원 무료, 일반 19,800원 이상 무료)",
+     "link": "https://www.coupang.com/vp/products/9785222661?itemId=29296571959&vendorItemId=96213344973&q=먼작귀 스티커&searchId=23db7ec310082166&sourceType=search&rank=20&itemsCount=60&searchRank=20",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/fdd6/d0ee173ef2111e87e4f5a8ef148283f1b1502388df60ebe3a98a4ee77a79.jpg",
      "suspicious": false
     },
     {
@@ -1771,6 +2048,21 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%8A%A4%ED%8B%B0%EC%BB%A4&prds=localAnnotatedOfferId:1,catalogid:5806605234794290706,gpcid:16141013398115407027,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSdaRwFg5nMEfF5yG5qoHHNgu-Mv3hpwAeIDHMohEUzijhmCvXHql4nBNIe-yJJ2r7UY3K6_uVSG9h8rz53xIAiy7iY-87HLxGNer-QjQzBJT3fVW5XS2-39Q",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9605175068",
+     "title": "[사은품맛집] 먼작귀 스티커팩 스티커세트 다꾸 스티커 치이카와 하치와레 우사기 모몽가 시사 쿠리만쥬 카니 랏코, 1개, 먼작귀믹스 B",
+     "mall": "쿠팡",
+     "price_orig": 8900,
+     "currency": "KRW",
+     "landed_krw": 8900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9605175068?itemId=28674460245&vendorItemId=95616298396&q=먼작귀 스티커&searchId=23db7ec310082166&sourceType=search&rank=7&itemsCount=60&searchRank=7",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/ee6a/951d49ac3eebf1d4ce59282fab1da59d5f343bdb0551af5c4977fa94f7ac.jpg",
      "suspicious": false
     },
     {
@@ -1785,6 +2077,21 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+DIY+%ED%88%AC%EB%AA%85+%EB%B9%85%EC%8A%A4%ED%8B%B0%EC%BB%A4+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcREfKcO1xHWRzc4Ss6PC9dzu_nO3SfaK1v6uUdMISyTVO2KT5beslCjLQnnzhc6Inqrhcjt_fm5cGTcTbPme_ADdVrbQxwBsPilw0BKySR7",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9519689509",
+     "title": "작귀들 스티커 캐리어 방수스티커 리무버블 꾸미기 먼작귀이들 방수 꾸래핑 여자아이 선물, 101개, 햄스타",
+     "mall": "쿠팡 로켓배송",
+     "price_orig": 9900,
+     "currency": "KRW",
+     "landed_krw": 9900,
+     "ship_note": "로켓배송 (와우 회원 무료, 일반 19,800원 이상 무료)",
+     "link": "https://www.coupang.com/vp/products/9519689509?itemId=28377393392&vendorItemId=95329612836&q=먼작귀 스티커&searchId=23db7ec310082166&sourceType=search&rank=29&itemsCount=60&searchRank=29",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/5ee6/33765c2208c99e57f82f36225c7c1e533de75e180d51915a086c902d8528.jpg",
      "suspicious": false
     },
     {
@@ -1799,6 +2106,35 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%B3%BC%EB%A1%9D+%EC%8A%A4%ED%8B%B0%EC%BB%A4%28%ED%8D%BC%ED%94%8C+%ED%9B%84%EB%A3%A8%EC%B8%A0%ED%8C%A8%EB%B0%80%EB%A6%AC",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRpbQ2z8QJ0rO0ffNZSp-pklBkBTlRz7R3re5A5msXjh_ZXtIKs8R7lWD15T3LurepmaU7cnDCo5gsmH00Y2W9jp7gW7CCKI4euiOgVdqxD",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9811888663",
+     "title": "치이카와 캐릭터 다꾸 미니 스티커북 DIY 스티커 다이어리 30매, 1개, 먼작귀 스티커북",
+     "mall": "쿠팡",
+     "price_orig": 11900,
+     "currency": "KRW",
+     "landed_krw": 11900,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9811888663?itemId=29384840996&vendorItemId=96296406215&q=먼작귀 스티커&searchId=23db7ec310082166&sourceType=search&rank=3&itemsCount=60&searchRank=3",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/1a36/9a601a99183a8f1bd260fc6c5610e5c16ae1fa5381afe26d89ce02d43508.jpg",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9786878111",
+     "title": "치이카와 우사기 하치와레 대용량 스티커북 다꾸 DIY 데코 재료, 기이카와 스티커북 [1권 30페이지] + 분홍색 핀셋",
+     "mall": "쿠팡",
+     "price_orig": 16880,
+     "currency": "KRW",
+     "landed_krw": 16880,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9786878111?itemId=29302407531&vendorItemId=96217940827&q=먼작귀 스티커&searchId=23db7ec310082166&sourceType=search&rank=10&itemsCount=60&searchRank=10",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/53ae/211db195dd6c6580c1ae5f1e1b65ae85b5f0f069aa0d8418e5b3b463ad5b.jpeg",
      "suspicious": false
     },
     {
@@ -1813,6 +2149,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%A8%BC%EC%9E%91%EA%B7%80+%EC%8A%A4%EC%8B%9C+%EC%B4%88%EB%B0%A5+%EC%8A%A4%ED%8B%B0%EC%BB%A4+%EB%8D%B0%EC%BD%94+%EB%8B%A4%EA%BE%B8%2C+1%EA%B0%9C%2C+%ED%88%AC%EB%AA%85+PVC+25%EB%A7%A4+5CM+coupang.com",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQkLQXC_gExhKnzR7Ohr_tRk65hps1VUZ8CGuz9DJgnsTdeKZqcQnqugVJ3Zeq3iR7ul4nIDFbO41wAQIn8N_Osqq2Aw5vT",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1827,6 +2164,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EB%86%8D%EB%8B%B4%EA%B3%B0+%EB%8D%B0%EC%BD%94+%EB%A1%A4%EC%8A%A4%ED%8B%B0%EC%BB%A4+%EB%9D%BC%EB%B2%A8V+%EB%8D%B0%EC%BD%94%ED%85%8C%EC%9D%B4%ED%94%84+%EB%8B%A4%EA%BE%B8%EC%9A%A9+%EC%BA%90%EB%A6%AD%ED%84%B0+%EC%8A%A4%ED%8B%B0%EC%BB%A4+%EC%84%B8%ED%8A%B8+gsshop",
      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOuJhLvW0YoIIPLw-wH5TPUHxr8zRb4Wd1pE00oIm07yxCvFMsb9HOTFKs7QYGNMWLRPAPWcryZFIviMWaaA_LhRvi5xL8X9Mri5LBquZ50lgZl9kbQMBs",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1841,6 +2179,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%5B%EB%A8%BC%EC%9E%91%EA%B7%80%5D+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%9E%85%EC%B2%B4+%EC%8A%A4%ED%8B%B0%EC%BB%A4%EB%A9%94%EC%9D%B4%EC%BB%A4+%ED%85%90%EB%B0%94%EC%9D%B4%ED%85%90",
      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRYPnfFdJ7qPldf6NIYyec8735jSPo6IkI08g9GF9BjvY2FQF00ZQDX7S_Fm0lj3AS20I1zEo-eR0VDUoJ44zzL1EsZKd7Z5w",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     },
     {
@@ -1855,6 +2194,7 @@
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?ibp=oshop&q=%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+%EC%8A%A4%ED%8B%B0%EC%BB%A4&prds=localAnnotatedOfferId:1,catalogid:16212071489331122560,gpcid:1272967805350506472,pvo:2,pvt:hg&gl=kr&udm=28&pvorigin=2",
      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTyQcHAgLKszmYtSQuyo60HbTYAVKYltbGjLwbqUY_pI9b5HYbNYTq6AsGJQtpcjTig0ceZRTyfQqbqkwx6aQeO1V9w_lf-9eFc7DwFe6Tm",
+     "fetched_at": "2026-11-12T14:45+00:00",
      "suspicious": false
     }
    ]
@@ -1865,34 +2205,50 @@
    "target_krw": 12000,
    "sell_price": 22000,
    "best": {
-    "source": "google",
+    "source": "coupang",
     "region": "KR",
-    "key": "google:8282304309794330223",
-    "title": "예쁜 핸들머그컵 라이너 치이카와",
-    "mall": "domemall.kr",
-    "price_orig": 13050,
+    "key": "coupang:9632172850",
+    "title": "먼작귀 인어 투명 유리컵 글라스 머그 맥주잔, 1개, 우사기",
+    "mall": "쿠팡",
+    "price_orig": 10500,
     "currency": "KRW",
-    "landed_krw": 13050,
-    "ship_note": "배송비 판매처별 상이",
-    "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%98%88%EC%81%9C+%ED%95%B8%EB%93%A4%EB%A8%B8%EA%B7%B8%EC%BB%B5+%EB%9D%BC%EC%9D%B4%EB%84%88+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+domemall.kr",
-    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSkc5sprd7DcpVlKeq7hEWP3o3DnAWj_x3bfO-6PrzuRmsBjaIllVn45EViccG9Yb1DVEzpubP9Ml_WbPJCzN1OG37ykbcva-JOcOTe-P-FPPvCtOJI_oH1lQ"
+    "landed_krw": 10500,
+    "ship_note": "배송비 판매자별 상이",
+    "link": "https://www.coupang.com/vp/products/9632172850?itemId=28772026685&vendorItemId=95709804221&q=먼작귀 머그컵&searchId=666009819086937&sourceType=search&rank=4&itemsCount=60&searchRank=4",
+    "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/63e1/be3ab04dea9b1390b30ffb3f06684c524c5cacf305757d7760823acad837.jpg",
+    "suspicious": false
    },
    "best_kr": {
-    "source": "google",
+    "source": "coupang",
     "region": "KR",
-    "key": "google:8282304309794330223",
-    "title": "예쁜 핸들머그컵 라이너 치이카와",
-    "mall": "domemall.kr",
-    "price_orig": 13050,
+    "key": "coupang:9632172850",
+    "title": "먼작귀 인어 투명 유리컵 글라스 머그 맥주잔, 1개, 우사기",
+    "mall": "쿠팡",
+    "price_orig": 10500,
     "currency": "KRW",
-    "landed_krw": 13050,
-    "ship_note": "배송비 판매처별 상이",
-    "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%98%88%EC%81%9C+%ED%95%B8%EB%93%A4%EB%A8%B8%EA%B7%B8%EC%BB%B5+%EB%9D%BC%EC%9D%B4%EB%84%88+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+domemall.kr",
-    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSkc5sprd7DcpVlKeq7hEWP3o3DnAWj_x3bfO-6PrzuRmsBjaIllVn45EViccG9Yb1DVEzpubP9Ml_WbPJCzN1OG37ykbcva-JOcOTe-P-FPPvCtOJI_oH1lQ"
+    "landed_krw": 10500,
+    "ship_note": "배송비 판매자별 상이",
+    "link": "https://www.coupang.com/vp/products/9632172850?itemId=28772026685&vendorItemId=95709804221&q=먼작귀 머그컵&searchId=666009819086937&sourceType=search&rank=4&itemsCount=60&searchRank=4",
+    "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/63e1/be3ab04dea9b1390b30ffb3f06684c524c5cacf305757d7760823acad837.jpg",
+    "suspicious": false
    },
    "best_jp": null,
-   "all_time_low": 13050,
+   "all_time_low": 10500,
    "offers": [
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9632172850",
+     "title": "먼작귀 인어 투명 유리컵 글라스 머그 맥주잔, 1개, 우사기",
+     "mall": "쿠팡",
+     "price_orig": 10500,
+     "currency": "KRW",
+     "landed_krw": 10500,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9632172850?itemId=28772026685&vendorItemId=95709804221&q=먼작귀 머그컵&searchId=666009819086937&sourceType=search&rank=4&itemsCount=60&searchRank=4",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/63e1/be3ab04dea9b1390b30ffb3f06684c524c5cacf305757d7760823acad837.jpg",
+     "suspicious": false
+    },
     {
      "source": "google",
      "region": "KR",
@@ -1904,7 +2260,51 @@
      "landed_krw": 13050,
      "ship_note": "배송비 판매처별 상이",
      "link": "https://www.google.com/search?udm=28&gl=kr&hl=ko&q=%EC%98%88%EC%81%9C+%ED%95%B8%EB%93%A4%EB%A8%B8%EA%B7%B8%EC%BB%B5+%EB%9D%BC%EC%9D%B4%EB%84%88+%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80+domemall.kr",
-     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSkc5sprd7DcpVlKeq7hEWP3o3DnAWj_x3bfO-6PrzuRmsBjaIllVn45EViccG9Yb1DVEzpubP9Ml_WbPJCzN1OG37ykbcva-JOcOTe-P-FPPvCtOJI_oH1lQ"
+     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSkc5sprd7DcpVlKeq7hEWP3o3DnAWj_x3bfO-6PrzuRmsBjaIllVn45EViccG9Yb1DVEzpubP9Ml_WbPJCzN1OG37ykbcva-JOcOTe-P-FPPvCtOJI_oH1lQ",
+     "fetched_at": "2026-11-12T14:45+00:00",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9775604943",
+     "title": "치이카와 캐릭터 도자기 머그컵 귀여운 커피컵 우유컵 물컵 홈카페 머그잔, 1개, Hachiware",
+     "mall": "쿠팡",
+     "price_orig": 14890,
+     "currency": "KRW",
+     "landed_krw": 14890,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9775604943?itemId=29263336247&vendorItemId=96181001648&q=먼작귀 머그컵&searchId=666009819086937&sourceType=search&rank=3&itemsCount=60&searchRank=3",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/e051/34d3ef0713cf4796e1ab0dcf074ff731b068b02ac8b6b1d2a30c0769742e.jpg",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9789038937",
+     "title": "먼작귀 치이카와 우사기 하치와레 세라믹 머그컵 머그잔 물컵 물잔 인테리어 귀여운 선물, A. 노란색 머그컵 x 1종, 1개",
+     "mall": "쿠팡",
+     "price_orig": 15100,
+     "currency": "KRW",
+     "landed_krw": 15100,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9789038937?itemId=29308719528&vendorItemId=96223958416&q=먼작귀 머그컵&searchId=666009819086937&sourceType=search&rank=1&itemsCount=60&searchRank=1",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/863b/d44b922568429824ec328ea7fbf006447b354ef428d0dea17bdcd02ec89b.jpeg",
+     "suspicious": false
+    },
+    {
+     "source": "coupang",
+     "region": "KR",
+     "key": "coupang:9542927721",
+     "title": "먼작귀 치이카와 우사기 하치와레 세라믹 머그컵 머그잔 물컵 물잔 인테리어 귀여운 선물 굿즈 YTR324986, 3개（모델당 1개씩）, 3개",
+     "mall": "쿠팡",
+     "price_orig": 23800,
+     "currency": "KRW",
+     "landed_krw": 23800,
+     "ship_note": "배송비 판매자별 상이",
+     "link": "https://www.coupang.com/vp/products/9542927721?itemId=28466963661&vendorItemId=96244438153&q=먼작귀 머그컵&searchId=666009819086937&sourceType=search&rank=0&itemsCount=60&searchRank=0",
+     "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/1fc1/66b62bec102cda4e49facd6a03e2b035eeecc8b8433e37bddb0690127a9c.png",
+     "suspicious": false
     }
    ]
   }
