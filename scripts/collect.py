@@ -457,6 +457,12 @@ def serpapi_naver(query):
 _KANA = re.compile(r"[぀-ヿ]")
 
 
+def google_shop_link(title, store):
+    """Serper가 판매처 링크를 안 줄 때가 많아서(약 70%), 상품명+쇼핑몰로 구글쇼핑 검색 페이지를 대신 건다."""
+    q = f"{title or ''} {store or ''}".strip()
+    return "https://www.google.com/search?" + urllib.parse.urlencode({"udm": 28, "gl": "kr", "hl": "ko", "q": q})
+
+
 def serper_google(query):
     """Serper로 구글 쇼핑(한국)을 검색한다. 쿠팡·SSG·에이블리·텐바이텐 등이 원화로 나온다. 실패하면 None."""
     key = (os.getenv("SERPER_API_KEY") or "").strip()
@@ -499,17 +505,18 @@ def serper_google(query):
         else:
             fee, note = 0, "배송비 판매처별 상이"
         pid = it.get("productId") or hashlib.md5(f"{it.get('title')}|{store}".encode()).hexdigest()[:12]
+        title = clean_title(it.get("title"))
         out.append({
             "source": "google",
             "region": "KR",
             "key": f"google:{pid}",
-            "title": clean_title(it.get("title")),
+            "title": title,
             "mall": store[:30] or "구글쇼핑",
             "price_orig": price,
             "currency": "KRW",
             "landed_krw": price + fee,
             "ship_note": note,
-            "link": it.get("link"),
+            "link": it.get("link") or google_shop_link(title, store),
             "image": it.get("imageUrl"),
         })
     log(f"[Serper] {query}: 구글쇼핑 {len(out)}건" + (f" (일본 쇼핑몰 {skipped_jp}건 제외)" if skipped_jp else ""))
