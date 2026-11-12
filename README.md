@@ -28,7 +28,7 @@ docs/data/              수집 결과 (자동 커밋)
 | 네이버쇼핑 칸 (선택) | serpapi.com 가입 (무료 월 250회) → serpapi.com/manage-api-key | Private API Key |
 | 구글쇼핑 (선택) | serper.dev 가입 (카드 없이 무료 2,500회, 한 번만 줌) → serper.dev/api-keys | API Key |
 | 쿠팡 (선택) | apify.com 가입 (카드 없이 무료 월 $5) → console.apify.com/settings/integrations | Personal API token |
-| 라쿠텐 (선택) | webservice.rakuten.co.jp → アプリID発行 | アプリID, アクセスキー |
+| 라쿠텐 (선택) | 라쿠텐 회원 로그인 → webservice.rakuten.co.jp/app/create (새 앱 등록) | アプリケーションID(UUID 형식) + アクセスキー(`pk_`로 시작) — 둘 다 필요 |
 | 야후쇼핑 (선택) | e.developer.yahoo.co.jp/register (일본 휴대폰 번호 필요) | Client ID |
 | 알림 (선택) | 텔레그램 @BotFather → /newbot | 봇 토큰 + 내 chat id |
 
@@ -43,7 +43,7 @@ docs/data/              수집 결과 (자동 커밋)
 2. **Settings → Secrets and variables → Actions → New repository secret** 에 아래 이름으로 등록
    `ELEVENST_API_KEY`, `SERPAPI_KEY`, `SERPER_API_KEY`, `APIFY_TOKEN`, `RAKUTEN_APP_ID`, `RAKUTEN_ACCESS_KEY`, `YAHOO_APP_ID`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
 3. **Settings → Pages** → Branch `main`, 폴더 `/docs` → Save
-4. `config/settings.json` 의 `rakuten_origin` 을 사이트 주소(현재 `https://chiikawa-price.vercel.app`)로 맞추고, 라쿠텐 앱 등록 때 **アプリケーションタイプ: Webアプリケーション**, **許可されたWebサイト: `chiikawa-price.vercel.app`** 로 등록 (2026년 새 API는 이 주소의 Referer 헤더를 확인함)
+4. `config/settings.json` 의 `rakuten_origin` 을 사이트 주소(현재 `https://chiikawa-price.vercel.app`)로 맞추고, 라쿠텐 앱 등록 때 **アプリケーションタイプ: Webアプリケーション**, **許可されたWebサイト: `chiikawa-price.vercel.app`** 로 등록 (2026년 새 API는 이 주소의 Referer 헤더를 확인함). 2026-05-13 이전에 만든 앱 키는 새 API에서 안 되니 새로 등록해야 해요. 키가 틀리면 수집 로그에 `⚠ [라쿠텐] …` 으로 무엇을 확인할지 찍힙니다
 5. **Actions 탭 → 먼작귀 최저가 수집 → Run workflow** 로 첫 실행
 
 이후 `https://아이디.github.io/chiikawa-price/` 에서 확인. 홈 화면에 추가하면 앱처럼 쓸 수 있어요.

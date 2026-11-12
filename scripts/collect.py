@@ -21,7 +21,7 @@ SerpApi·Apify는 쓴 만큼 한도가 줄어서, 남은 한도를 다음 갱신
   SERPER_API_KEY                         (선택, 국내 구글쇼핑 — serper.dev)
   APIFY_TOKEN                            (선택, 국내 쿠팡 — apify.com)
   NAVER_CLIENT_ID, NAVER_CLIENT_SECRET   (예전 네이버쇼핑용 — 종료됨, 없어도 됨)
-  RAKUTEN_APP_ID, RAKUTEN_ACCESS_KEY     (선택, 라쿠텐)
+  RAKUTEN_APP_ID, RAKUTEN_ACCESS_KEY     (선택, 라쿠텐 — 2026-05-13 이후 새로 등록한 앱의 UUID 앱ID + pk_ 액세스키, 둘 다 필요)
   YAHOO_APP_ID                           (선택, 야후쇼핑)
   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID   (선택, 알림)
 
@@ -221,26 +221,46 @@ def elevenst(query):
 _RAKUTEN_OK_VER = []  # 이번 실행에서 응답이 온 API 버전 (한 번 찾으면 계속 사용)
 
 
+def _rakuten_hint(body):
+    """라쿠텐 401/403 응답에서 사용자가 고칠 곳을 짚어 준다."""
+    if "REFERRER" in body.upper() or "REFERER" in body.upper():
+        return ("라쿠텐 앱 설정의 '許可されたWebサイト'에 chiikawa-price.vercel.app 이 들어 있는지, "
+                "settings.json 의 rakuten_origin 과 같은지 확인하세요.")
+    if "access key" in body.lower() or "accesskey" in body.lower():
+        return "RAKUTEN_ACCESS_KEY(pk_로 시작)가 이 앱ID의 액세스키가 맞는지 확인하세요."
+    if "application" in body.lower():
+        return "RAKUTEN_APP_ID(새 형식은 UUID)가 맞는지, 2026-05-13 이후 새로 등록한 앱인지 확인하세요."
+    return "앱ID·액세스키·許可されたWebサイト 설정을 확인하세요."
+
+
 def rakuten(query, fx, s):
-    app, key = os.getenv("RAKUTEN_APP_ID"), os.getenv("RAKUTEN_ACCESS_KEY")
-    if not app:
+    app = (os.getenv("RAKUTEN_APP_ID") or "").strip()
+    key = (os.getenv("RAKUTEN_ACCESS_KEY") or "").strip()
+    if not app or "rakuten" in _SKIP:
+        return []
+    if not key:  # 2026년 새 API는 accessKey 없으면 400 "accessKey must be present"
+        log("⚠ [라쿠텐] RAKUTEN_ACCESS_KEY(pk_로 시작)가 없어 건너뜁니다. 새 API는 앱ID와 액세스키가 둘 다 필요해요.")
+        _SKIP.add("rakuten")
         return []
     # 2026년 새 API는 앱 등록 때 넣은 '許可されたWebサイト'와 같은 주소의 Referer 헤더를 확인함
     site = s.get("rakuten_origin", "https://example.com").rstrip("/")
     headers = {"Origin": site, "Referer": site + "/"}
     out = []
     for sort in ("standard", "+itemPrice"):
-        params = {"applicationId": app, "keyword": query, "hits": 30, "sort": sort,
+        params = {"applicationId": app, "accessKey": key, "keyword": query, "hits": 30, "sort": sort,
                   "availability": 1, "format": "json", "formatVersion": 2}
-        if key:
-            params["accessKey"] = key
         d = None
         for ver in list(_RAKUTEN_OK_VER or s.get("rakuten_api_versions") or ["20260701", "20220601"]):
             url = f"https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/{ver}?" + urllib.parse.urlencode(params)
             try:
                 d = http_json(url, headers)
             except urllib.error.HTTPError as e:
-                log(f"[라쿠텐 {ver}] {query} 실패: HTTP {e.code}", e.read().decode("utf-8", "replace")[:200])
+                body = " ".join(e.read().decode("utf-8", "replace").split())
+                log(f"[라쿠텐 {ver}] {query} 실패: HTTP {e.code}", body[:200])
+                if e.code in (401, 403):  # 키·허용 사이트 오류는 버전을 바꿔도 같음 → 이번 실행에서 라쿠텐 중단
+                    log("⚠ [라쿠텐] " + _rakuten_hint(body))
+                    _SKIP.add("rakuten")
+                    return out
                 d = None
             except Exception as e:  # noqa: BLE001
                 log(f"[라쿠텐 {ver}] {query} 실패:", e)
