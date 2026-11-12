@@ -12,11 +12,15 @@
     "must_ko": [
       [
         "치이카와",
-        "먼작귀"
+        "먼작귀",
+        "chiikawa",
+        "ちいかわ"
       ],
       [
         "인형",
-        "봉제"
+        "봉제",
+        "plush",
+        "stuffed"
       ]
     ],
     "must_ja": [
@@ -32,7 +36,12 @@
       "씰",
       "키트",
       "키링",
-      "볼펜"
+      "볼펜",
+      "keychain",
+      "key chain",
+      "keyring",
+      "key ring",
+      "sticker"
     ],
     "exclude_ja": [
       "シール",
@@ -60,11 +69,20 @@
     ],
     "must_ko": [
       [
-        "하치와레"
+        "치이카와",
+        "먼작귀",
+        "chiikawa",
+        "ちいかわ"
+      ],
+      [
+        "하치와레",
+        "hachiware"
       ],
       [
         "인형",
-        "봉제"
+        "봉제",
+        "plush",
+        "stuffed"
       ]
     ],
     "must_ja": [
@@ -83,7 +101,12 @@
       "씰",
       "키트",
       "키링",
-      "볼펜"
+      "볼펜",
+      "keychain",
+      "key chain",
+      "keyring",
+      "key ring",
+      "sticker"
     ],
     "exclude_ja": [
       "シール",
@@ -112,11 +135,20 @@
     ],
     "must_ko": [
       [
-        "우사기"
+        "치이카와",
+        "먼작귀",
+        "chiikawa",
+        "ちいかわ"
+      ],
+      [
+        "우사기",
+        "usagi"
       ],
       [
         "인형",
-        "봉제"
+        "봉제",
+        "plush",
+        "stuffed"
       ]
     ],
     "must_ja": [
@@ -135,7 +167,12 @@
       "씰",
       "키트",
       "키링",
-      "볼펜"
+      "볼펜",
+      "keychain",
+      "key chain",
+      "keyring",
+      "key ring",
+      "sticker"
     ],
     "exclude_ja": [
       "シール",
@@ -161,13 +198,23 @@
     "ja": [
       "ちいかわ モモンガ ぬいぐるみ"
     ],
+    "google_q": "chiikawa momonga plush",
     "must_ko": [
       [
-        "모몽가"
+        "치이카와",
+        "먼작귀",
+        "chiikawa",
+        "ちいかわ"
+      ],
+      [
+        "모몽가",
+        "momonga"
       ],
       [
         "인형",
-        "봉제"
+        "봉제",
+        "plush",
+        "stuffed"
       ]
     ],
     "must_ja": [
@@ -186,7 +233,12 @@
       "씰",
       "키트",
       "키링",
-      "볼펜"
+      "볼펜",
+      "keychain",
+      "key chain",
+      "keyring",
+      "key ring",
+      "sticker"
     ],
     "exclude_ja": [
       "シール",

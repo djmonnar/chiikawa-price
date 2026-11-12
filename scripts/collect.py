@@ -581,10 +581,11 @@ def pick_groups(groups, n, slot):
     return {g["id"] for g in ordered[:n]}
 
 
-def paid_offers(g, fetch, slot, fresh, s):
-    """이번 차례인 상품은 새로 조회하고, 아니면 cache.json의 지난 결과를 쓴다."""
+def paid_offers(g, fetch, slot, fresh, s, qkey=None):
+    """이번 차례인 상품은 새로 조회하고, 아니면 cache.json의 지난 결과를 쓴다.
+    qkey가 있으면 그 소스 전용 검색어(예: google_q)를 먼저 쓰고, 없으면 ko 첫 검색어."""
     now = datetime.now(timezone.utc)
-    q = (g.get("ko") or [None])[0]
+    q = (qkey and g.get(qkey)) or (g.get("ko") or [None])[0]
     if q and g["id"] in fresh:
         got = fetch(q)
         if got is not None:
@@ -690,13 +691,13 @@ def main():
     cache = {} if mock else load_json(CACHE, {})
     paid = []
     if not mock:
-        for name, quota, fetch in (("serpapi", serpapi_quota, serpapi_naver),
-                                   ("serper", serper_quota, serper_google),
-                                   ("apify", apify_quota, lambda q: apify_coupang(q, s))):
+        for name, quota, fetch, qkey in (("serpapi", serpapi_quota, serpapi_naver, None),
+                                         ("serper", serper_quota, serper_google, "google_q"),
+                                         ("apify", apify_quota, lambda q: apify_coupang(q, s), None)):
             slot = cache.setdefault(name, {})
             for gid in [k for k in slot if k not in {g["id"] for g in groups}]:
                 slot.pop(gid)  # keywords.json에서 빠진 상품은 지움
-            paid.append((fetch, slot, pick_groups(groups, quota(s, len(groups)), slot)))
+            paid.append((fetch, slot, pick_groups(groups, quota(s, len(groups)), slot), qkey))
 
     for g in groups:
         if mock:
@@ -705,8 +706,8 @@ def main():
             raw = []
             for q in g.get("ko", []):
                 raw += elevenst(q) + naver(q)
-            for fetch, slot, fresh in paid:
-                raw += paid_offers(g, fetch, slot, fresh, s)
+            for fetch, slot, fresh, qkey in paid:
+                raw += paid_offers(g, fetch, slot, fresh, s, qkey)
             for q in g.get("ja", []):
                 raw += rakuten(q, fx, s) + yahoo(q, fx, s)
         offers = finalize([o for o in raw if relevant(o, g, s)], s)
