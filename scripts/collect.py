@@ -709,11 +709,17 @@ def finalize(offers, s):
             continue
         seen.add(o["key"])
         uniq.append(o)
-    if len(uniq) >= 5:
-        med = statistics.median(o["landed_krw"] for o in uniq)
-        for o in uniq:
-            o["suspicious"] = o["landed_krw"] < med * s["suspicious_ratio"]
-    return uniq[: s["max_offers_per_group"]]
+    # 가품의심·개수 제한은 국내/일본을 따로: 일본 도착가는 배대지비 등이 붙어 비싸서, 섞으면 중간값이 올라가
+    # 국내 정상가가 가품의심으로 숨겨지고(2026-11-13 스티커 2,500원 등), 40개 제한에 일본 상품이 통째로 잘릴 수 있음
+    kept = []
+    for region in ("KR", "JP"):
+        same = [o for o in uniq if o["region"] == region]
+        if len(same) >= 5:
+            med = statistics.median(o["landed_krw"] for o in same)
+            for o in same:
+                o["suspicious"] = o["landed_krw"] < med * s["suspicious_ratio"]
+        kept += same[: s["max_offers_per_group"]]
+    return sorted(kept, key=lambda x: x["landed_krw"])
 
 
 # ---------------------------------------------------------------- 모의 데이터
