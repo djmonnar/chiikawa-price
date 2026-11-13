@@ -21,6 +21,8 @@
     "그립톡",
     "中古",
     "ジャンク",
+    "まとめ売り",
+    "美品",
     "ケース"
   ],
   "_라쿠텐설명": "라쿠텐 앱 등록 때 '許可されたWebサイト'에 넣은 주소와 같아야 해요. 앞의 버전이 안 되면 다음 버전을 시도합니다.",
@@ -33,7 +35,7 @@
   "serper_refresh_hours": 24,
   "serper_jp_refresh_hours": 24,
   "_일본구글설명": "라쿠텐 키를 못 받는 동안 일본 구글쇼핑으로 일본 가격을 가져와요. 아래 쇼핑몰은 중고 거래처라 뺍니다.",
-  "jp_google_exclude_shops": ["メルカリ", "ラクマ", "PayPayフリマ", "ヤフオク", "オークション", "駿河屋", "ブックオフ", "BOOKOFF", "2nd STREET", "セカンドストリート", "eBay"],
+  "jp_google_exclude_shops": ["メルカリ", "mercari", "ラクマ", "rakuma", "fril", "PayPayフリマ", "paypayfleamarket", "ヤフオク", "オークション", "auction", "駿河屋", "suruga-ya", "ブックオフ", "BOOKOFF", "2nd STREET", "2ndstreet", "セカンドストリート", "eBay"],
   "apify_coupang_actor": "piotrv1001~coupang-listings-scraper",
   "apify_coupang_sort": "relevance",
   "apify_items_per_keyword": 10,

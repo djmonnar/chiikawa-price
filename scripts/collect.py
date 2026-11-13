@@ -694,6 +694,8 @@ def relevant(offer, group, s):
     excl = s["exclude_words"] + (group.get("exclude_ja" if jp else "exclude_ko") or [])
     if any(w.lower() in t for w in excl):
         return False
+    if jp and any(w.lower() in (offer.get("mall") or "").lower() for w in s.get("jp_google_exclude_shops", [])):
+        return False  # 중고 거래처 (cache.json 에 남은 지난 결과도 바로 걸러지게 여기서도 확인)
     must = group.get("must_ja" if jp else "must_ko") or []
     if must and isinstance(must[0], str):
         must = [must]
