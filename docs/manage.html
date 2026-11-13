@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>상품 관리 · 먼작귀 최저가 노트</title>
+<style>
+  :root{
+    --bg:#fbf7f2; --card:#fff; --ink:#2b2622; --sub:#7d736b; --line:#ece4da;
+    --accent:#e86f8f; --accent-soft:#fde8ee; --kr:#3b7ddd; --jp:#d9534f; --good:#2f9e6e; --good-soft:#e3f5ec;
+    --warn:#b7791f; --warn-soft:#fdf2dc; --radius:16px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#181614; --card:#221f1c; --ink:#f1ebe4; --sub:#a89e94; --line:#35302b;
+      --accent-soft:#3b2229; --good-soft:#1c3328; --warn-soft:#3a2f17; color-scheme:dark; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));word-break:keep-all;overflow-wrap:anywhere}
+  .wrap{max-width:720px;margin:0 auto;padding:0 16px;display:flex;flex-direction:column;gap:12px}
+  header{padding:18px 0 4px;display:flex;flex-direction:column;gap:4px}
+  header a.back{color:var(--sub);font-size:13px;text-decoration:none}
+  h1{font-size:22px;margin:0;letter-spacing:-.3px}
+  h1 span{color:var(--accent)}
+  h2{font-size:17px;margin:0}
+  .meta{color:var(--sub);font-size:13px}
+  a{color:var(--accent)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;display:flex;flex-direction:column;gap:10px}
+  .notice{border-radius:12px;padding:10px 12px;font-size:14px}
+  .notice.warn{background:var(--warn-soft);color:var(--ink)}
+  .notice.good{background:var(--good-soft);color:var(--ink)}
+  .notice.bad{background:var(--accent-soft);color:var(--ink)}
+  ol.steps{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:14px}
+  code{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:0 5px;font-size:13px}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .grow{flex:1 1 160px;min-width:0}
+  input[type=text],input[type=password],input[type=number],input:not([type]),textarea{
+    width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:12px;padding:10px 12px;font:inherit;font-size:16px}
+  textarea{resize:vertical;min-height:64px;line-height:1.45}
+  input:focus-visible,textarea:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:1px}
+  button{font:inherit;cursor:pointer}
+  .btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:9px 14px;font-size:14px;white-space:nowrap}
+  .btn.main{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:600}
+  .btn.danger{color:var(--jp)}
+  .btn.icon{padding:7px 10px;min-width:38px}
+  .btn:disabled{opacity:.45;cursor:default}
+  .add{width:100%;padding:13px;font-size:15px;font-weight:600;border-style:dashed}
+
+  .item{display:flex;flex-direction:column;gap:6px}
+  .item + .item{border-top:1px dashed var(--line);padding-top:12px}
+  .item .top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+  .item h3{font-size:16px;margin:0}
+  .item .now{font-size:13px;color:var(--sub);text-align:right;white-space:nowrap}
+  .item .now b{color:var(--ink);font-size:14px}
+  .item .q{font-size:13px;color:var(--sub)}
+  .tag{font-size:11px;padding:1px 6px;border-radius:6px;margin-right:4px;font-weight:600;white-space:nowrap}
+  .tag.KR{background:#e3edfb;color:var(--kr)} .tag.JP{background:#fbe5e4;color:var(--jp)}
+  .tag.new{background:var(--warn-soft);color:var(--warn)}
+  .acts{display:flex;gap:6px;flex-wrap:wrap}
+
+  #form{display:flex;flex-direction:column;gap:14px}
+  #lockForm{flex-wrap:nowrap}
+  label.f{display:flex;flex-direction:column;gap:5px;font-weight:600;font-size:14px}
+  label.f small,.hint{font-weight:400;color:var(--sub);font-size:12.5px}
+  .chk{display:flex;gap:8px;align-items:flex-start;font-size:14px}
+  .chk input{width:20px;height:20px;margin:1px 0 0;flex:none}
+  details{border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+  details[open]{display:flex;flex-direction:column;gap:12px}
+  summary{cursor:pointer;font-weight:600;font-size:14px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .formbar{position:sticky;bottom:0;background:var(--bg);padding:10px 0 calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;flex-wrap:wrap;align-items:center;border-top:1px solid var(--line)}
+  #toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);background:var(--ink);color:var(--bg);
+    padding:9px 16px;border-radius:999px;font-size:14px;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none;z-index:20;max-width:calc(100% - 32px);text-align:center}
+  #toast.show{opacity:1;transform:translate(-50%,0)}
+  @media (prefers-reduced-motion: reduce){#toast{transition:none}}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="./">← 최저가 목록</a>
+    <h1>먼작귀 <span>상품 관리</span></h1>
+    <div class="meta" id="meta">불러오는 중…</div>
+  </header>
+
+  <!-- GitHub Pages 에서 열었을 때 -->
+  <div class="notice warn" id="pagesNote" hidden>
+    상품 관리는 <a href="https://chiikawa-price.vercel.app/manage.html">chiikawa-price.vercel.app/manage.html</a> 에서 할 수 있어요.
+  </div>
+
+  <!-- 설정 전 안내 -->
+  <section class="box" id="setup" hidden>
+    <h2>처음 한 번: 저장 설정</h2>
+    <p class="meta">사이트에서 바꾼 목록을 GitHub에 저장하려면 열쇠 두 개가 필요해요. 값은 직접 넣어 주세요.</p>
+    <ol class="steps">
+      <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub 새 토큰 만들기</a>
+        → Repository access: <b>Only select repositories</b> → <code>chiikawa-price</code>
+        → Permissions에서 <b>Contents</b>와 <b>Actions</b>를 <b>Read and write</b>로 → Generate</li>
+      <li>Vercel → chiikawa-price → Settings → Environment Variables에 두 개 추가:
+        <code>GITHUB_TOKEN</code> = 방금 만든 토큰, <code>ADMIN_PASSWORD</code> = 이 화면에서 쓸 비밀번호</li>
+      <li>Vercel → Deployments → 맨 위 배포의 ⋯ → <b>Redeploy</b></li>
+    </ol>
+    <p class="meta" id="setupState"></p>
+  </section>
+
+  <!-- 비밀번호 -->
+  <section class="box" id="lock" hidden>
+    <h2>관리 비밀번호</h2>
+    <form id="lockForm" class="row" autocomplete="on">
+      <input class="grow" type="password" id="pw" autocomplete="current-password" placeholder="ADMIN_PASSWORD" aria-label="관리 비밀번호">
+      <button class="btn main" type="submit">확인</button>
+    </form>
+    <p class="hint">한 번 맞으면 이 창을 닫을 때까지 다시 안 물어봐요.</p>
+  </section>
+
+  <div class="notice" id="status" role="status" aria-live="polite" hidden></div>
+
+  <!-- 목록 -->
+  <section class="box" id="listView">
+    <div class="row" style="justify-content:space-between">
+      <h2 id="count">추적 상품</h2>
+      <span class="hint">위·아래 화살표로 순서를 바꿔요</span>
+    </div>
+    <div id="list"></div>
+    <button class="btn add" type="button" id="addBtn">+ 상품 추가</button>
+  </section>
+
+  <!-- 추가·수정 -->
+  <section class="box" id="formView" hidden>
+    <h2 id="formTitle">상품 추가</h2>
+    <form id="form" novalidate>
+      <label class="f">상품 이름
+        <input type="text" id="f_name" maxlength="40" placeholder="예: 하치와레 키링" required>
+        <small>목록에 보일 이름이에요.</small>
+      </label>
+
+      <label class="chk"><input type="checkbox" id="f_brand" checked>
+        <span>치이카와(먼작귀) 굿즈예요<br><small class="hint">상품명에 ‘치이카와·먼작귀·chiikawa·ちいかわ’ 중 하나가 있는 것만 모아요. 일반 상품이면 끄세요.</small></span>
+      </label>
+
+      <label class="f">국내 검색어
+        <textarea id="f_ko" rows="2" placeholder="한 줄에 하나 (최대 3개)"></textarea>
+        <small>쿠팡·11번가 등에서 이 말로 찾아요.</small>
+      </label>
+
+      <label class="f">꼭 들어갈 말 (국내)
+        <textarea id="f_must_ko" rows="2" placeholder="예: 하치와레, hachiware&#10;키링, 키홀더, keyring"></textarea>
+        <small>한 줄 = 꼭 있어야 하는 것. 쉼표로 묶은 말은 그중 하나만 있으면 돼요.</small>
+      </label>
+
+      <label class="f">빼는 말 (국내)
+        <input type="text" id="f_ex_ko" placeholder="예: 스티커, 십자수, DIY">
+        <small>이 말이 들어간 상품은 빼요. 쉼표로 구분.</small>
+      </label>
+
+      <label class="f">구글쇼핑 검색어 <span class="hint">(선택)</span>
+        <input type="text" id="f_gq" maxlength="60" placeholder="비우면 첫 번째 국내 검색어">
+        <small>구글은 영어가 더 잘 맞을 때가 있어요. 예: chiikawa hachiware keychain</small>
+      </label>
+
+      <label class="f">일본 검색어 <span class="hint">(선택)</span>
+        <textarea id="f_ja" rows="2" placeholder="예: ちいかわ ハチワレ キーホルダー"></textarea>
+        <small id="jaHint">비우면 일본 가격은 안 찾아요.</small>
+      </label>
+
+      <details id="jpMore">
+        <summary>일본 세부 설정</summary>
+        <label class="f">꼭 들어갈 말 (일본)
+          <textarea id="f_must_ja" rows="2" placeholder="예: ハチワレ&#10;キーホルダー, キーチェーン"></textarea>
+        </label>
+        <label class="f">빼는 말 (일본)
+          <input type="text" id="f_ex_ja" placeholder="예: シール, ステッカー">
+        </label>
+        <label class="f">일본 구글쇼핑 검색어
+          <input type="text" id="f_gq_ja" maxlength="60" placeholder="비우면 첫 번째 일본 검색어">
+        </label>
+      </details>
+
+      <div class="two">
+        <label class="f">목표가 (원)
+          <input type="number" id="f_target" inputmode="numeric" min="0" step="100" placeholder="예: 8000">
+          <small>이 값 이하면 알림</small>
+        </label>
+        <label class="f">판매가 (원)
+          <input type="number" id="f_sell" inputmode="numeric" min="0" step="100" placeholder="예: 15000">
+          <small>마진 계산용</small>
+        </label>
+      </div>
+
+      <label class="chk"><input type="checkbox" id="f_collect" checked>
+        <span>저장하고 바로 가격 찾기<br><small class="hint">2~4분 뒤 목록에 나와요. 끄면 다음 정기 수집(08:17·18:17)에 찾아요.</small></span>
+      </label>
+
+      <div class="formbar">
+        <button class="btn main" type="submit" id="saveBtn">저장</button>
+        <button class="btn" type="button" id="cancelBtn">취소</button>
+        <span class="hint" id="formMsg"></span>
+      </div>
+    </form>
+  </section>
+
+  <p class="hint">상품 1개당 구글쇼핑 무료 횟수를 하루 2번(국내·일본) 써요. 무료 2,500회는 한 번만 주니까, 안 보는 상품은 지워 두면 오래 써요.</p>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const BRAND_KO = ['치이카와', '먼작귀', 'chiikawa', 'ちいかわ'];
+const BRAND_JA = ['ちいかわ'];
+const RAW = 'https://raw.githubusercontent.com/djmonnar/chiikawa-price/main/config/keywords.json';
+
+// 일본 검색어·꼭 들어갈 말 제안용 (모르는 말이 있으면 제안 안 해요)
+const JA = {
+  '치이카와':'ちいかわ','먼작귀':'ちいかわ','하치와레':'ハチワレ','우사기':'うさぎ','모몽가':'モモンガ','쿠리만쥬':'くりまんじゅう',
+  '랏코':'ラッコ','시사':'シーサー','후루혼야':'古本屋','인형':'ぬいぐるみ','봉제인형':'ぬいぐるみ','마스코트':'マスコット',
+  '키링':'キーホルダー','키홀더':'キーホルダー','키체인':'キーホルダー','파우치':'ポーチ','스티커':'シール','씰':'シール',
+  '머그컵':'マグカップ','머그':'マグカップ','컵':'コップ','가방':'バッグ','에코백':'エコバッグ','토트백':'トートバッグ',
+  '볼펜':'ボールペン','펜':'ペン','수건':'タオル','타올':'タオル','손수건':'ハンカチ','담요':'ブランケット','쿠션':'クッション',
+  '피규어':'フィギュア','뱃지':'缶バッジ','배지':'缶バッジ','캔뱃지':'缶バッジ','아크릴':'アクリル','스탠드':'スタンド',
+  '메모지':'メモ帳','노트':'ノート','지갑':'財布','필통':'ペンケース','양말':'靴下','모자':'帽子','우산':'傘','텀블러':'タンブラー',
+  '접시':'皿','도시락':'弁当箱','젓가락':'箸','거울':'ミラー','자석':'マグネット','마그넷':'マグネット','가챠':'ガチャ',
+  '스트랩':'ストラップ','퍼즐':'パズル','달력':'カレンダー','엽서':'ポストカード','미니':'ミニ','빅':'BIG','대형':'BIG'
+};
+const SYN = {
+  '인형':['인형','봉제','plush','stuffed'],'봉제인형':['인형','봉제','plush'],'키링':['키링','키홀더','키체인','keyring','keychain'],
+  '키홀더':['키링','키홀더','keyring'],'파우치':['파우치','pouch'],'스티커':['스티커','씰','sticker'],'머그컵':['머그','mug'],
+  '머그':['머그','mug'],'하치와레':['하치와레','hachiware'],'우사기':['우사기','usagi'],'모몽가':['모몽가','momonga'],
+  '쿠리만쥬':['쿠리만쥬','밤만쥬'],'랏코':['랏코','해달'],'가방':['가방','백','bag'],'마스코트':['마스코트','mascot'],
+  '뱃지':['뱃지','배지','badge'],'배지':['뱃지','배지','badge'],'텀블러':['텀블러','tumbler'],'쿠션':['쿠션','cushion']
+};
+const SYN_JA = { 'キーホルダー':['キーホルダー','キーチェーン','ストラップ'], 'シール':['シール','ステッカー'], 'マグカップ':['マグ'] };
+const EXCLUDE_HINT = { '인형':'키링, 스티커, 키트, 볼펜, keychain, sticker', '키링':'스티커, 십자수, DIY', '스티커':'케이스, 키링' };
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const won = n => n == null ? '-' : n.toLocaleString('ko-KR') + '원';
+const lines = s => s.split('\n').map(x => x.trim()).filter(Boolean);
+const commas = s => s.split(/[,，、]/).map(x => x.trim()).filter(Boolean);
+const rowsOf = s => lines(s).map(commas).filter(r => r.length);
+const rowsText = rows => (rows || []).map(r => (Array.isArray(r) ? r : [r]).join(', ')).join('\n');
+const isBrandRow = (row, brand) => (Array.isArray(row) ? row : [row]).some(w => brand.includes(String(w).toLowerCase()) || brand.includes(w));
+const store = { get(k){ try { return sessionStorage.getItem(k); } catch { return null; } }, set(k, v){ try { sessionStorage.setItem(k, v); } catch {} } };
+
+let items = [], sha = null, ready = null, latest = {}, password = store.get('chiikawa-admin') || '', editing = -1, orderTimer = null, lastUpdated = null;
+
+function toast(msg){
+  const t = $('toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast.timer); toast.timer = setTimeout(() => t.classList.remove('show'), 2600);
+}
+function status(msg, kind){
+  const s = $('status');
+  if (!msg) { s.hidden = true; return; }
+  s.hidden = false; s.className = 'notice ' + (kind || 'good'); s.innerHTML = msg;
+}
+
+async function api(method, body){
+  const r = await fetch('api/products', {
+    method, headers: body ? {'Content-Type': 'application/json'} : {}, body: body ? JSON.stringify(body) : undefined, cache: 'no-store'
+  });
+  let d = {};
+  try { d = await r.json(); } catch {}
+  if (!r.ok) { const e = new Error(d.error || ('HTTP ' + r.status)); e.status = r.status; e.data = d; throw e; }
+  return d;
+}
+
+async function loadLatest(){
+  try {
+    const d = await fetch('data/latest.json?t=' + Date.now(), {cache: 'no-store'}).then(r => r.json());
+    latest = Object.fromEntries((d.groups || []).map(g => [g.id, g]));
+    return d.updated;
+  } catch { return null; }
+}
+
+// ------------------------------------------------------------- 목록
+function render(){
+  $('count').textContent = `추적 상품 ${items.length}개`;
+  const can = canEdit();
+  $('list').innerHTML = items.map((p, i) => {
+    const g = latest[p.id];
+    const best = g && g.best;
+    const now = !g ? '<span class="tag new">다음 수집 때 찾아요</span>'
+      : best ? `<b>${won(best.landed_krw)}</b><br>${esc(best.mall)}` : '결과 없음';
+    const q = [
+      (p.ko || []).length ? `<span class="tag KR">국내</span>${esc(p.ko.join(' / '))}` : '',
+      (p.ja || []).length ? `<span class="tag JP">일본</span>${esc(p.ja.join(' / '))}` : ''
+    ].filter(Boolean).join('<br>');
+    const money = [p.target_krw ? `목표가 ${won(p.target_krw)}` : '', p.sell_price ? `판매가 ${won(p.sell_price)}` : ''].filter(Boolean).join(' · ');
+    return `<div class="item">
+      <div class="top"><h3>${esc(p.name)}</h3><div class="now">${now}</div></div>
+      <div class="q">${q}${money ? `<br>${money}` : ''}</div>
+      <div class="acts">
+        <button class="btn" type="button" data-act="edit" data-i="${i}" ${can ? '' : 'disabled'}>수정</button>
+        <button class="btn icon" type="button" data-act="up" data-i="${i}" aria-label="${esc(p.name)} 위로" ${can && i ? '' : 'disabled'}>↑</button>
+        <button class="btn icon" type="button" data-act="down" data-i="${i}" aria-label="${esc(p.name)} 아래로" ${can && i < items.length - 1 ? '' : 'disabled'}>↓</button>
+        <button class="btn danger" type="button" data-act="del" data-i="${i}" ${can && items.length > 1 ? '' : 'disabled'}>삭제</button>
+      </div>
+    </div>`;
+  }).join('') || '<p class="meta">상품이 없어요</p>';
+  $('addBtn').disabled = !can;
+}
+
+const canEdit = () => Boolean(ready && ready.token && ready.password && password && sha);
+
+$('list').addEventListener('click', e => {
+  const b = e.target.closest('button[data-act]');
+  if (!b || b.disabled) return;
+  const i = +b.dataset.i;
+  if (b.dataset.act === 'edit') openForm(i);
+  if (b.dataset.act === 'del') remove(i);
+  if (b.dataset.act === 'up' || b.dataset.act === 'down') move(i, b.dataset.act === 'up' ? -1 : 1);
+});
+
+function move(i, d){
+  const j = i + d;
+  if (j < 0 || j >= items.length) return;
+  [items[i], items[j]] = [items[j], items[i]];
+  render();
+  status('순서 저장 대기 중…', 'warn');
+  clearTimeout(orderTimer);
+  orderTimer = setTimeout(() => save(items, {collect: false, done: '순서를 저장했어요'}), 1500);
+}
+
+async function remove(i){
+  const p = items[i];
+  if (!confirm(`‘${p.name}’ 상품을 목록에서 지울까요?\n지난 가격 기록은 남아 있어서, 같은 상품을 다시 넣으면 새로 쌓여요.`)) return;
+  const next = items.filter((_, k) => k !== i);
+  await save(next, {collect: false, done: `‘${p.name}’ 지웠어요`});
+}
+
+// ------------------------------------------------------------- 저장
+async function save(next, {collect, done}){
+  clearTimeout(orderTimer); orderTimer = null;
+  status('저장 중…', 'warn');
+  try {
+    const before = await loadLatest();
+    const d = await api('POST', {password, sha, products: next, collect});
+    items = d.products; sha = d.sha || sha;
+    if (!d.sha) await refreshList(); // 응답에 새 sha 가 없으면 다시 받아요
+    render();
+    if (collect && d.collect === 'started') {
+      status(`${esc(done)} · 가격 찾는 중이에요 (보통 2~4분). 이 화면을 열어 두면 끝나고 알려 드려요.`, 'good');
+      watch(before);
+    } else if (collect) {
+      status(`${esc(done)}. 바로 수집은 시작 못 했어요 (${esc(d.collect || '')}) → 다음 정기 수집 때 찾아요.`, 'warn');
+    } else {
+      status(esc(done), 'good');
+    }
+    return true;
+  } catch (e) {
+    if (e.status === 401) { password = ''; store.set('chiikawa-admin', ''); showLock(); }
+    if (e.status === 409) await refreshList();
+    status(esc(e.message), 'bad');
+    render();
+    return false;
+  }
+}
+
+/** 수집이 끝나 latest.json 이 바뀌면 알려줘요 (최대 10분) */
+function watch(before){
+  clearInterval(watch.t);
+  const start = Date.now();
+  watch.t = setInterval(async () => {
+    const u = await loadLatest();
+    if (u && u !== before) {
+      clearInterval(watch.t);
+      render();
+      status('새 가격이 들어왔어요 🎉 <a href="./">최저가 목록에서 보기</a>', 'good');
+      toast('새 가격이 들어왔어요');
+    } else if (Date.now() - start > 10 * 60 * 1000) {
+      clearInterval(watch.t);
+      status('수집이 아직 안 끝났어요. 조금 뒤 <a href="./">최저가 목록</a>을 새로고침해 보세요.', 'warn');
+    }
+  }, 20000);
+}
+
+// ------------------------------------------------------------- 추가·수정 폼
+const F = ['name','ko','must_ko','ex_ko','gq','ja','must_ja','ex_ja','gq_ja','target','sell'];
+let touched = {};
+
+function openForm(i){
+  editing = i;
+  touched = {};
+  const p = i >= 0 ? items[i] : null;
+  $('formTitle').textContent = p ? `‘${p.name}’ 수정` : '상품 추가';
+  const mustKo = (p && p.must_ko) || [], mustJa = (p && p.must_ja) || [];
+  const brand = p ? mustKo.some(r => isBrandRow(r, BRAND_KO)) : true;
+  $('f_brand').checked = brand;
+  $('f_name').value = p ? p.name : '';
+  $('f_ko').value = p ? (p.ko || []).join('\n') : '';
+  $('f_must_ko').value = rowsText(mustKo.filter(r => !isBrandRow(r, BRAND_KO)));
+  $('f_ex_ko').value = p ? (p.exclude_ko || []).join(', ') : '';
+  $('f_gq').value = p ? (p.google_q || '') : '';
+  $('f_ja').value = p ? (p.ja || []).join('\n') : '';
+  $('f_must_ja').value = rowsText(mustJa.filter(r => !isBrandRow(r, BRAND_JA)));
+  $('f_ex_ja').value = p ? (p.exclude_ja || []).join(', ') : '';
+  $('f_gq_ja').value = p ? (p.google_q_ja || '') : '';
+  $('f_target').value = p && p.target_krw ? p.target_krw : '';
+  $('f_sell').value = p && p.sell_price ? p.sell_price : '';
+  $('f_collect').checked = true;
+  $('formMsg').textContent = '';
+  $('jaHint').textContent = '비우면 일본 가격은 안 찾아요.';
+  $('jpMore').open = false;
+  if (p) F.forEach(k => touched[k] = true); // 수정할 땐 자동 제안 안 해요
+  $('listView').hidden = true; $('formView').hidden = false;
+  window.scrollTo(0, 0);
+  $('f_name').focus();
+}
+
+function closeForm(){
+  $('formView').hidden = true; $('listView').hidden = false; editing = -1;
+}
+
+F.forEach(k => {
+  const el = $('f_' + k);
+  el.addEventListener('input', () => { if (k !== 'name') touched[k] = true; if (k === 'name') suggest(); });
+});
+$('f_brand').addEventListener('change', suggest);
+
+/** 이름을 보고 빈 칸을 채워 줘요 (직접 고친 칸은 안 건드려요) */
+function suggest(){
+  if (editing >= 0) return;
+  const name = $('f_name').value.trim();
+  const brand = $('f_brand').checked;
+  const ws = name.split(/\s+/).filter(Boolean);
+  const core = ws.filter(w => !BRAND_KO.includes(w.toLowerCase()) && !BRAND_KO.includes(w));
+  const set = (k, v) => { if (!touched[k]) $('f_' + k).value = v; };
+  const hasBrand = ws.some(w => BRAND_KO.includes(w.toLowerCase()) || BRAND_KO.includes(w));
+  set('ko', name ? (brand && !hasBrand ? `치이카와 ${name}` : name) : '');
+  set('must_ko', core.map(w => (SYN[w] || [w]).join(', ')).join('\n'));
+  set('ex_ko', core.map(w => EXCLUDE_HINT[w]).filter(Boolean).join(', '));
+  const ja = ws.map(w => JA[w]);
+  if (name && ja.every(Boolean)) {
+    const jaWords = [...new Set(ja)];
+    const jaq = (brand && !jaWords.includes('ちいかわ') ? ['ちいかわ'] : []).concat(jaWords).join(' ');
+    set('ja', jaq);
+    set('must_ja', core.map(w => JA[w]).filter((w, i, a) => a.indexOf(w) === i).map(w => (SYN_JA[w] || [w]).join(', ')).join('\n'));
+    $('jaHint').textContent = '이름을 보고 자동으로 채웠어요. 맞는지 한 번 봐 주세요.';
+  } else {
+    set('ja', ''); set('must_ja', '');
+    $('jaHint').textContent = name ? '모르는 말이 있어 자동으로 못 채웠어요. 일본 가격도 보려면 일본어로 적어 주세요.' : '비우면 일본 가격은 안 찾아요.';
+  }
+}
+
+$('cancelBtn').addEventListener('click', closeForm);
+
+$('form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const name = $('f_name').value.trim();
+  const ko = lines($('f_ko').value).slice(0, 3);
+  const ja = lines($('f_ja').value).slice(0, 3);
+  if (!name) { $('formMsg').textContent = '상품 이름을 적어 주세요'; $('f_name').focus(); return; }
+  if (!ko.length && !ja.length) { $('formMsg').textContent = '검색어를 하나 이상 적어 주세요'; $('f_ko').focus(); return; }
+  const old = editing >= 0 ? items[editing] : null;
+  const brand = $('f_brand').checked;
+  const oldBrandKo = old && (old.must_ko || []).find(r => isBrandRow(r, BRAND_KO));
+  const oldBrandJa = old && (old.must_ja || []).find(r => isBrandRow(r, BRAND_JA));
+  const p = {
+    id: old ? old.id : 'p-' + Date.now().toString(36),
+    name, ko, ja,
+    google_q: $('f_gq').value.trim(),
+    google_q_ja: $('f_gq_ja').value.trim(),
+    must_ko: (brand ? [oldBrandKo || BRAND_KO] : []).concat(rowsOf($('f_must_ko').value)),
+    must_ja: (brand && ja.length ? [oldBrandJa || BRAND_JA] : []).concat(rowsOf($('f_must_ja').value)),
+    exclude_ko: commas($('f_ex_ko').value),
+    exclude_ja: commas($('f_ex_ja').value),
+    target_krw: +$('f_target').value || null,
+    sell_price: +$('f_sell').value || null
+  };
+  const next = old ? items.map((x, k) => k === editing ? p : x) : items.concat(p);
+  $('saveBtn').disabled = true; $('formMsg').textContent = '저장 중…';
+  const ok = await save(next, {collect: $('f_collect').checked, done: old ? `‘${name}’ 고쳤어요` : `‘${name}’ 추가했어요`});
+  $('saveBtn').disabled = false; $('formMsg').textContent = '';
+  if (ok) { closeForm(); window.scrollTo(0, 0); }
+});
+
+$('addBtn').addEventListener('click', () => openForm(-1));
+
+// ------------------------------------------------------------- 비밀번호·시작
+function showLock(){ $('lock').hidden = !(ready && ready.token && ready.password) || Boolean(password); }
+
+$('lockForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const pw = $('pw').value;
+  if (!pw) return;
+  try {
+    await api('POST', {password: pw, check: true});
+    password = pw; store.set('chiikawa-admin', pw); $('pw').value = '';
+    showLock(); render(); toast('확인했어요. 이제 바꿀 수 있어요');
+    $('meta').textContent = '바꾼 내용은 GitHub에 바로 저장돼요';
+  } catch (err) {
+    toast(err.message);
+  }
+});
+
+async function refreshList(){
+  const d = await api('GET');
+  ready = d.ready;
+  if (d.products) { items = d.products; sha = d.sha; }
+  return d;
+}
+
+async function start(){
+  if (/github\.io$/.test(location.hostname)) {
+    $('pagesNote').hidden = false;
+  }
+  lastUpdated = await loadLatest();
+  try {
+    await refreshList();
+  } catch (e) {
+    ready = null;
+  }
+  if (!ready || !ready.token) {
+    // 저장 설정 전: 공개 저장소에서 읽기만
+    try { items = await fetch(RAW + '?t=' + Date.now()).then(r => r.json()); } catch {}
+  }
+  const setup = !ready || !ready.token || !ready.password;
+  $('setup').hidden = !ready || !setup; // API 가 없으면(Pages) 위 안내만
+  if (ready && setup) {
+    $('setupState').textContent = `지금 상태: GITHUB_TOKEN ${ready.token ? '✓ 있음' : '✕ 없음'} · ADMIN_PASSWORD ${ready.password ? '✓ 있음' : '✕ 없음'}`;
+  }
+  $('meta').textContent = setup ? '지금은 보기만 돼요' : (password ? '바꾼 내용은 GitHub에 바로 저장돼요' : '비밀번호를 넣으면 바꿀 수 있어요');
+  showLock();
+  render();
+}
+
+window.addEventListener('beforeunload', e => { if (orderTimer) { e.preventDefault(); e.returnValue = ''; } });
+start();
+</script>
+</body>
+</html>

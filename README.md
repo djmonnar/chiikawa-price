@@ -14,7 +14,9 @@
 config/keywords.json    추적할 상품 목록 (한/일 검색어, 목표가, 판매가)
 config/settings.json    배대지비, 일본 배송비, 제외 단어 등
 scripts/collect.py      수집 스크립트 (외부 라이브러리 없음)
-docs/index.html         대시보드 화면 (GitHub Pages)
+docs/index.html         대시보드 화면 (Vercel·GitHub Pages)
+docs/manage.html        상품 관리 화면 (Vercel에서만 저장 가능)
+docs/api/products.js    상품 목록 저장 API (Vercel 서버 함수)
 docs/data/              수집 결과 (자동 커밋)
 .github/workflows/      매일 자동 실행 설정
 ```
@@ -49,6 +51,20 @@ docs/data/              수집 결과 (자동 커밋)
 이후 `https://아이디.github.io/chiikawa-price/` 에서 확인. 홈 화면에 추가하면 앱처럼 쓸 수 있어요.
 
 ## 상품 추가·수정
+
+### 사이트에서 (추천)
+https://chiikawa-price.vercel.app/manage.html (목록 오른쪽 위 **⚙️ 상품 관리**)
+- 상품 이름만 적으면 국내·일본 검색어, 꼭 들어갈 말, 빼는 말을 자동으로 채워 줘요. 맞는지 보고 고쳐서 저장.
+- 저장하면 `config/keywords.json` 에 바로 커밋되고, ‘저장하고 바로 가격 찾기’를 켜 두면 수집(Actions)이 바로 돌아요 (2~4분 뒤 목록에 나와요).
+- 수정·삭제·순서 바꾸기도 여기서. 삭제해도 지난 가격 기록(history.json)은 남아요.
+- 저장은 Vercel 서버 함수 `docs/api/products.js` 가 해요. **처음 한 번** Vercel 환경변수 두 개가 필요해요 (값은 직접 넣기):
+  - `GITHUB_TOKEN` — [새 fine-grained 토큰](https://github.com/settings/personal-access-tokens/new): Only select repositories → `chiikawa-price`, 권한 **Contents**·**Actions** = Read and write
+  - `ADMIN_PASSWORD` — 상품 관리 화면 비밀번호
+  - 넣은 뒤 Vercel → Deployments → Redeploy
+- GitHub Pages 주소는 정적이라 저장이 안 돼요 → Vercel 주소에서.
+- 상품 1개당 Serper(구글쇼핑) 무료 횟수를 하루 2번(국내·일본) 써요. 안 보는 상품은 지워 두면 오래 써요.
+
+### 파일로 직접
 `config/keywords.json` 에 블록 하나 추가:
 ```json
 {

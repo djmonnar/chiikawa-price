@@ -729,18 +729,20 @@ def mock_offers(group, fx, s):
     malls_kr = ["쿠팡", "11번가", "G마켓", "치이카와 공식 스토어", "토이저러스", "스마트스토어 먼작귀샵"]
     malls_jp = ["ちいかわらんど楽天市場店", "キャラクターショップ", "ホビーストック"]
     out = []
+    ko = (group.get("ko") or [group["name"]])[0]
+    ja = (group.get("ja") or [None])[0]
     for i in range(8):
         p = int(base * rnd.uniform(0.8, 1.8) // 100 * 100)
         out.append({"source": "11st", "region": "KR", "key": f"mock:kr:{group['id']}:{i}",
-                    "title": f"{group['ko'][0]} 정품 {rnd.choice(['S', 'M', 'L', '20cm', '세트'])}",
+                    "title": f"{ko} 정품 {rnd.choice(['S', 'M', 'L', '20cm', '세트'])}",
                     "mall": rnd.choice(malls_kr), "price_orig": p, "currency": "KRW", "landed_krw": p,
                     "ship_note": "배송비 판매처별 상이", "link": "https://search.11st.co.kr/", "image": None})
-    out.append({**out[0], "key": f"mock:kr:{group['id']}:fake", "title": f"{group['ko'][0]} 초특가",
+    out.append({**out[0], "key": f"mock:kr:{group['id']}:fake", "title": f"{ko} 초특가",
                 "mall": "해외직구몰", "price_orig": int(base * 0.3), "landed_krw": int(base * 0.3)})
-    for i in range(5):
+    for i in range(5 if ja else 0):  # 일본 검색어가 없는 상품은 일본 가격 없음
         jpy = int(base / fx * rnd.uniform(0.5, 1.1) // 10 * 10)
         out.append(jp_offer(rnd.choice(["rakuten", "yahoo"]), f"mock:jp:{group['id']}:{i}",
-                            f"{group['ja'][0]} 公式", rnd.choice(malls_jp), jpy, rnd.random() < 0.4,
+                            f"{ja} 公式", rnd.choice(malls_jp), jpy, rnd.random() < 0.4,
                             "https://www.rakuten.co.jp/", None, fx, s))
     return out
 

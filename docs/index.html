@@ -19,7 +19,8 @@
   body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
     -webkit-font-smoothing:antialiased;padding-bottom:40px}
   .wrap{max-width:880px;margin:0 auto;padding:0 16px}
-  header{padding:22px 0 8px}
+  header{padding:22px 0 8px;position:relative}
+  .manage{position:absolute;right:0;top:22px;font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 11px}
   h1{font-size:22px;margin:0 0 4px;letter-spacing:-.3px}
   h1 span{color:var(--accent)}
   .meta{color:var(--sub);font-size:13px}
@@ -71,6 +72,7 @@
 <body>
 <div class="wrap">
   <header>
+    <a class="manage" id="manageLink" href="manage.html">⚙️ 상품 관리</a>
     <h1>먼작귀 <span>최저가 노트</span></h1>
     <div class="meta" id="meta">불러오는 중…</div>
     <div class="demo" id="demo" hidden>지금 보이는 가격은 화면 확인용 샘플이에요. API 키를 넣으면 실제 가격으로 바뀝니다.</div>
@@ -95,6 +97,8 @@ const won = n => n == null ? '-' : n.toLocaleString('ko-KR') + '원';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const SRC = {'11st':'11번가', naver:'네이버쇼핑', google:'구글쇼핑', coupang:'쿠팡', rakuten:'라쿠텐', yahoo:'야후쇼핑'};
 let DATA, HIST, region = 'ALL';
+// GitHub Pages 는 정적이라 상품 관리(저장)가 안 돼요 → Vercel 주소로
+if (/github\.io$/.test(location.hostname)) document.getElementById('manageLink').href = 'https://chiikawa-price.vercel.app/manage.html';
 
 async function load(){
   if (window.__DATA__) { DATA = window.__DATA__; HIST = window.__HIST__ || {}; return; }
