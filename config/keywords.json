@@ -296,17 +296,17 @@
         "キーチェーン"
       ]
     ],
+    "exclude_ko": [
+      "십자수",
+      "DIY"
+    ],
     "exclude_ja": [
       "賞味期限",
       "チョコ",
       "ボールペン"
     ],
     "target_krw": 8000,
-    "sell_price": 15000,
-    "exclude_ko": [
-      "십자수",
-      "DIY"
-    ]
+    "sell_price": 15000
   },
   {
     "id": "pouch",
@@ -412,5 +412,38 @@
     ],
     "target_krw": 12000,
     "sell_price": 22000
+  },
+  {
+    "id": "p-mwhe4f2y",
+    "name": "시크릿 먼작귀 키링",
+    "ko": [
+      "시크릿 먼작귀 키링"
+    ],
+    "ja": [],
+    "must_ko": [
+      [
+        "치이카와",
+        "먼작귀",
+        "chiikawa",
+        "ちいかわ"
+      ],
+      [
+        "시크릿"
+      ],
+      [
+        "키링",
+        "키홀더",
+        "키체인",
+        "keyring",
+        "keychain"
+      ]
+    ],
+    "exclude_ko": [
+      "스티커",
+      "십자수",
+      "DIY"
+    ],
+    "target_krw": 3000,
+    "sell_price": 6000
   }
 ]
